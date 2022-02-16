@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "DTD/xhtml1-strict.dtd">
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app204.us.archive.org';v.server_ms=394;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=rQCmsv02" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://python.net:80/crew/mwh/hacks/objectthink.html","20180323193347","https://web.archive.org/","web","/_static/",
+	      "1521833627");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=fantwOh2" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>How to think like a Pythonista</title>
+<link rel="stylesheet" type="text/css" href="/web/20180323193347cs_/http://python.net/crew/mwh/hacks/objectthink.css"/>
+</head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20180323193347/http%3A//python.net/crew/mwh/hacks/objectthink.html"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://python.net/crew/mwh/hacks/objectthink.html" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20180323193347" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+		<div class="s" id="wm-nav-captures">
+	  	  <a class="t" href="/web/20180323193347*/http://python.net/crew/mwh/hacks/objectthink.html" title="See a list of every capture for this URL">137 captures</a>
+	  <div class="r" title="Timespan for captures of this URL">15 May 2007 - 23 Mar 2018</div>
+	  </div>
+	<div class="k" style="flex:1;">
+	  <a href="" id="wm-graph-anchor">
+	    <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+	      <canvas id="wm-sparkline-canvas" width="675" height="27" border="0"></canvas>
+	    </div>
+	  </a>
+	</div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+	<tbody>
+	  <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+	  <tr class="m">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20180220163003/http://python.net:80/crew/mwh/hacks/objectthink.html" title="20 Feb 2018"><strong>Feb</strong></a></td>
+	    <td class="c" id="displayMonthEl" title="You are here: 19:33:47 Mar 23, 2018">MAR</td>
+	    <td class="f" nowrap="nowrap">Apr</td>
+	  </tr>
+	  <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+	  <tr class="d">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20180220163003/http://python.net:80/crew/mwh/hacks/objectthink.html" title="16:30:03 Feb 20, 2018"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+	    <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 19:33:47 Mar 23, 2018">23</td>
+	    <td class="f" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+	  </tr>
+	  <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+	  <tr class="y">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20170129122139/http://python.net:80/crew/mwh/hacks/objectthink.html" title="29 Jan 2017"><strong>2017</strong></a></td>
+	    <td class="c" id="displayYearEl" title="You are here: 19:33:47 Mar 23, 2018">2018</td>
+	    <td class="f" nowrap="nowrap">2019</td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+        	<span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+	</span>
+        	<a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20180323193347/http://web.archive.org/screenshot/http://python.net/crew/mwh/hacks/objectthink.html"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+	<a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20180323193347/http://python.net:80/crew/mwh/hacks/objectthink.html" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20180323193347/http://python.net:80/crew/mwh/hacks/objectthink.html" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+	<a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20180323193347/http://python.net:80/crew/mwh/hacks/objectthink.html</div>
+<script type="text/javascript">
+__wm.bt(675,27,25,2,"web","http://python.net/crew/mwh/hacks/objectthink.html","20180323193347",1996,"/_static/",["/_static/css/banner-styles.css?v=fantwOh2","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<h1>How to think like a Pythonista</h1>
+<p>
+This is an archive of part of a thread on comp.lang.python, kept here
+so I can post links to it when it seems appropriate (it dealt with a
+question that comes up relatively often).
+</p>
+<p>
+If you want you can read the thread <a href="https://web.archive.org/web/20180323193347/http://groups.google.com/groups?hl=en&amp;threadm=3CBD1C02.8AB2CF62%40yahoo.com&amp;rnum=1">on
+google</a> instead.
+</p>
+<ul>
+<li><a href="#question">The Question</a></li>
+<li><a href="#mwh">My Answer</a></li>
+<li><a href="#alex">Alex's Answer</a></li>
+<li><a href="#satisfied">A Satisfied Customer</a></li>
+</ul>
+
+<p>
+<a name="question"/>
+In the recent past (this is being written in April 2002, for
+reference), a searcher after enlightenment posted the following query
+to <a href="https://web.archive.org/web/20180323193347/news:comp.lang.python">comp.lang.python</a>:
+</p>
+<blockquote>
+<pre>
+Hello,
+
+one thing I like very much about Python is that statements
+work like you would expect them to work. Take for example
+the use of dict.values() for dictionaries: If you store the
+result of dict.values(), and change the dictionary after-
+wards, the previously stored result remains untouched.
+
+&gt;&gt;&gt; dict = {'a':1,'b':2}
+&gt;&gt;&gt; list = dict.values()
+&gt;&gt;&gt; list
+[1, 2]
+&gt;&gt;&gt; dict['a']=3
+&gt;&gt;&gt; list
+[1, 2]
+&gt;&gt;&gt; dict
+{'a': 3, 'b': 2}
+
+However, if a dictionary has lists as value entries, I get
+a counterintuitive behavior (which, just recently, broke my
+code): If you change the dict, the list you previously
+created via dict.values() gets automagically updated. A nice
+feature, but nothing I would have expected!
+
+&gt;&gt;&gt; dict = {'a':[1],'b':[2]}
+&gt;&gt;&gt; list = dict.values()
+&gt;&gt;&gt; list
+[[1], [2]]
+&gt;&gt;&gt; dict['a'].append(3)
+&gt;&gt;&gt; dict
+{'a': [1, 3], 'b': [2]}
+&gt;&gt;&gt; list
+[[1, 3], [2]]
+
+Looks like that in the first case a copy is returned while
+in the latter case list references are returned. Ok, but
+according to Python's philosophy I shouldn't mind if I work
+with lists in the dictionary or anything else. If the
+behavior depends on the knowledge of the type of values I
+put into a dictionary, I find that somehow counterintuitive.
+
+Who is wrong here: my intuition or Python (2.2)? If it's
+my intuition, how can I train my thinking about Python's
+execution model, so that my intuition get's better ;-)
+</pre>
+</blockquote>
+<p>
+Almost needless to say, it was the poster's intuition that was at
+fault, but he is (was) far from unique in having this sort of
+misconception.
+</p>
+<p>
+Luckily for him, two more Pythonically experienced posters -- myself
+and Alex Martelli -- were in a particularly pedagogical mood that
+day<a name="backnote1"/><a class="note" href="#footnote1">¹</a>, and
+wrote lengthy articles explaining in rather different ways where he
+was going wrong.
+</p>
+<p>
+<a name="mwh"/>
+I ranted about thinking in terms of "names, objects and bindings",
+something I don't do enough, and drew some ascii art diagrams
+explaining what was going on under the covers of the interactive
+sessions the OP was confused about:
+</p>
+<blockquote>
+<pre>
+&gt; one thing I like very much about Python is that statements
+&gt; work like you would expect them to work.
+
+Well, Python works very much as I expect it, but it's not clear if
+this says more about me or Python &lt;wink&gt;.
+
+At the end of your email, you say:
+
+&gt; Who is wrong here: my intuition or Python (2.2)? If it's
+&gt; my intuition, how can I train my thinking about Python's
+&gt; execution model, so that my intuition get's better ;-)
+
+It's you :) As I can't read my email at the moment<a name="backnote2"/><a class="note" href="#footnote2">[1]</a>, I have no
+better way of wasting my time to hand than drawing you some ascii art.
+
+First, some terminology.  Actually, the very first thing is some
+anti-terminology; I find the word "variable" to be particularly
+uphelpful in a Python context.  I prefer "names", "bindings" and
+"objects".
+
+Names look like this:
+
+    ,-----.
+    | foo |
+    `-----'
+
+Names live in namespaces, but that's not really important for the
+matter at hand as the only namespace in play is the one associated
+with the read-eval-print loop of the interpreter.  In fact names are
+only minor players in the current drama; bindings and objects are the
+real stars.
+
+Bindings look like this:
+
+    ------------&gt;
+
+Bindings' left ends can be attached to names, or other "places" such
+as attributes of objects and entries in lists or dictionaries.  Their
+right hand ends are always attached to objects<a name="backnote3"/><a class="note" href="#footnote3">[2]</a>.
+
+Objects look like this:
+
+    +-------+
+    | "bar" |
+    +-------+
+
+This is meant to be the string "bar".  Other types of object will be
+drawn differently, but I hope you'll work out what I'm up to.
+
+&gt; Take for example the use of dict.values() for dictionaries: If you
+&gt; store the result of dict.values(), and change the dictionary after-
+&gt; wards, the previously stored result remains untouched.
+&gt; 
+&gt; &gt;&gt;&gt; dict = {'a':1,'b':2}
+
+After this statement, it would seem appropriate to draw this picture:
+
+    ,------.       +-------+
+    | dict |------&gt;|+-----+|     +---+
+    `------'       || "a" |+----&gt;| 1 |
+                   |+-----+|     +---+
+                   |+-----+|     +---+
+                   || "b" |+----&gt;| 2 |
+                   |+-----+|     +---+
+                   +-------+
+
+&gt; &gt;&gt;&gt; list = dict.values()
+
+Now this:
+
+    ,------.       +-------+
+    | dict |------&gt;|+-----+|             +---+
+    `------'       || "a" |+------------&gt;| 1 |
+                   |+-----+|             +---+
+                   |+-----+|              /\
+                   || "b" |+-----.    ,---'
+                   |+-----+|     |    |
+                   +-------+     `----+----.
+                                      |    |
+    ,------.       +-----+            |    \/
+    | list |------&gt;| [0]-+------------'   +---+
+    `------'       | [1]-+---------------&gt;| 2 |
+                   +-----+                +---+
+
+&gt; &gt;&gt;&gt; list
+&gt; [1, 2]
+
+Which is of course, no surprise.
+
+&gt; &gt;&gt;&gt; dict['a']=3
+
+Now this:
+
+
+    ,------.       +-------+
+    | dict |------&gt;|+-----+|             +---+
+    `------'       || "a" |+-.           | 1 |
+                   |+-----+| |           +---+
+                   |+-----+| |            /\
+                   || "b" |+-+---.    ,---'
+                   |+-----+| |   |    |
+                   +-------+ |   `----+----.
+                             |        |    |
+    ,------.       +-----+   |        |    \/
+    | list |------&gt;| [0]-+---+--------'   +---+
+    `------'       | [1]-+---+-----------&gt;| 2 |
+                   +-----+   |            +---+
+                             |            +---+
+                             `-----------&gt;| 3 |
+                                          +---+
+
+
+&gt; &gt;&gt;&gt; list
+&gt; [1, 2]
+&gt; &gt;&gt;&gt; dict
+&gt; {'a': 3, 'b': 2}
+
+These should also come as no surprise; just chase the arrows
+(bindings) above.
+
+&gt; However, if a dictionary has lists as value entries, I get
+&gt; a counterintuitive behavior (which, just recently, broke my
+&gt; code): If you change the dict, the list you previously
+&gt; created via dict.values() gets automagically updated. A nice
+&gt; feature, but nothing I would have expected!
+
+That's because you're not thinking in terms of Names, Objects and
+Bindings.
+
+&gt; &gt;&gt;&gt; dict = {'a':[1],'b':[2]}
+
+    ,------.       +-------+
+    | dict |------&gt;|+-----+|     +-----+   +---+
+    `------'       || "a" |+----&gt;| [0]-+--&gt;| 1 |
+                   |+-----+|     +-----+   +---+
+                   |+-----+|     +-----+   +---+
+                   || "b" |+----&gt;| [0]-+--&gt;| 2 |
+                   |+-----+|     +-----+   +---+
+                   +-------+
+
+&gt; &gt;&gt;&gt; list = dict.values()
+
+    ,------.       +-------+
+    | dict |------&gt;|+-----+|             +-----+   +---+
+    `------'       || "a" |+------------&gt;| [0]-+--&gt;| 1 |
+                   |+-----+|             +-----+   +---+
+                   |+-----+|               /\
+                   || "b" |+-----.    ,----'
+                   |+-----+|     |    |
+                   +-------+     `----+-----.
+                                      |     |
+    ,------.       +-----+            |     \/
+    | list |------&gt;| [0]-+------------'   +-----+   +---+
+    `------'       | [1]-+---------------&gt;| [0]-+--&gt;| 2 |
+                   +-----+                +-----+   +---+
+
+&gt; &gt;&gt;&gt; list
+&gt; [[1], [2]]
+
+Again, no surprises here.
+
+&gt; &gt;&gt;&gt; dict['a'].append(3)
+
+                                                    +---+
+    ,------.       +-------+                     ,-&gt;| 1 |
+    | dict |------&gt;|+-----+|             +-----+ |  +---+
+    `------'       || "a" |+------------&gt;| [0]-+-'
+                   |+-----+|             | [1]-+-.
+                   |+-----+|             +-----+ |  +---+
+                   || "b" |+-----.         /\    `-&gt;| 3 |
+                   |+-----+|     |    ,----'        +---+
+                   +-------+     |    |
+                                 `----+-----.
+    ,------.       +-----+            |     \/
+    | list |------&gt;| [0]-+------------'   +-----+   +---+
+    `------'       | [1]-+---------------&gt;| [0]-+--&gt;| 2 |
+                   +-----+                +-----+   +---+
+
+&gt; &gt;&gt;&gt; dict
+&gt; {'a': [1, 3], 'b': [2]}
+&gt; &gt;&gt;&gt; list
+&gt; [[1, 3], [2]]
+
+And now these should not be surprising either.
+
+&gt; Looks like that in the first case a copy is returned while
+&gt; in the latter case list references are returned. Ok, but
+&gt; according to Python's philosophy I shouldn't mind if I work
+&gt; with lists in the dictionary or anything else. If the
+&gt; behavior depends on the knowledge of the type of values I
+&gt; put into a dictionary, I find that somehow counterintuitive.
+
+If you haven't realised where you're misconceptions come from from the
+above pictures, I'm not sure more prose would help.
+
+Cheers,
+M.
+<a name="footnote2"/><a class="note" href="#backnote2">[1]</a> Does anyone know where the starship's gone?
+<a name="footnote3"/><a class="note" href="#backnote3">[2]</a> Anyone mentioning UnboundLocalError at this point will be shot.
+
+-- 
+  A.D. 1517: Martin Luther nails his 95 Theses to the church door and
+             is promptly moderated down to (-1, Flamebait).
+        -- http://slashdot.org/comments.pl?sid=01/02/09/1815221&amp;cid=52
+                                        (although I've seen it before)
+</pre>
+</blockquote>
+<p>
+My access to email returned not long after posting, so my time wasting
+became more normal again.  I might redraw the diagrams in <a href="https://web.archive.org/web/20180323193347/http://www.lysator.liu.se/~alla/dia/">dia</a> or something
+someday (although probably only if my email goes down again...).
+</p>
+<p>
+<a name="alex"/>
+Alex took a different, wordier strategy, explaining that Python
+doesn't copy when it doesn't have to, recounting a very nice anecdote
+about a statue in Bologna and suggesting that the OP read some Borges,
+Calvino, Wittgenstein or Korzibsky:
+</p>
+<blockquote>
+<pre>
+&gt; Hello,
+&gt; 
+&gt; one thing I like very much about Python is that statements
+&gt; work like you would expect them to work. Take for example
+&gt; the use of dict.values() for dictionaries: If you store the
+&gt; result of dict.values(), and change the dictionary after-
+&gt; wards, the previously stored result remains untouched.
+
+The .values() method of a dictionary is defined to return
+a new list of the values.  That's more or less inevitable, 
+since a dictionary doesn't _have_ a list of its value 
+normally, so it must build it on the fly when you ask for it.
+It's not a copy -- it's a new list object.
+
+However, Python does NOT copy except in situations where
+a copy is specifically defined to happen.  The .values()
+method being in a vague sense such a situation, as mentioned...
+a new object, rather than a copy of any existing one.
+
+In general, whenever possible, Python returns references 
+to the same objects it already had around, rather than 
+copying; if you DO want a copy you ask for it -- see module 
+copy if you want to do so in a general way.  Of course,
+building new objects is a different case.
+
+If this is counteintuitive, so be it -- there is really
+no alternative in the general case without imposing huge
+overhead, making copies of everything "just in case".
+MUCH better to get copies only on explicit request (and
+new objects, when there's no existing object that could
+either be copied or referred-to).
+
+Of course there are in-between cases -- such as slices.
+
+The standard sequences give you a new object when you 
+ask for a slice; this only matters for lists (for immutable
+objects you shouldn't care if you get copies or what).
+A list is not able to "share a part of itself", so when
+asked for a slice it gives out a copy, a new list (for
+generality, of course, it then also does when asked for
+a slice-of-everything, thelist[:] -- so in that limit case
+the new object can be seen as a copy of the existing one).
+
+The justly popular Numeric package, on the other hand,
+defines an array type which IS able to share some or all 
+data among several array objects -- so a slice of a Numeric 
+array does share data with the array it's sliced from.  It's
+a new object, mind you:
+
+&gt;&gt;&gt; import Numeric
+&gt;&gt;&gt; a=Numeric.array(range(6))
+&gt;&gt;&gt; b=a[:]
+&gt;&gt;&gt; id(a)
+136052568
+&gt;&gt;&gt; id(b)
+136052728
+&gt;&gt;&gt;
+
+but the two distinct objects a and b do share data:
+
+&gt;&gt;&gt; a
+array([0, 1, 2, 3, 4, 5])
+&gt;&gt;&gt; b
+array([0, 1, 2, 3, 4, 5])
+&gt;&gt;&gt; a[3]=23
+&gt;&gt;&gt; b
+array([ 0,  1,  2, 23,  4,  5])
+&gt;&gt;&gt;
+
+
+Each behavior has excellent pragmatics behind it -- lists 
+are _way_ simpler by not having to worry about data sharing, 
+arrays have different use cases by far -- but it's hard to 
+be unsurprising when two somewhat similar objects differ 
+in such details.
+
+But all of the copies which do "happen", e.g. by the
+limit case of list slicing or whatever else (with ONE 
+exception of which more later) are always SHALLOW copies.
+
+NEVER does Python embark on the HUGE task of _deep_ copying 
+unless you very specifically ask it to -- specifically with 
+function deepcopy of module copy.  DEEP copying is a serious 
+matter -- function deepcopy has to watch out for cycles, 
+reproduce any identity of references, potentially follow 
+references to any depth, recursively -- it has to reproduce
+faithfully a graph of objects referencing each other
+with unbounded complexity.  It works, but of course it
+can never be as fast as the mundane business of shallow
+copying (which in turn is never as fast as just handing
+out one more reference to an existing object, whenever
+the latter course of action is feasible).
+
+
+So, that's what has apparently snagged you here:
+
+&gt; However, if a dictionary has lists as value entries, I get
+&gt; a counterintuitive behavior (which, just recently, broke my
+&gt; code): If you change the dict, the list you previously
+&gt; created via dict.values() gets automagically updated. A nice
+&gt; feature, but nothing I would have expected!
+
+Not really -- if you change _objects to which the dict refers_
+(rather than changing the dict in se), then other references
+to just-the-same-objects remain references to just the same
+objects -- if the objects mutate, you see the mutated objects
+from whatever references to them you may be using.
+
+
+&gt;&gt;&gt;&gt; dict = {'a':[1],'b':[2]}
+&gt;&gt;&gt;&gt; list = dict.values()
+&gt;&gt;&gt;&gt; list
+&gt; [[1], [2]]
+
+Don't use the names of built-in types as variables: you WILL
+be burned one day if you do this.  dict, list, str, tuple, file,
+int, long, float, unicode... do NOT use these identifiers for 
+your own purposes, tempting though they may be (an "attractive
+nuisance", to be sure).  If you don't get into the habit of
+avoiding them, one day you'll be trying to (e.g.) build a
+list with x=list('ciao') and get puzzling errors... because
+you have rebound identifier 'list' to refer to a certain list
+object rather than to the list type itself.
+
+Use alist, somedict, myfile, whatever... nothing to do with
+your problem here, just some other simple advice!-)
+
+
+&gt;&gt;&gt;&gt; dict['a'].append(3)
+
+This does not "change the dictionary" -- the dictionary object
+still contains exactly the same references, to objects with
+the same id's (two string objects, the keys, and two list
+objects, the values).  You're changing (mutating) one of those
+objects, but that's quite another issue.  You could be
+mutating said list object through any reference to it
+whatsoever, e.g.:
+
+&gt;&gt;&gt; alist=list('ciao')
+&gt;&gt;&gt; adict={'a':alist}
+&gt;&gt;&gt; adict
+{'a': ['c', 'i', 'a', 'o']}
+&gt;&gt;&gt; alist.pop()
+'o'
+&gt;&gt;&gt; adict
+{'a': ['c', 'i', 'a']}
+&gt;&gt;&gt;
+
+If you wanted dictionary adict to refer to a COPY (a "snapshot",
+if you will) of the contents of alist, you could have said so:
+
+&gt;&gt;&gt; import copy
+&gt;&gt;&gt; alist=list('ciao')
+&gt;&gt;&gt; adict={'a':copy.copy(alist)}
+&gt;&gt;&gt; adict
+{'a': ['c', 'i', 'a', 'o']}
+&gt;&gt;&gt; alist.pop()
+'o'
+&gt;&gt;&gt; adict
+{'a': ['c', 'i', 'a', 'o']}
+&gt;&gt;&gt;
+
+and then the dictionary object's string-representation would
+be isolated from whatever changes to the list to which name
+alist refers.  The string representation delegates part of its
+job to the objects to which the dictionary object refers, so,
+if you want to isolate it, you do need copies -- maybe deep
+ones, in fact (&lt;shudder&gt;... well no, not really, but...:-).
+
+
+&gt;&gt;&gt;&gt; dict
+&gt; {'a': [1, 3], 'b': [2]}
+&gt;&gt;&gt;&gt; list
+&gt; [[1, 3], [2]]
+&gt; 
+&gt; Looks like that in the first case a copy is returned while
+&gt; in the latter case list references are returned. Ok, but
+
+Nope.  ALWAYS references.  .values() doesn't return a reference
+to an existing object NOR a copy of an existing object, because
+there's no "existing object" in this case -- so it always
+returns a NEW object, suitably built as per its specs.
+
+&gt; according to Python's philosophy I shouldn't mind if I work
+&gt; with lists in the dictionary or anything else. If the
+&gt; behavior depends on the knowledge of the type of values I
+&gt; put into a dictionary, I find that somehow counterintuitive.
+
+There is no such dependence.  Just a huge difference
+between changing an object, and changing (mutating) some
+OTHER object to which the first refers.
+
+In Bologna over 100 years ago we had a statue of a local hero
+depicted pointing forwards with his finger -- presumably to
+the future, but given where exactly it was placed, the locals
+soon identified it as "the statue that points to Hotel
+Belfiore".  The one day some enterprising developer bought
+the hotel's building and restructured it -- in particular,
+where the hotel used to be was now a restaurant, Da Carlo.
+
+So, "the statue that points to Hotel Belfiore" had suddenly
+become "the statue that points to Da Carlo"...!  Amazing
+isn't it?  Considering that marble isn't very fluid and the
+statue had not been moved or disturbed in any way...?
+
+This is a real anecdote, by the way (except that I'm not
+sure of the names of the hotel and restaurant involved --
+I could be wrong on those), but I think it can still help
+here.  The dictionary, or statue, has not changed at all,
+even though the objects it refers/points to may have been
+mutated beyond recognition, and the name people know it
+by (the dictionary's string-representation) may therefore
+change.  That name or representation was and is referring
+to a non-intrinsic, non-persistent, "happenstance"
+characteristic of the statue, or dictionary...
+
+
+&gt; Who is wrong here: my intuition or Python (2.2)? If it's
+&gt; my intuition, how can I train my thinking about Python's
+&gt; execution model, so that my intuition get's better ;-)
+
+Your intuition, which led you astray here (Python does just
+what it should do), can be trained in several ways.  The
+works of J. L. Borges and I. Calvino, if you like fiction
+that's reasonably sophisticated but still quite pleasant,
+are good bets.  If you like non-fiction written by
+engineers fighting hard to dispell some of the errors of
+philosophers, Wittgenstein and Korzibsky are excellent.
+
+I'm not kidding, but I realize that many Pythonistas don't
+really care for either genre.  In which case, this group
+and its archives, essays by GvR and /F, and the Python
+sources, may also prove interesting reading.
+
+
+Alex
+</pre>
+</blockquote>
+<p>
+The essay by /F that Alex was referring to was probably <a href="https://web.archive.org/web/20180323193347/http://effbot.org/guides/python-objects.htm">this one</a> (and
+even if it wasn't, you should still read it).  It talks about some of
+the same issues in a terser style.
+</p>
+<p>
+<a name="satisfied"/>
+And just to prove that there is some point in all this, the OP went
+away a satisfied customer:
+</p>
+<blockquote>
+<pre>
+Dear Michael, dear Alex,
+
+you are excellent teachers!!!
+
+Michael, you helped me really getting the point with your
+drawings. Thanks a lot for your art work!
+
+Alex, the anecdote about the statue pointing to Hotel Belfiore
+made my wrong intuition so obvious! I like that and will never
+ever forget it anymore! Thanks for your answer!
+
+I think, today I learnt a lot on my way becoming a real Pythoniac!
+</pre>
+</blockquote>
+<p>
+I hope you found these answers useful too.
+</p>
+<hr/>
+<p>
+<a name="footnote1"/><a class="note" href="#backnote1">¹</a> Well, he was lucky to
+catch me in such a mood.  Alex writes articles like this all the time.
+</p>
+<address>
+<a href="https://web.archive.org/web/20180323193347/http://validator.w3.org/check?uri=http://starship.python.net/crew/mwh/hacks/objectthink.html">
+<img style="border:0;width:88px;height:31px" src="https://web.archive.org/web/20180323193347im_/http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88"/>
+</a>
+<a href=" http://jigsaw.w3.org/css-validator/validator?uri=http://starship.python.net/crew/mwh/hacks/objectthink.html">
+<img style="border:0;width:88px;height:31px" src="https://web.archive.org/web/20180323193347im_/http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"/>
+</a>
+Please send comments, praise, abuse, etc. to <a href="mwh@python.net">mwh@python.net</a>.
+</address>
+<p>
+If you want to translate this document, by all means feel free.  It 
+would be nice if you sent me a link to your translation.  So far I know 
+about
+</p>
+<ul>
+<li>Hernan Martinez Foffani's 
+  <a href="https://web.archive.org/web/20180323193347/http://www.orgmf.com.ar/condor/objectthink.html">Spanish</a>
+  translation</li>
+</ul>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 19:33:47 Mar 23, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:59:39 Feb 13, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 200.225
+  exclusion.robots: 0.243
+  exclusion.robots.policy: 0.236
+  RedisCDXSource: 1.761
+  esindex: 0.008
+  LoadShardBlock: 177.723 (3)
+  PetaboxLoader3.datanode: 111.816 (4)
+  CDXLines.iter: 16.736 (3)
+  PetaboxLoader3.resolve: 181.132 (2)
+  load_resource: 188.405
+-->

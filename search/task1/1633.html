@@ -1,0 +1,1039 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+  
+
+
+
+ 
+  
+
+
+<html>
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app228.us.archive.org';v.server_ms=255;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=rQCmsv02" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html","20100715145616","https://web.archive.org/","web","/_static/",
+	      "1279205776");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=fantwOh2" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Python Language Guide (v1.0) - Google Documents List Data API v1.0 - Google Code</title>
+<script type="text/javascript"><!--
+(function(){function a(){this.t={};this.tick=function(c){this.t[c]=(new Date).getTime()};this.tick("start")}var b=new a;window.jstiming={Timer:a,load:b};if(window.external&&window.external.pageT)window.jstiming.pt=window.external.pageT;})();
+
+var _tocPath_ = '/apis/documents/_toc.ezt';
+var codesite_token = null;
+var logged_in_user_email = null;
+//--></script>
+<link href="/web/20100715145616cs_/http://code.google.com/css/codesite.pack.04102009.css" type="text/css" rel="stylesheet">
+<script src="/web/20100715145616js_/http://code.google.com/js/codesite_head.pack.04102009.js" type="text/javascript"></script>
+<script type="text/javascript">CODESITE_CSITimer['load'].tick('bhs');</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Google Code" href="/web/20100715145616/http://code.google.com/osd.xml">
+
+<!--[if IE]><link rel="stylesheet" type="text/css" href="/css/iehacks.css"><![endif]-->
+
+  </head>
+
+  <body class="gc-documentation"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20100715145616/http%3A//code.google.com/apis/documents/docs/1.0/developers_guide_python.html"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100715145616" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+		<div class="s" id="wm-nav-captures">
+	  	  <a class="t" href="/web/20100715145616*/http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html" title="See a list of every capture for this URL">47 captures</a>
+	  <div class="r" title="Timespan for captures of this URL">01 Dec 2008 - 29 Aug 2020</div>
+	  </div>
+	<div class="k" style="flex:1;">
+	  <a href="" id="wm-graph-anchor">
+	    <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+	      <canvas id="wm-sparkline-canvas" width="675" height="27" border="0"></canvas>
+	    </div>
+	  </a>
+	</div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+	<tbody>
+	  <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+	  <tr class="m">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20100515172516/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="15 May 2010"><strong>May</strong></a></td>
+	    <td class="c" id="displayMonthEl" title="You are here: 14:56:16 Jul 15, 2010">JUL</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20101110000451/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="10 Nov 2010"><strong>Nov</strong></a></td>
+	  </tr>
+	  <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+	  <tr class="d">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20100515172516/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="17:25:16 May 15, 2010"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+	    <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 14:56:16 Jul 15, 2010">15</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20101110000451/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="00:04:51 Nov 10, 2010"><img src="/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a></td>
+	  </tr>
+	  <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+	  <tr class="y">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20090417124003/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="17 Apr 2009"><strong>2009</strong></a></td>
+	    <td class="c" id="displayYearEl" title="You are here: 14:56:16 Jul 15, 2010">2010</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20110822023555/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="22 Aug 2011"><strong>2011</strong></a></td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+        	<span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+	</span>
+        	<a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20100715145616/http://web.archive.org/screenshot/http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+	<a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20100715145616/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20100715145616/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+	<a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexa_web_2010)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexa_web_2010" target="_new"><span class="wm-title">alexa_web_2010</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  this data is currently not publicly accessible.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20100715145616/http://code.google.com:80/apis/documents/docs/1.0/developers_guide_python.html</div>
+<script type="text/javascript">
+__wm.bt(675,27,25,2,"web","http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html","20100715145616",1996,"/_static/",["/_static/css/banner-styles.css?v=fantwOh2","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+    <div id="gb">
+ <span>
+  
+   
+    <a href="#" id="projects-dropdown" onclick="return false;"><span style="text-decoration:underline">My favorites</span> <span style="font-size:.75em;">&#9660;</span></a>
+    |
+  
+    <a id="lang-dropdown" class="dropdown" href="/web/20100715145616/http://code.google.com/" onclick="return false;"><img width="13" height="13" class="globeicon" src="/web/20100715145616im_/http://code.google.com/images/globe2_small.png"><span style="text-decoration:underline">English</span> <span style="font-size:.75em;">&#9660;</span></a>
+  
+   
+    | <a href="https://web.archive.org/web/20100715145616/https://www.google.com/accounts/Login?continue=http%3A%2F%2Fcode.google.com%2Fapis%2Fdocuments%2Fdocs%2F1.0%2Fdevelopers_guide_python.html&amp;followup=http%3A%2F%2Fcode.google.com%2Fapis%2Fdocuments%2Fdocs%2F1.0%2Fdevelopers_guide_python.html" onclick="CODESITE_click('/gb/sc/signin');"><span style="style:text-decoration:underline">Sign in</span></a>
+   
+  
+ </span>
+</div>
+
+<div class="gbh" style="left:0px;"></div>
+<div class="gbh" style="right:0px;"></div>
+
+<div id="gc-container">
+<a id="top"></a>
+<div id="skipto">
+  
+  
+</div>
+
+<div id="gc-header">
+  <div id="logo"><a href="/web/20100715145616/http://code.google.com/">
+  
+  
+     <img src="/web/20100715145616im_/http://code.google.com/images/code_logo.png" height="40" width="161" alt="Google Code" style="border:0;margin:3px 0 0 0;">
+  
+  
+  </a></div>
+  <div id="search">
+    <div id="searchForm" class="searchForm">
+      <form id="cse" action="https://web.archive.org/web/20100715145616/http://www.google.com/cse" accept-charset="utf-8" class="gsc-search-box" onsubmit="executeGSearch(document.getElementById('gsearchInput').value); return false;">
+      <noscript>
+      <input type="hidden" name="cref" value="http://code.google.com/cse/googlecode-context.xml">
+      </noscript>
+      <div id="gsc-search-box">
+        <input id="gsearchInput" type="text" name="q" maxlength="2048" class="gsc-input" autocomplete="off" title="Google Code Search" style="width:345px">
+        <div id="cs-searchresults" onclick="event.cancelBubble = true;"></div>
+        <input title="Search" id="gsearchButton" class="gsc-search-button" name="sa" value="Search" type="submit">
+        <div class="greytext">e.g. "ajax apis" or "open source"</div>
+      </div>
+      </form>
+    </div> <!-- end searchForm -->
+  </div> <!-- end search -->
+
+
+
+<h2 id="googlecode-promo">Make web development faster with these <a href="https://web.archive.org/web/20100715145616/http://chrome.google.com/extensions/featured/web_dev" onclick="siteTracker._trackEvent('Promos','Web Development',this.href);">Chrome Extensions</a>!</h2>
+
+</div> <!-- end gc-header -->
+
+
+<div id="codesiteContent">
+
+<a id="gc-topnav-anchor"></a>
+<div id="gc-topnav">
+  <h1 style="padding:0 0 0 6px;">Google Documents List Data API v1.0</h1>
+  <ul id="docs" class="gc-topnav-tabs">
+
+    <li id="home_link">
+      <a href="/web/20100715145616/http://code.google.com/apis/documents/overview.html" title="Google Documents List Data API v1.0 home page">Home</a>
+    </li>
+  
+    <li id="docs_link">
+      <a href="/web/20100715145616/http://code.google.com/apis/documents/docs/developers_guide.html" class="selected" title="Official Google Documents List Data API v1.0 documentation">Docs</a>
+    </li>
+  
+    <li id="faq_link">
+      <a href="/web/20100715145616/http://code.google.com/apis/documents/faq.html" title="Answers to frequently asked questions about Google Documents List Data API v1.0">FAQ</a>
+    </li>
+  
+    <li id="articles_link">
+      <a href="/web/20100715145616/http://code.google.com/apis/documents/articles/" title="Focused articles and tutorials for Google Documents List Data API v1.0 developers">Articles</a>
+    </li>
+  
+    <li>
+      <a href="https://web.archive.org/web/20100715145616/http://googledocs.blogspot.com/" title="Official Google Documents List Data API v1.0 blog">Blog</a>
+    </li>
+  
+    <li>
+      <a href="https://web.archive.org/web/20100715145616/http://www.google.com/support/forum/p/apps-apis/label?lid=5c316c702e844c99&amp;hl=en" title="Google Documents List Data API v1.0 developer forum">Forum</a>
+    </li>
+  
+    <li>
+      <a href="/web/20100715145616/http://code.google.com/apis/documents/terms.html" title="Google Documents List Data API v1.0 terms of service">Terms</a>
+    </li>
+  
+
+  </ul>
+</div> <!-- end gc-topnav -->
+
+    <div class="g-section g-tpl-170">
+
+      <a name="gc-toc-anchor"></a>
+      <div class="g-unit g-first" id="gc-toc">
+        <ul>
+
+  <li><h2>Documents List Data API</h2>
+  <ul>
+
+    <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/developers_guide.html">Developer's Guide</a></li>
+    <li><ul>
+    
+      <li><span class="tlw-title">Version 3.0 <sup>(Labs</sup> <img src="/web/20100715145616im_/http://code.google.com/images/labs-11.png" alt="" style="padding:0;margin:0;"/><sup>)</sup></span>
+      <ul>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/3.0/developers_guide_protocol.html">Protocol Guide</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/3.0/reference.html">Reference Guide</a></li>
+        <div class="line" style="margin:.6em 0 0 1em;"></div>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/3.0/developers_guide_java.html">Java</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/3.0/developers_guide_python.html">Python</a></li>
+      </ul>
+      </li>
+      
+      <li><span class="tlw-title">Version 2.0</span>
+      <ul>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/2.0/developers_guide_protocol.html">Protocol Guide</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/2.0/reference.html">Reference Guide</a></li>
+        <div class="line" style="margin:.6em 0 0 1em;"></div>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/2.0/developers_guide_java.html">Java</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/2.0/developers_guide_dotnet.html">.NET</a></li>
+      </ul>
+      <li>
+      
+      <li><span class="tlw-title">Version 1.0</span>
+      <ul>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/developers_guide_protocol.html">Protocol Guide</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/reference.html">Reference Guide</a></li>
+        <div class="line" style="margin:.6em 0 0 1em;"></div>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/developers_guide_java.html">Java</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/developers_guide_dotnet.html">.NET</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/developers_guide_php.html">PHP</a></li>
+        <li><a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html">Python</a></li>
+      </ul>
+      </li>  
+    
+    </ul></li>
+      
+    <li><a href="/web/20100715145616/http://code.google.com/apis/documents/changelog.html">API Changelog</a></li>
+    <li><a href="/web/20100715145616/http://code.google.com/p/gdata-issues/issues/list?q=label:API-DocumentsList">Issue Tracker</a></li>
+    <li><a href="/web/20100715145616/http://code.google.com/apis/documents/code.html">Libraries and Code</a></li>
+    <li><a href="https://web.archive.org/web/20100715145616/http://www.google.com/enterprise/marketplace/">Solutions Marketplace</a></li>
+
+  </ul>
+  </li>
+  
+</ul>
+
+<div class="line"></div>
+
+<ul>
+  <li><h2>Google Data Protocol</h2>
+    <ul>
+      <li><a href="/web/20100715145616/http://code.google.com/apis/gdata/docs/developers-guide.html">Developer's Guide</a></li>
+      <div class="line" style="margin:.6em 0 .3em 1.2em;"></div>
+      <li><a href="/web/20100715145616/http://code.google.com/apis/gdata/docs/batch.html">Batch Processing Guide</a></li>
+      <li><a href="/web/20100715145616/http://code.google.com/apis/gdata/docs/auth/overview.html">Authentication Guide</a>
+    </ul>
+  </li>
+</ul>
+      
+
+
+
+
+      </div>
+
+      <a name="gc-pagecontent-anchor"></a>
+      <div class="g-unit" id="gc-pagecontent">
+        <script type="text/javascript">CODESITE_docEarlyProcessing();</script>
+        <h1 class="page_title">Python Language Guide (v1.0)</h1>
+
+
+<p>In addition to providing some background on the capabilities of the Documents List Data API, this guide provides examples for interacting with the API using the <a href="https://web.archive.org/web/20100715145616/http://code.google.com/p/gdata-python-client/">Python client library</a>. If you're interested in understanding more about the underlying protocol used by the Python client library to interact with the Documents List, please see the <a href="developers_guide_protocol.html">protocol guide</a>.</p>
+
+<p class="warning">
+<strong>Important:</strong>  This Developer's Guide describes how to work with an older version of the Document List Data API protocol.  Rest assured we will continue to support this version according to our <a href="/web/20100715145616/http://code.google.com/apis/documents/terms.html">Terms of Service</a>.  However, the latest (and we think greatest) version of the protocol can be found in the left-side navbar -- if it meets your needs, we encourage you to migrate.
+</p>
+
+
+<h1>Contents</h1>
+<table class="columns">
+<tr><td>
+  <ol class="toc">
+    <li><a href="#Audience">Audience</a></li>
+    <li><a href="#GettingStarted">Getting started</a></li>
+    <li><a href="#Auth">Authenticating to the Documents List API</a>
+      <ol>
+        <li><a href="#AuthClientLogin">ClientLogin for "installed" applications</a></li>
+        <li><a href="#AuthAuthSub">AuthSub for web applications</a>
+          <ul>
+          <li><a href="#AuthSubSingleUseToken">Request a single-use token</a></li>
+          <li><a href="#AuthSubSessionToken">Upgrading to a session token</a></li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#ListDocs">Retrieving a list of documents</a></li>
+    <li><a href="#SearchingDocs">Searching the documents feed</a>
+      <ol class="toc">
+        <li><a href="#RetrievingWPDocs">Retrieving all word processor documents</a></li>
+        <li><a href="#RetrievingSpreadsheets">Retrieving all spreadsheets</a></li>
+        <li><a href="#RetrievingStarredPresentations">Retrieving all presentations that I own</a></li>
+        <li><a href="#RetrievingFolders">Retrieving a list of folders</a></li>
+        <li><a href="#RetrievingByTitleExact">Retrieving a document by an exact title match</a></li>
+        <li><a href="#RetrievingInNamedFolder">Retrieving all documents in a named folder</a></li>
+        <li><a href="#Querying">Performing a text query</a></li>
+      </ol>
+    </li>
+    <li><a href="#UploadingDocs">Uploading documents</a>
+      <ol class="toc">
+        <li><a href="#CreatingAnEmptyDocument">Creating an empty document</a></li>
+        <li><a href="#UploadingWPDocs">Uploading a word processor document</a></li>
+        <li><a href="#UploadingPresentation">Uploading a presentation</a></li>
+        <li><a href="#UploadingSpreadsheet">Uploading a spreadsheet</a></li>
+        <li><a href="#UploadingToAFolder">Uploading a document to a folder</a></li>
+      </ol>
+    </li>
+  </ol>
+</td><td>
+  <ol class="toc">
+    <li><a href="#DownloadingDocs">Downloading and exporting documents</a>
+      <ol class="toc">
+        <li><a href="#DownloadingWPDocuments">Exporting word processor documents</a></li>
+        <li><a href="#DownloadingPresentations">Exporting presentations</a></li>
+        <li><a href="#DownloadingSpreadsheets">Exporting spreadsheets</a></li>
+      </ol>
+    </li>
+    <li><a href="#TrashingDocs">Trashing a document</a></li>
+    <li><a href="#UpdatingDocs">Updating existing documents</a>
+      <ol class="toc">
+        <li><a href="#UpdatingMetadata">Updating metadata</a></li>
+        <li><a href="#UpdatingReplaceContent">Replacing a document's content</a></li>
+        <li><a href="#UpdatingAppendingContent">Appending to a document</a></li>
+      </ol>
+    </li>
+    <li><a href="#Folders">Folder management</a>
+      <ol class="toc">
+        <li><a href="#FoldersCreating">Creating folders</a></li>
+        <li><a href="#FoldersTrashing">Trashing a folder</a></li>
+        <li><a href="#FoldersMovingInAndOutOfFolder">Moving documents/folders in and out folders</a></li>
+      </ol>
+    </li>
+    <li><a href="#AccessControlLists">Modifying Document Sharing Permissions</a>
+      <ol class="toc">
+        <li><a href="#ACLRetrieve">Retrieving the ACL feed for a document</a></li>
+        <li><a href="#ACLModification">Modifying the ACL feed for a document</a></li>
+      </ol>
+    </li>
+  </ol>
+</td></tr>
+</table>
+
+
+<h1 id="Audience">Audience</h1>
+<p>This document is intended for developers who want to write client
+applications using the Google Data Python client library that can interact with Google Documents.</p>
+<h1 id="GettingStarted">Getting started</h1>
+<p>Google Documents uses Google Accounts for authentication, so if you have a Google account you are all set. Otherwise, you can <a href="https://web.archive.org/web/20100715145616/https://www.google.com/accounts/NewAccount">create a new account</a>.</p>
+<p>To use the Python client library, you'll need Python 2.2+ and the modules listed on the <a href="https://web.archive.org/web/20100715145616/http://code.google.com/p/gdata-python-client/wiki/DependencyModules">DependencyModules</a> wiki page.  After <a href="https://web.archive.org/web/20100715145616/http://code.google.com/p/gdata-python-client/downloads/list">downloading the client library</a>,
+see <a href="/web/20100715145616/http://code.google.com/apis/gdata/articles/python_client_lib.html">Getting Started with the Google Data Python Library</a> for help installing and using
+the Python client.</p>
+<h3>Running the sample</h3>
+<p>A full working sample is located in the <code>samples/docs</code> subdirectory of the project's SVN repository
+(<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/samples/docs/docs_example.py">/trunk/samples/docs/docs_example.py</a>).</p>
+<p>Run the example as follows:</p>
+<pre class="prettyprint">python docs_example.py</pre>
+<p>The program uses <a href="/web/20100715145616/http://code.google.com/apis/gdata/auth.html#ClientLogin">ClientLogin</a>, so it will prompt you for a username and password.
+These values are the same credentials that you use to login to Google Documents.</p>
+<p>The sample allows the user to perform a number of operations which demonstrate how to use the Documents List API. To include the
+examples in this guide into your own code, you'll need
+the following <code>import</code> statements:</p>
+<pre class="prettyprint">
+import <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html">gdata.docs</a>
+import <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html">gdata.docs.service</a>
+</pre>
+<p>You will also need to setup a <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService"><code>DocsService</code></a> object, which represents a client connection (with authentication) to the Documents List API.</p>
+<pre class="prettyprint">gd_client = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService"><code>DocsService</code></a>(source='yourCo-yourAppName-v1')</pre>
+<p>The <code>source</code> argument is optional and should follow the format: <code>company-applicationname-version</code>.
+It's recommended to include this parameter for logging purposes.</p>
+
+<p class="note"><strong>Note</strong>: The rest of the guide assumes you created a <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService"><code>DocsService</code></a> in the variable <code>gd_client</code>.</p>
+
+<h1 id="Auth">Authenticating to the Documents List API</h1>
+<p>The Python client library can be used to work with either public or
+private feeds. The Documents List Data API provides access to private feeds
+only which require authentication with the documents servers. This can be done via <a href="#AuthClientLogin">ClientLogin</a> username/password authentication,
+<a href="#AuthAuthSub">AuthSub</a>, or <a href="/web/20100715145616/http://code.google.com/apis/gdata/auth.html#OAuth">OAuth</a>.</p>
+<p class="note"><strong>Note</strong>: The API only offers private feeds at the moment. Your application must perform authentication to issue requests
+against the Documents List.</p>
+<p>Please see the <a href="/web/20100715145616/http://code.google.com/apis/gdata/auth.html">Google Data APIs Authentication Overview</a> for more information on AuthSub, OAuth, and ClientLogin.</p>
+
+<h2 id="AuthClientLogin">ClientLogin for "installed" applications</h2>
+<p>To use <a href="/web/20100715145616/http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html">ClientLogin</a>, invoke the <code><a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.service.html#GDataService-ClientLogin">ClientLogin</a></code>
+method of <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html"><code>DocsService</code></a>, which is inherited from
+<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.service.html"><code>Service</code></a>.  Specify the email address and password of the user on whose behalf your client is making requests. For example:</p>
+<pre class="prettyprint">gd_client.ClientLogin('example@gmail.com', 'pa$$word')</pre>
+
+<p>For more information on ClientLogin, see the <a href="/web/20100715145616/http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html">Authentication for Installed Applications</a> documentation.</p>
+
+<h2 id="AuthAuthSub">AuthSub for web applications</h2>
+<p><a href="/web/20100715145616/http://code.google.com/apis/accounts/docs/AuthSub.html">AuthSub Authentication for Web Applications</a> should be used by client applicaitons which need to
+authenticate their users to Google accounts. The operator does not need
+access to the username and password for the Google Documents user - only an AuthSub token is required.</p>
+
+<h3 id="AuthSubSingleUseToken">Request a single-use token</h3>
+
+<p>When the user first visits your application, they need to authenticate.  In this case, you need to print some text and a link
+directing the user to Google to authenticate your request for access to their documents.  The Python Google Data client library provides a
+function to generate this URL.  The code below sets up a link to the <a href="/web/20100715145616/http://code.google.com/apis/accounts/docs/AuthSub.html#AuthSubRequest">AuthSubRequest</a> page.</p>
+<pre class="prettyprint">
+import gdata.service
+
+def GetAuthSubUrl():
+  next = 'http://www.example.com/welcome.pyc'
+  scopes = ['http://docs.google.com/feeds/']
+  secure = False  # set secure=True to request a secure AuthSub token
+  session = True
+  return gdata.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.service.html#-GenerateAuthSubRequestUrl">GenerateAuthSubRequestUrl</a>(next, scopes, secure=secure, session=session)
+
+print '&lt;a href="%s"&gt;Login to your Google account&lt;/a&gt;' % GetAuthSubUrl()
+</pre>
+<p>Notice the parameters sent to the <code>GenerateAuthSubRequestUrl</code> method:</p>
+<ul>
+  <li><b>next</b>, the URL of the page that Google should redirect the user to after authentication.</li>
+  <li><b>scope</b>, indicates that the application is requesting access to the Documents feed.</li>
+  <li><b>secure</b>, <code>False </code> indicates we won't be using secure AuthSub tokens.</li>
+  <li><b>session</b>, <code>True</code> indicates the single-use token can be exchanged for a long-lived session token.</li>
+</ul>
+<p class="note"><strong>Note</strong>: To authenticate users to a Google Apps account, include the <code>domain</code> keyword argument
+set to your domain name: <code>domain='example.com'</code>.</p>
+<p>The generated URL looks something like this:</p>
+<pre>https://www.google.com/accounts/AuthSubRequest?scope=http%3A%2F%2Fdocs.google.com%2Ffeeds%2F&session;=1&secure;=0&hd;=default&next;=http%3A%2F%2Fwww.example.com%2Fwelcome.pyc%3Fauthsub_token_scope%3Dhttp%253A%252F%252Fdocs.google.com%252Ffeeds%252F</pre>
+<p>The user can then follow the link to Google's site and authenticate to their Google account.</p>
+<p>After the user authenticates, they will be redirected back to the <code>next</code> URL. The URL will have a single-use token value appended to it as a query parameter. The URL looks something like this:</p>
+<pre>http://www.example.com/welcome.pyc<strong>?token=<em>yourSingleUseToken</em></strong></pre>
+
+<h3 id="AuthSubSessionToken">Upgrading to a session token</h3>
+<p>For security, this token is single-use only, so now you need to exchange this single-use token for a session token.
+This process is described in the <a href="/web/20100715145616/http://code.google.com/apis/gdata/authsub.html#request-session-token">Using AuthSub with the Google Data API Client Libraries</a> document. The following code snippet shows how to upgrade the token.</p>
+<pre class="prettyprint">
+import cgi
+
+parameters = cgi.FieldStorage()
+authsub_token = parameters['token']
+
+gd_client.auth_token = authsub_token
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.service.html#GDataService-UpgradeToSessionToken">UpgradeToSessionToken</a>()
+</pre>
+<p>Alternatively, you could use the <code>extract_auth_sub_token_from_url</code> method of the <code>gdata.auth</code> module to create a
+<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.auth.html#AuthSubToken"><code>AuthSubToken</code></a> / <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.auth.html#SecureAuthSubToken"><code>SecureAuthSubToken</code></a>  object from the single-use token.</p>
+
+<pre class="prettyprint">
+import gdata.auth
+
+# TODO: Get page's current URL
+single_use_token = gdata.auth.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.auth.html#-extract_auth_sub_token_from_url">extract_auth_sub_token_from_url</a>(current_url)
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.service.html#GDataService-UpgradeToSessionToken">UpgradeToSessionToken</a>(single_use_token)
+</pre>
+
+<p>For more details on AuthSub, including how to use secure AuthSub, see <a href="/web/20100715145616/http://code.google.com/apis/gdata/authsub.html#request-session-token">Using AuthSub with the Google Data API Client Libraries</a>
+and <a href="/web/20100715145616/http://code.google.com/apis/accounts/docs/AuthSub.html">AuthSub Authentication for Web Applications</a>.</p>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="ListDocs">Retrieving a list of documents</h1>
+<p>To fetch a feed containing a list of the currently authenticated user's documents, send an authenticated <code>GET</code> request to the following URL:</p>
+<pre>http://docs.google.com/feeds/documents/private/full</pre>
+<p>The result is a "meta-feed," a feed that lists all of that user's documents; each entry in the feed represents a document
+(spreadsheet, presentation, word processor document, pdf, etc.). Again, this feed is only accessible after <a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html#Auth">Authenticating to the Documents List API</a>.</p>
+<p>Here is an example of printing out the user's entire document list:</p>
+<pre class="prettyprint">
+def PrintFeed(feed):
+  """Prints out the contents of a feed to the console."""
+  print '\n'
+  if not feed.entry:
+    print 'No entries in feed.\n'
+  for entry in feed.entry:
+    print '%s %s %s' % (entry.title.text.encode('UTF-8'), entry.GetDocumentType(), entry.resourceId.text)
+
+feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-GetDocumentListFeed">GetDocumentListFeed</a>()
+PrintFeed(feed)
+</pre>
+
+<p>The resulting <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#DocumentListFeed"><code>DocumentListFeed</code></a>
+object <code>feed</code> represents a response from the server. Among other things, this feed
+contains a list of <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#DocumentListEntry"><code>DocumentListEntry</code></a>
+objects (<code>feed.entry</code>), each of which represents a single
+document. <code>DocumentListEntry</code> encapsulates the information shown in <a href="developers_guide_protocol.html#ListDocs">the protocol developer's guide</a>.</p>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="SearchingDocs">Searching the documents feed</h1>
+<p>You can search the Document List using some of <a href="/web/20100715145616/http://code.google.com/apis/gdata/reference.html#Queries">the standard Google Data API query parameters</a>.
+Categories are used to restrict the type of document (spreadsheet, folder, etc.) returned. The full-text query string (<code>q</code> parameter) is used to search the content of all the documents. More detailed information on parameters specific to the Documents List can be found in the <!--TODO: fix link --><a href="/web/20100715145616/http://code.google.com/apis/documents/reference.html#Parameters">Documents List Data API Reference Guide.</a></p>
+<p>In the Python client library, a <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery"><code>DocumentQuery</code></a> object can be used to construct queries for the Documents List feed. The following code
+is used in all of the examples below to print out the feed results to the command line.</p>
+<pre class="prettyprint">
+def PrintFeed(feed):
+  """Prints out the contents of a feed to the console."""
+  print '\n'
+  if not feed.entry:
+    print 'No entries in feed.\n'
+  for entry in feed.entry:
+    print '%s %s %s' % (entry.title.text.encode('UTF-8'), entry.GetDocumentType(), entry.resourceId.text)
+</pre>
+
+<h2 id="RetrievingWPDocs">Retrieving all word processor documents</h2>
+<p>A list of only word processor documents can be retrieved by using the <code>document</code> category as follows:</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>(categories=['document'])
+feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Query">Query</a>(q.ToUri())
+PrintFeed(feed)
+</pre>
+<h2 id="RetrievingSpreadsheets">Retrieving all spreadsheets</h2>
+<p>A list of only spreadsheets can be retrieved by using the <code>spreadsheet</code> category as follows:</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>(categories=['spreadsheet'])
+feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Query">Query</a>(q.ToUri())
+PrintFeed(feed)
+</pre>
+<h2 id="RetrievingStarredPresentations">Retrieving all presentations that I own</h2>
+<p>A list of only starred presentations can be retrieved by using the <code>presentation</code> and <code>mine</code> categories as follows:</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>()
+q.categories.append('presentation')
+q.categories.append('mine')
+feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Query">Query</a>(q.ToUri())
+PrintFeed(feed)
+</pre>
+
+<h2 id="RetrievingFolders">Retrieving a list of folders</h2>
+<p>A list of folders can be retrieved by using the <code>folder</code> category along with the <code>showfolders=true</code> parameter:</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>(categories=['folder'], params={'showfolders': 'true'})
+feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Query">Query</a>(q.ToUri())
+PrintFeed(feed)
+</pre>
+
+<p class="note"><strong>Tip</strong>: Category queries can work for other document types as well.  For a list of possible categories, see the <a href="/web/20100715145616/http://code.google.com/apis/documents/docs/2.0/reference.html">reference guide</a>.</p>
+
+<h2 id="RetrievingByTitleExact">Retrieving a document by an exact title match</h2>
+<p>It is possible to retrieve documents by matching on their title instead of their entire contents. To do this, add the
+<code>title</code> parameter to the <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery"><code>DocumentQuery</code></a> object. To match a title exactly, add a <code>title-exact</code> parameter to indicate this is the full, explicit title. Since this parameter is case-insensitive or multiple docs could have the same title, a feed is returned.</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>()
+q['title'] = 'Test'
+q['title-exact'] = 'true'
+feed = self.gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Query">Query</a>(q.ToUri())
+PrintFeed(feed)
+</pre>
+<p class="note"><strong>Note</strong>: <code>title-exact</code> queries are case-insenstive. For example, the sample above will print documents
+that match "Test", "test", and "TeSt", but not "Test title".</p>
+
+<h2 id="RetrievingInNamedFolder">Retrieving all documents in a named folder</h2>
+<p>In most cases, a category query which includes the folder name will find the documents in that folder. However, you can also explicitly request
+documents in a named folder by using a schema qualified query. The <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery-AddNamedFolder"><code>AddNamedFolder</code></a> function lets you retrieve all documents in a
+specified folder belonging to a user with the specified email address:</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>()
+q.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery-AddNamedFolder">AddNamedFolder</a>(email, folder_name)
+</pre>
+<p>This style of query is useful when a folder name conflicts with a category that has a different meaning, such as "starred". For example, to query for all the documents in the "starred" folder belonging to user "user@gmail.com", you could use the function as follows:</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>()
+q.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery-AddNamedFolder">AddNamedFolder</a>('user@gmail.com', 'starred')
+feed = self.gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Query">Query</a>(q.ToUri())
+PrintFeed(feed)
+</pre>
+<p>The important distinction here is if you had simply appended the category of "starred" you would get back a list of all starred documents, not the documents in the folder named "starred".</p>
+<h2 id="Querying">Performing a text query</h2>
+<p>You can search the contents of documents by using the text_query property of the <code>DocumentQuery</code> object.</p>
+<pre class="prettyprint">
+q = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentQuery">DocumentQuery</a>()
+q.text_query = 'test'
+feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Query">Query</a>(q.ToUri())
+PrintFeed(feed)
+</pre>
+<p>This searches the entire contents of every document for the string "test" and returns all documents where this string is found.
+This is different than searching just the title of every document, which can be done as described in the section
+<a href="#RetrievingByTitleExact">Retrieving a document by an exact title match</a>.</p>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="UploadingDocs">Uploading documents</h1>
+<p>Any document uploaded to the server is first wrapped in a <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.html#MediaSource"><code>MediaSource</code></a> object.
+In the examples the <code>MediaSource</code> constructor is taking in two variables: <code>file_path</code> is the name of the file including the
+file system path, and <code>content_type</code> is the MIME type (e.g. <code>text/plain</code>) of the document being uploaded. For more information
+on the <code>MediaSource</code> class, please use the Python built-in documentation system:</p>
+<pre class="prettyprint">import gdata
+help(gdata.MediaSource)
+</pre>
+<p>For your convenience, there is a static dictionary member of the <code>gdata.docs.service</code> module named <code>SUPPORTED_FILETYPES</code>.
+It maps upper-case file extensions to their appropriate MIME types.  You should also refer to the <a href="/web/20100715145616/http://code.google.com/apis/documents/faq.html#WhatKindOfFilesCanIUpload">supported file types</a> section of the FAQ.</p>
+
+<h2 id="CreatingAnEmptyDocument">Creating an empty document</h2>
+<p>This example creates a new spreadsheet in the Documents List feed by creating a <code>DocumentListEntry</code> object containining
+metadata for the document.</p>
+<pre class="prettyprint">
+new_entry = gdata.GDataEntry()
+new_entry.title = gdata.atom.Title(text='MyBlankSpreadsheetTitle')
+category = gd_client._MakeKindCategory(gdata.docs.service.SPREADSHEET_LABEL)
+new_entry.category.append(category)
+
+created_entry = gd_client.Post(new_entry, '/feeds/documents/private/full')
+print 'Spreadsheet now accessible online at:', created_entry.GetAlternateLink().href
+</pre>
+
+<h2 id="UploadingWPDocs">Uploading a word processor document</h2>
+<p>This example uploads a document, assuming <code>file_path</code> is the path to a word processor document of MIME type
+<code>content_type</code>. The <code>entry</code> variable is a <code>DocumentListEntry</code> object containining information about
+the document that was uploaded, including a direct link to the document.</p>
+<pre class="prettyprint">
+ms = gdata.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.html#MediaSource">MediaSource</a>(file_path='/path/to/your/test.doc', content_type=gdata.docs.service.SUPPORTED_FILETYPES['DOC'])
+entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Upload">Upload</a>(ms, 'MyDocTitle')
+print 'Document now accessible online at:', entry.GetAlternateLink().href
+</pre>
+
+<p>Similarly, you can upload different file types:</p>
+<pre class="prettyprint">
+ms = gdata.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.html#MediaSource">MediaSource</a>(file_path='/path/to/your/test.rtf', content_type=gdata.docs.service.SUPPORTED_FILETYPES['RTF'])
+entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Upload">Upload</a>(ms, 'MyDocTitle')
+print 'Document now accessible online at:', entry.GetAlternateLink().href
+</pre>
+
+<h2 id="UploadingPresentation">Uploading a presentation</h2>
+<p>This example uploads a presentation, assuming <code>file_path</code> is
+the path to a presentation of MIME type <code>content_type</code>. The <code>entry</code> variable is a <code>DocumentListEntry</code> object containing information about the presentation that was uploaded, including a direct link to the presentation.</p>
+<pre class="prettyprint">
+ms = gdata.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.html#MediaSource">MediaSource</a>(file_path='/path/to/your/test.ppt', content_type=gdata.docs.service.SUPPORTED_FILETYPES['PPT'])
+entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Upload">Upload</a>(ms, 'MyPresoTitle')
+print 'Presentation now accessible online at:', entry.GetAlternateLink().href
+</pre>
+
+<h2 id="UploadingSpreadsheet">Uploading a spreadsheet</h2>
+<p>This example uploads a spreadsheet, assuming <code>file_path</code> is the path to a spreadsheet of MIME type <code>content_type</code>. The <code>entry</code> variable is a <code>DocumentListEntry</code> object containing information about the spreadsheet that was uploaded, including a direct link to the spreadsheet.</p>
+<pre class="prettyprint">
+ms = gdata.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.html#MediaSource">MediaSource</a>(file_path='/path/to/your/test.xls', content_type=gdata.docs.service.SUPPORTED_FILETYPES['XLS'])
+entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Upload">Upload</a>(ms, 'MySpreadsheetTitle')
+print 'Spreadsheet now accessible online at:', entry.GetAlternateLink().href
+</pre>
+
+<h2 id="UploadingToAFolder">Uploading a document to a folder</h2>
+<p>The previous methods also take an optional third argument that accepts either a <code>DocumentListEntry</code> object representing a folder,
+or the folder's self link (<code>entry.GetSelfLink().href</code>).  This example uploads a spreadsheet to an existing folder.  It assume <code>folder</code>
+is a <code>DocumentListEntry</code> fetched form the document list.</p>
+<pre class="prettyprint">
+ms = gdata.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.html#MediaSource">MediaSource</a>(file_path='/path/to/your/test.csv', content_type=gdata.docs.service.SUPPORTED_FILETYPES['CSV'])
+entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Upload">Upload</a>(ms, 'MySpreadsheetTitle', folder_or_uri=folder)
+print 'Spreadsheet now accessible online at:', entry.GetAlternateLink().href
+</pre>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="DownloadingDocs">Downloading and exporting documents</h1>
+<p>To export documents from the Documents List feed, you need the Atom entry of the document or
+the document, spreadsheet, or presentation's resource id (e.g. <code>document:12345</code>).</p>
+
+<h2 id="DownloadingWPDocuments">Exporting word processor documents</h2>
+<p>The following example exports a <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#DocumentListEntry"><code>DocumentListEntry</code></a> objection as a .doc file:</p>
+<pre class="prettyprint">
+file_path = '/path/to/save/your_document.doc'
+print 'Downloading document to %s...' % (file_path,)
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Export">Export</a>(entry, file_path)
+</pre>
+
+<p>Alternatively, you can pass in the resource id, as the Download helper methods also accept that.
+The following example exports a <code>DocumentListEntry</code> object as a .html file:</p>
+<pre class="prettyprint">
+file_path = '/path/to/save/your_document.html'
+print 'Downloading document to %s...' % (file_path,)
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Export">Export</a>(entry.resourceId.text, file_path)
+</pre>
+
+<h2 id="DownloadingPresentations">Exporting presentations</h2>
+<p>The following example exports a <code>DocumentListEntry</code> object as a .swf file:</p>
+<pre class="prettyprint">
+file_path = '/path/to/save/your_presentation.swf'
+print 'Downloading presentation to %s...' % (file_path,)
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Export">Export</a>(entry, file_path)
+</pre>
+
+<h2 id="DownloadingSpreadsheets">Exporting spreadsheets</h2>
+
+<p>The following example exports a <code>DocumentListEntry</code> object as a .xls file:</p>
+<pre class="prettyprint">
+file_path = '/path/to/save/your_spreadsheets.xls'
+print 'Downloading spreadsheet to %s...' % (file_path,)
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Export">Export</a>(entry, file_path)
+</pre>
+
+<p>When exporting to .csv or .tsv, you can specify which grid/sheet to download by using the <code>gid</code> argument:</p>
+<pre class="prettyprint">
+file_path = '/path/to/save/your_spreadsheets.csv'
+print 'Downloading spreadsheet to %s...' % (file_path,)
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Export">Export</a>(entry, file_path, gid=1) # export the second sheet
+</pre>
+
+<p class="warning"><strong>Important</strong>: In order to download spreadsheets, your client needs a valid token for the Spreadsheets API service.
+See <a href="/web/20100715145616/http://code.google.com/apis/documents/docs/2.0/developers_guide_protocol.html#DownloadingSpreadsheets">downloading spreadsheets</a> section
+of the protocol guide for more details.</p>
+
+<p>If you're using AuthSub, the solution is to request a multi-scoped token, good for both the Documents List API and the
+Spreadsheets API.  Pass in <code>scope=['http://docs.google.com/feeds/', 'http://spreadsheets.google.com/feeds/']</code> to
+<a href="/web/20100715145616/http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html#AuthSubSingleUseToken"><code>GenerateAuthSubRequestUrl</code></a>.</p>
+<p>For ClientLogin, first create a <code>SpreadsheetsService</code> object (to obtain a spreadsheets token), and then
+swap that token into your <code>DocsService</code> object. This example demonstrates that process:</p>
+<pre class="prettyprint">
+import gdata.spreadsheet.service
+
+spreadsheets_client = gdata.spreadsheet.service.SpreadsheetsService()
+spreadsheets_client.ClientLogin('user@gmail.com', 'pa$$word')
+
+# substitute the spreadsheets token into our gd_client
+docs_auth_token = gd_client.GetClientLoginToken()
+gd_client.SetClientLoginToken(spreadsheets_client.GetClientLoginToken())
+
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-Export">Export</a>(entry, file_path)
+
+gd_client.SetClientLoginToken(docs_auth_token) # reset the DocList auth token
+</pre>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="TrashingDocs">Trashing a document</h1>
+<p>To trash a document, folder, presentation, or spreadsheet, use the <code>Delete</code> method of the service object
+on the <code>edit</code> link of the Atom entry representing the document. For example, to trash one of the new
+documents from the upload examples above, you would execute the following.
+<pre class="prettyprint">gd_client.Delete(entry.GetEditLink().href)</pre>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="UpdatingDocs">Updating existing documents</h1>
+
+<h2 id="UpdatingMetadata">Updating metadata</h2>
+<p>Here is an example of updating a presentation's metadata, but leaving its content unchanged.
+The presentation's name will be changed to 'better presentation title'. Since the request does not contain new document content,
+the entry's <code>edit</code> link is used.</p>
+<pre class="prettyprint">
+existing_entry.title.text = 'better presentation title'
+updated_entry = gd_client.Put(existing_entry, existing_entry.GetEditLink().href)
+</pre>
+<h2 id="UpdatingReplaceContent">Replacing a document's content</h2>
+<p>To update a document's content, use the Atom entry's <code>edit-media</code> link.  The following example replaces the
+document's content with replacementContent.doc's content, and updates the document's title to 'updated document' in the same request.</p>
+<pre class="prettyprint">
+ms = gdata.MediaSource(file_path='/path/to/your/replacementContent.doc',
+                       content_type=gdata.docs.service.SUPPORTED_FILETYPES['DOC'])
+entry.title.text = 'updated document'
+updated_entry = gd_client.Put(ms, entry.GetEditMediaLink().href)
+</pre>
+<h3 id="UpdatingAppendingContent">Appending to a document</h3>
+<p>For word documents, you can append data to the document's content by using the <code>append=true</code> parameter.
+The process is exactly the same as <a href="#UpdatingReplaceContent">replacing a document's content</a> (above).</p>
+<p class="warning"><strong>Important</strong>: <code>Content-Type: text/plain</code> is the only accepted content type when appending data.
+For example, you cannot append the contents of a Word processor document with <code>Content-Type: application/msword</code> to an
+existing document.</p>
+<p>Here is an example of appending the text 'Appending this data!' to an existing document.  Again, the <code>edit-media</code> link
+is used because we're modifying the document's content.</p>
+<pre class="prettyprint">
+import StringIO
+
+data = 'Appending this data!'
+ms = gdata.MediaSource(file_handle=StringIO.StringIO(data), content_type='text/plain', content_length=len(data))
+updated_entry = gd_client.Put(ms, entry.GetEditMediaLink().href + '?append=true')
+</pre>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="Folders">Folder management</h1>
+
+<h2 id="FoldersCreating">Creating folders</h2>
+<p>To create a new folder, use the <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-CreateFolder"><code>CreateFolder</code></a> helper by passing it folder name:</p>
+<pre class="prettyprint">
+folder_entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-CreateFolder">CreateFolder</a>('YourFolderTitle')
+</pre>
+<p>To create a folder inside another folder, pass in the folder's Atom entry as a second argument to <code>CreatedFolder</code>.
+This example creates two folders.  The second folder (Folder2) is created inside of Folder1:</p>
+<pre class="prettyprint">
+parent_folder_entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-CreateFolder">CreateFolder</a>('Folder1')
+child_folder_entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-CreateFolder">CreateFolder</a>('Folder2', parent_folder_entry)
+</pre>
+
+<h2 id="FoldersTrashing">Trashing a folder</h2>
+<p>Deleting a folder is the same as deleting a document.  Use the service's <code>Delete</code> method and
+pass it the entry's <code>edit</code> link:</p>
+<pre class="prettyprint">gd_client.Delete(folder_entry.GetEditLink().href)</pre>
+
+<h2 id="FoldersMovingInAndOutOfFolder">Moving documents/folders in and out folders</h2>
+<p>Moving a document into a folder requires that you have a <code>DocumentListEntry</code> object for the document, and another for the folder
+in which the document should be moved to. The <code>DocsService</code> module provides a method for moving documents, presentations, spreadsheets,
+and folders in and out of folders.</p>
+<h4 id="FoldersMovingIntoFolder">Moving a document/folder into another folder:</h4>
+<pre class="prettyprint">
+moved_doc_entry = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-MoveIntoFolder">MoveIntoFolder</a>(doc_entry, dest_folder_entry)
+</pre>
+<p>The first argument to <code>MoveIntoFolder()</code> is a <code>DocumentListEntry</code> object representing the source folder or document to relocate.  The second argument
+is a <code>DocumentListEntry</code> object representing the destination folder entry.</p>
+
+<h4 id="FoldersMovingOutOfAFolder">Moving a document/folder out of a folder:</h4>
+<pre class="prettyprint">
+gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-MoveOutOfFolder">MoveOutOfFolder</a>(src_entry)
+</pre>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+<h1 id="AccessControlLists">Modifying Document Sharing Permissions</h1>
+
+<h2 id="ACLRetrieve">Retrieving the ACL feed for a document</h2>
+<p>The <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-GetDocumentListAclFeed"><code>GetDocumentListAclFeed</code></a> method can be used to retrieve the ACL permissions for a document.  To retrieve the
+permission for a document, you need the <code>&lt;gd:feedLink&gt;</code> from the Atom entry.  The <code>gdata.docs.DocumentListEntry.GetAclLink()</code>
+method returns that link.</p>
+<p>The following example fetches the first document the authenticated user owns, queries its ACL feed, and prints out the permission entries:</p>
+<pre class="prettyprint">
+uri = ('http://docs.google.com/feeds/documents/private/full/'
+       '-/mine?max-results=1')
+feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-GetDocumentListFeed">GetDocumentListFeed</a>(uri)
+acl_feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-GetDocumentListAclFeed">GetDocumentListAclFeed</a>(feed.entry[0].GetAclLink().href)
+for acl_entry in acl_feed.entry:
+  print '%s - %s (%s)' % (acl_entry.role.value, acl_entry.scope.value, acl_entry.scope.type)
+</pre>
+<p>You can also instantiate a <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentAclQuery"><code>DocumentAclQuery</code></a> if you know the document's resouce_id:</p>
+<pre class="prettyprint">
+resource_id = 'spreadsheet:12345'
+query = gdata.docs.service.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocumentAclQuery">DocumentAclQuery</a>(resource_id)
+acl_feed = gd_client.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.service.html#DocsService-GetDocumentListAclFeed">GetDocumentListAclFeed</a>(query.ToUri())
+...
+</pre>
+<h2 id="ACLModification">Modifying the ACL feed for a document</h2>
+<h3 id="ACLCreate">Adding a new permission</h3>
+<p>To add a new permission to a document, your client needs to create a new <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#DocumentListAclEntry"><code>DocumentListAclEntry</code></a> and <code>POST</code> it to the server.</p>
+<p>Here's an example that adds 'user@example.com' as a <code>reader</code> to the document represented by <code>doc_entry</code>:</p>
+<pre class="prettyprint">
+scope = gdata.docs.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#Scope">Scope</a>(value='user@example.com', type='user')
+role = gdata.docs.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#Role">Role</a>(value='reader')
+acl_entry = gdata.docs.<a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#DocumentListAclEntry">DocumentListAclEntry</a>(scope=scope, role=role)
+
+created_acl_entry = gd_client.Post(acl_entry, doc_entry.GetAclLink().href,
+                                   converter=gdata.docs.DocumentListAclEntryFromString)
+</pre>
+<p>Possible values for the <a href="https://web.archive.org/web/20100715145616/http://gdata-python-client.googlecode.com/svn/trunk/pydocs/gdata.docs.html#Role"><code>Role</code></a> are <code>reader</code>, <code>writer</code>, and <code>owner</code>.</p>
+
+<h3 id="ACLUpdate">Updating a permission</h3>
+<p>We can update the ACL entry that we just added by sending a <code>PUT</code> request (with the updated content) to the
+<code>edit</code> link of the acl entry in question.</p>
+<p>This example modfies our previous <code>created_acl_entry</code> by updating 'user@example.com' to be a <code>writer</code> (collaborator):</p>
+<pre class="prettyprint">
+created_acl_entry.role.value = 'writer'
+updated_acl_entry = gd_client.Put(created_acl_entry, created_acl_entry.GetEditLink().href,
+                                  converter=gdata.docs.DocumentListAclEntryFromString)
+</pre>
+
+<h3 id="ACLDelete">Deleting a permission</h3>
+<p>Deleting a permission invovles sending a <code>DELETE</code> to the ACL entry's <code>edit</code> link.</p>
+<pre class="prettyprint">
+gd_client.Delete(updated_acl_entry.GetEditLink().href)
+</pre>
+<p class="backtotop"><a href="#top">Back to top</a></p>
+
+
+      </div><!-- end gc-pagecontent -->
+   </div><!-- end gooey wrapper -->
+
+    </div> <!-- end codesite content -->
+
+
+<div id="gc-footer" dir="ltr">
+  <div class="text">
+    
+    &copy;2010 Google -
+    <a href="/web/20100715145616/http://code.google.com/">Code Home</a> -
+    <a href="/web/20100715145616/http://code.google.com/terms.html">Terms of Service</a> -
+    <a href="/web/20100715145616/http://code.google.com/privacy.html">Privacy Policy</a> -
+    <a href="/web/20100715145616/http://code.google.com/more/">Site Directory</a>
+    <br> <br>
+    Google Code offered in:
+    <a href="/web/20100715145616/http://code.google.com/intl/en/">English</a> -
+    <a href="/web/20100715145616/http://code.google.com/intl/es/">Español</a> -
+    <a href="/web/20100715145616/http://code.google.com/intl/ja/">日本語</a> -
+    <a href="/web/20100715145616/http://code.google.com/intl/ko/">한국어</a> -
+    <a href="/web/20100715145616/http://code.google.com/intl/pt-BR/">Português</a> -
+    <a href="/web/20100715145616/http://code.google.com/intl/ru/">Pусский</a> -
+    <a href="/web/20100715145616/http://code.google.com/intl/zh-CN/">中文(简体)</a> -
+    <a href="/web/20100715145616/http://code.google.com/intl/zh-TW/">中文(繁體)</a>
+  </div>
+</div><!-- end gc-footer -->
+
+</div><!-- end gc-container -->
+
+<script type="text/javascript">CODESITE_CSITimer['load'].tick('ats');</script>
+<script src="/web/20100715145616js_/http://code.google.com/js/codesite_tail.pack.04102009.js" type="text/javascript"></script>
+
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(
+
+
+    ['siteTracker._setAccount', 'UA-18071-1'],
+    ['siteTracker._setDomainName', 'code.google.com'],
+    ['siteTracker._setCookiePath', window.location.pathname.substring(0,
+        window.location.pathname.lastIndexOf('/') + 1)],
+    ['siteTracker._trackPageview']
+);
+(function() {
+  var ga = document.createElement('script');
+
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = 'https://web.archive.org/web/20100715145616/http://www.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] ||
+   document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+</script>
+
+
+
+
+  </body>
+</html>
+
+
+<!--
+     FILE ARCHIVED ON 14:56:16 Jul 15, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:59:54 Feb 13, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 168.462
+  exclusion.robots: 0.196
+  exclusion.robots.policy: 0.184
+  RedisCDXSource: 1.529
+  esindex: 0.008
+  LoadShardBlock: 143.238 (3)
+  PetaboxLoader3.resolve: 73.666 (2)
+  PetaboxLoader3.datanode: 70.894 (4)
+  CDXLines.iter: 19.859 (3)
+  load_resource: 72.196
+-->

@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+  <head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <title>index | TIOBE - The Software Quality Company</title>
+  <link href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css' />
+  <link rel="shortcut icon" href="/images/tiobe.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/main_prefixed.css?1623057826709">
+  <link rel="stylesheet" href="/stylesheets/slicknav.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script type="text/javascript" src="/js/jquery-1.8.0.release.js"></script>
+  <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/vendor/jquery.slicknav.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script>
+    $(function(){
+      $('#menu').slicknav({appendTo:'#siteheader, #siteheadervervolg'});
+    });
+  </script>
+  <script type="text/javascript">
+       window.cookieconsent_options = {"message":"We use cookies to analyse our traffic and to show ads. By using our website, you agree to our use of cookies.","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"/stylesheets/cookieconsent_theme.css"};
+  </script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+  </head>
+  <body>
+    <div id="slider" class="fullwidth cycle-slideshow" data-cycle-fx="none" data-cycle-speed="500"  data-cycle-slides="> div.slide" data-cycle-pause-on-hover="false" data-cycle-timeout="12000" data-cycle-pager=".realpager" data-cycle-prev=".prev" data-cycle-next=".next" data-starting-slide="4" style="height : 260px;">
+      <div class="slide cycle-slide" style="background-image: url('/images/slider/header_medical.jpg'); height: 400px; display: none;"></div>
+      <div class="slide cycle-slide" style="background-image: url('/images/slider/header_aerospace.jpg'); height: 300px; display: none;"></div>
+      <div class="slide cycle-slide" style="background-image: url('/images/slider/header_automotive.jpg'); height: 400px; display: none;"></div>
+      <div class="slide cycle-slide" style="background-image: url('/images/slider/header_finance.jpg'); height: 350px; display: none;"></div>
+      <div class="slide cycle-slide" style="background-image: url('/images/slider/header_logistics.jpg'); height: 500px; "></div>
+    </div>
+    <div id="siteheadervervolg" class="clearfix">
+      <div id="menutopfull">
+        <div class="sitewidth clearfix">
+          <div id="menutopcontainer">
+            <ul id="menutop">
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/tiobe-index/">TIOBE index</a></li>
+            </ul>
+          </div>
+          <div id="menutopfiller"></div>
+        </div>
+      </div>
+      <header class="fullwidth">
+        <div class="sitewidth">
+          <a href="/" class="ir" id="logo">TIOBE website</a>
+          <ul id="menu">
+            <li>
+              <a href="/documentation/">Documentation</a>
+            </li>
+            <li>
+              <a href="/tqi/definition/">Quality Standards</a>
+              <ul>
+                <li><a href="/tqi/definition/">TQI</a>
+                  <ul>
+                    <li><a href="/tqi/definition/">TQI Definition</a></li>
+                    <li><a href="/tqi/tqi-demo/">TQI Demo</a></li>
+                    <li><a href="/tqi/awards/">Awards</a></li>
+                    <li><a href="/tqi/changes/">Changes</a></li>
+                  </ul>
+                </li>
+                <li><a href="/tpm/definition/">Trusted Product Maintainability</a>
+                  <ul>
+                    <li><a href="/tpm/definition/">TPM Definition</a></li>
+                    <li><a href="/tpm/changes/">Changes</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/markets/customers/">Markets</a>
+              <ul>
+                <li><a href="/markets/customers/">Customers</a></li>
+                <li><a href="/markets/distributors/">Distributors</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/tics/fact-sheet/">Products</a>
+              <ul>
+                <li><a href="/tics/fact-sheet/">TICS</a></li>
+                <li><a href="/products/quality-assessment/">TQI Quality Assessment</a></li>
+                <li><a href="/tpm/definition/">TPM Maintainability Assessment</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/tics/fact-sheet/">TICS</a>
+              <ul>
+                <li><a href="/tics/fact-sheet/">Fact Sheet</a></li>
+                <li><a href="/tics/tics-framework/">TICS Framework</a></li>
+                <li><a href="/tics/documentation/" class="extern">Documentation</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/company/about/">Company</a>
+              <ul>
+                <li><a href="/company/about/">About</a></li>
+                <li><a href="/company/management-team/">Management Team</a></li>
+                <li><a href="/company/media/">Media</a></li>
+                <li><a href="/articles/">Blog</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <section class="fullwidth offwhitebg clearfix">
+      <section class="sitewidth">
+        <div id="crumbs">
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li>&gt;</li>
+        <li><a href='/tiobe-index/'>TIOBE Index</a></li>
+        <li>&gt;</li>
+        <li><a href=''>index</a></li>
+        <li></li>
+        </ul>
+        </div>        <section class="clearfix">
+          <article class="whitebg padblock content wide">
+            <link rel="stylesheet" href="/stylesheets/tpci.css">
+<style type="text/css">
+table.table-top20 tbody tr td {
+  vertical-align: baseline;
+}
+
+td.td-top20 {
+  text-align: center;
+}
+
+table.table-top20 tbody tr:hover td {
+  background-color: lightgrey;
+	font-weight: bold;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+table.table-top20 tbody tr td img {
+    vertical-align: top;
+}
+</style>
+<script>$(document).ready(function(){$("table.table-top20 > tbody > tr").click(function() {var lang = $(this).find($("td:nth-child(5)")).text();lang = lang.replace("/", "-");lang = lang.replace(".", "dot");lang = lang.replace(/\s/g, "-");lang = lang.toLowerCase();lang = lang.replace("#", "sharp");lang = lang.replace(/[+]/g, "plus");var page = encodeURIComponent(lang);window.open("/tiobe-index/" + page + "/", "_self");});});</script>
+<script>$(function () {
+  $('#container').highcharts({
+    credits: {
+		  enabled: false
+    },
+    chart: {
+    	type: 'spline'
+    },
+    plotOptions: {
+    	spline: {
+    		lineWidth: 4,
+    		states: {
+    			hover: {
+    				lineWidth: 5
+    			}
+    		},
+    		marker: {
+    			enabled: false
+    		}
+    	}
+    },
+    title: {
+    	text: 'TIOBE Programming Community Index',
+    	x: -20,
+    	useHTML: true
+    },
+    subtitle: {
+    	text: 'Source: www.tiobe.com',
+    	x: -20,
+    	useHTML: true
+    },
+    xAxis: {
+    	type: 'datetime',
+    	dateTimeLabelFormats: {
+    		year: '%Y'
+    	}
+    },
+    yAxis: {
+    	title: {
+    		text: 'Ratings (%)'
+    	},
+    	plotLines: [{
+    		value: 0,
+    		width: 1,
+    		color: '#808080'
+    	}]
+    },
+    tooltip: {
+    	valueSuffix: '%',
+    	dateTimeLabelFormats: {
+    		week: "%B %Y"
+    	}
+    },
+    legend: {
+      align: 'center',borderWidth: 0,
+    },
+    series: [
+    	{name : 'Python',data : [[Date.UTC(2001, 5, 30), 1.25], [Date.UTC(2001, 6, 30), 1.13], [Date.UTC(2001, 7, 30), 1.20], [Date.UTC(2001, 8, 28), 1.17], [Date.UTC(2001, 9, 26), 1.28], [Date.UTC(2001, 10, 28), 1.23], [Date.UTC(2001, 11, 31), 1.04], [Date.UTC(2002, 0, 30), 1.02], [Date.UTC(2002, 1, 27), 0.99], [Date.UTC(2002, 2, 29), 0.99], [Date.UTC(2002, 3, 29), 1.07], [Date.UTC(2002, 4, 29), 1.06], [Date.UTC(2002, 5, 29), 1.13], [Date.UTC(2002, 6, 31), 1.08], [Date.UTC(2002, 7, 29), 1.22], [Date.UTC(2002, 8, 29), 1.08], [Date.UTC(2002, 9, 30), 1.19], [Date.UTC(2002, 10, 29), 1.00], [Date.UTC(2002, 11, 31), 1.00], [Date.UTC(2003, 0, 31), 1.03], [Date.UTC(2003, 1, 28), 0.97], [Date.UTC(2003, 2, 31), 0.99], [Date.UTC(2003, 3, 30), 1.01], [Date.UTC(2003, 4, 30), 1.16], [Date.UTC(2003, 5, 30), 1.28], [Date.UTC(2003, 6, 31), 1.30], [Date.UTC(2003, 7, 31), 1.42], [Date.UTC(2003, 8, 30), 1.49], [Date.UTC(2003, 9, 31), 1.77], [Date.UTC(2003, 10, 30), 1.10], [Date.UTC(2003, 11, 31), 1.13], [Date.UTC(2004, 0, 31), 1.01], [Date.UTC(2004, 1, 29), 1.02], [Date.UTC(2004, 2, 31), 1.01], [Date.UTC(2004, 3, 30), 4.57], [Date.UTC(2004, 4, 30), 6.58], [Date.UTC(2004, 5, 30), 4.96], [Date.UTC(2004, 6, 31), 4.70], [Date.UTC(2004, 7, 30), 5.60], [Date.UTC(2004, 8, 30), 4.44], [Date.UTC(2004, 9, 31), 5.20], [Date.UTC(2004, 10, 30), 3.03], [Date.UTC(2004, 11, 31), 2.84], [Date.UTC(2005, 0, 31), 2.51], [Date.UTC(2005, 1, 28), 2.42], [Date.UTC(2005, 2, 31), 2.70], [Date.UTC(2005, 3, 30), 2.48], [Date.UTC(2005, 4, 31), 2.80], [Date.UTC(2005, 5, 30), 2.52], [Date.UTC(2005, 6, 31), 2.88], [Date.UTC(2005, 7, 31), 3.03], [Date.UTC(2005, 8, 30), 2.88], [Date.UTC(2005, 11, 3), 2.68], [Date.UTC(2006, 0, 4), 2.60], [Date.UTC(2006, 1, 2), 2.67], [Date.UTC(2006, 2, 1), 3.09], [Date.UTC(2006, 3, 2), 2.76], [Date.UTC(2006, 4, 1), 3.04], [Date.UTC(2006, 5, 1), 3.46], [Date.UTC(2006, 6, 2), 3.02], [Date.UTC(2006, 7, 2), 3.07], [Date.UTC(2006, 8, 2), 3.14], [Date.UTC(2006, 9, 1), 3.47], [Date.UTC(2006, 10, 2), 3.64], [Date.UTC(2006, 11, 1), 3.76], [Date.UTC(2007, 0, 2), 3.50], [Date.UTC(2007, 1, 3), 3.57], [Date.UTC(2007, 2, 3), 3.90], [Date.UTC(2007, 3, 1), 3.81], [Date.UTC(2007, 4, 5), 3.78], [Date.UTC(2007, 5, 2), 3.16], [Date.UTC(2007, 6, 2), 3.02], [Date.UTC(2007, 7, 5), 2.75], [Date.UTC(2007, 8, 2), 3.03], [Date.UTC(2007, 9, 4), 3.43], [Date.UTC(2007, 10, 4), 4.23], [Date.UTC(2007, 11, 3), 4.70], [Date.UTC(2008, 0, 3), 5.54], [Date.UTC(2008, 1, 7), 4.76], [Date.UTC(2008, 5, 1), 4.90], [Date.UTC(2008, 6, 2), 4.97], [Date.UTC(2008, 7, 3), 4.98], [Date.UTC(2008, 8, 3), 5.01], [Date.UTC(2008, 9, 6), 4.56], [Date.UTC(2008, 10, 2), 5.14], [Date.UTC(2008, 11, 3), 4.17], [Date.UTC(2009, 0, 2), 4.73], [Date.UTC(2009, 1, 1), 4.57], [Date.UTC(2009, 2, 5), 5.18], [Date.UTC(2009, 3, 7), 6.08], [Date.UTC(2009, 4, 1), 5.55], [Date.UTC(2009, 5, 4), 4.76], [Date.UTC(2009, 6, 2), 4.43], [Date.UTC(2009, 7, 1), 4.49], [Date.UTC(2009, 8, 5), 3.93], [Date.UTC(2009, 9, 2), 3.90], [Date.UTC(2009, 10, 2), 4.67], [Date.UTC(2009, 11, 2), 5.19], [Date.UTC(2010, 0, 5), 4.45], [Date.UTC(2010, 1, 7), 4.31], [Date.UTC(2010, 2, 7), 4.23], [Date.UTC(2010, 3, 5), 4.21], [Date.UTC(2010, 4, 15), 4.10], [Date.UTC(2010, 6, 6), 4.22], [Date.UTC(2010, 6, 30), 4.22], [Date.UTC(2010, 8, 11), 4.58], [Date.UTC(2010, 9, 2), 4.86], [Date.UTC(2010, 10, 3), 5.68], [Date.UTC(2010, 11, 7), 6.48], [Date.UTC(2011, 0, 2), 6.26], [Date.UTC(2011, 1, 8), 7.04], [Date.UTC(2011, 2, 8), 5.74], [Date.UTC(2011, 3, 3), 4.93], [Date.UTC(2011, 4, 2), 4.58], [Date.UTC(2011, 5, 5), 3.90], [Date.UTC(2011, 5, 27), 3.90], [Date.UTC(2011, 6, 8), 3.58], [Date.UTC(2011, 7, 3), 3.41], [Date.UTC(2011, 8, 10), 4.00], [Date.UTC(2011, 9, 9), 3.94], [Date.UTC(2011, 10, 7), 3.62], [Date.UTC(2011, 11, 4), 3.49], [Date.UTC(2012, 0, 8), 3.21], [Date.UTC(2012, 1, 5), 3.15], [Date.UTC(2012, 2, 11), 3.29], [Date.UTC(2012, 3, 8), 3.66], [Date.UTC(2012, 4, 9), 3.82], [Date.UTC(2012, 5, 10), 3.85], [Date.UTC(2012, 6, 4), 4.00], [Date.UTC(2012, 7, 10), 3.88], [Date.UTC(2012, 8, 2), 3.86], [Date.UTC(2012, 9, 5), 3.90], [Date.UTC(2012, 10, 4), 4.06], [Date.UTC(2012, 11, 2), 3.85], [Date.UTC(2013, 0, 5), 4.17], [Date.UTC(2013, 1, 8), 4.95], [Date.UTC(2013, 2, 11), 4.39], [Date.UTC(2013, 3, 7), 4.44], [Date.UTC(2013, 4, 8), 4.32], [Date.UTC(2013, 5, 9), 4.18], [Date.UTC(2013, 6, 7), 4.03], [Date.UTC(2013, 6, 12), 4.03], [Date.UTC(2013, 7, 4), 3.60], [Date.UTC(2013, 8, 11), 3.17], [Date.UTC(2013, 9, 10), 3.11], [Date.UTC(2013, 10, 9), 3.11], [Date.UTC(2013, 11, 6), 2.21], [Date.UTC(2014, 0, 1), 2.37], [Date.UTC(2014, 1, 8), 2.16], [Date.UTC(2014, 2, 3), 2.02], [Date.UTC(2014, 3, 10), 1.99], [Date.UTC(2014, 4, 7), 3.06], [Date.UTC(2014, 5, 8), 2.71], [Date.UTC(2014, 6, 6), 2.66], [Date.UTC(2014, 7, 11), 3.12], [Date.UTC(2014, 8, 1), 2.78], [Date.UTC(2014, 9, 3), 2.33], [Date.UTC(2014, 10, 8), 2.59], [Date.UTC(2014, 11, 7), 2.29], [Date.UTC(2015, 0, 6), 2.61], [Date.UTC(2015, 1, 5), 2.88], [Date.UTC(2015, 2, 7), 2.61], [Date.UTC(2015, 3, 13), 2.69], [Date.UTC(2015, 4, 13), 3.72], [Date.UTC(2015, 5, 6), 4.00], [Date.UTC(2015, 6, 12), 4.26], [Date.UTC(2015, 7, 6), 4.07], [Date.UTC(2015, 8, 5), 3.66], [Date.UTC(2015, 9, 4), 4.51], [Date.UTC(2015, 10, 7), 3.77], [Date.UTC(2015, 11, 4), 4.43], [Date.UTC(2016, 0, 2), 3.85], [Date.UTC(2016, 1, 2), 4.18], [Date.UTC(2016, 2, 3), 4.26], [Date.UTC(2016, 3, 7), 3.33], [Date.UTC(2016, 4, 6), 3.79], [Date.UTC(2016, 5, 5), 3.90], [Date.UTC(2016, 6, 4), 4.17], [Date.UTC(2016, 7, 6), 4.40], [Date.UTC(2016, 8, 8), 4.30], [Date.UTC(2016, 9, 7), 3.77], [Date.UTC(2016, 10, 5), 3.57], [Date.UTC(2016, 11, 4), 4.24], [Date.UTC(2017, 0, 7), 3.46], [Date.UTC(2017, 1, 8), 4.04], [Date.UTC(2017, 2, 7), 3.92], [Date.UTC(2017, 3, 9), 3.46], [Date.UTC(2017, 4, 6), 3.55], [Date.UTC(2017, 5, 3), 4.33], [Date.UTC(2017, 6, 7), 3.54], [Date.UTC(2017, 7, 2), 3.69], [Date.UTC(2017, 8, 6), 2.98], [Date.UTC(2017, 9, 5), 3.80], [Date.UTC(2017, 10, 12), 4.48], [Date.UTC(2017, 11, 9), 3.78], [Date.UTC(2018, 0, 3), 4.68], [Date.UTC(2018, 1, 8), 5.17], [Date.UTC(2018, 2, 7), 5.87], [Date.UTC(2018, 3, 1), 5.80], [Date.UTC(2018, 4, 6), 5.19], [Date.UTC(2018, 5, 10), 5.76], [Date.UTC(2018, 6, 7), 6.36], [Date.UTC(2018, 7, 1), 6.99], [Date.UTC(2018, 8, 3), 7.65], [Date.UTC(2018, 9, 5), 7.16], [Date.UTC(2018, 10, 8), 7.68], [Date.UTC(2018, 11, 2), 8.38], [Date.UTC(2019, 0, 4), 8.29], [Date.UTC(2019, 1, 6), 7.57], [Date.UTC(2019, 2, 2), 8.26], [Date.UTC(2019, 3, 7), 8.17], [Date.UTC(2019, 4, 4), 7.83], [Date.UTC(2019, 5, 9), 8.53], [Date.UTC(2019, 6, 6), 9.26], [Date.UTC(2019, 7, 5), 10.02], [Date.UTC(2019, 8, 9), 9.87], [Date.UTC(2019, 9, 5), 9.09], [Date.UTC(2019, 10, 3), 9.84], [Date.UTC(2019, 11, 6), 10.31], [Date.UTC(2020, 0, 5), 9.70], [Date.UTC(2020, 1, 4), 9.35], [Date.UTC(2020, 2, 4), 10.11], [Date.UTC(2020, 3, 2), 9.31], [Date.UTC(2020, 4, 2), 9.12], [Date.UTC(2020, 5, 1), 8.36], [Date.UTC(2020, 6, 4), 9.09], [Date.UTC(2020, 7, 2), 9.69], [Date.UTC(2020, 8, 6), 10.47], [Date.UTC(2020, 9, 4), 11.28], [Date.UTC(2020, 10, 3), 12.12], [Date.UTC(2020, 11, 3), 12.21], [Date.UTC(2021, 0, 2), 11.72], [Date.UTC(2021, 1, 6), 10.86], [Date.UTC(2021, 2, 4), 10.31], [Date.UTC(2021, 3, 4), 11.03], [Date.UTC(2021, 4, 2), 11.87], [Date.UTC(2021, 5, 5), 11.84], [Date.UTC(2021, 6, 4), 10.96], [Date.UTC(2021, 7, 3), 11.86], [Date.UTC(2021, 8, 11), 11.67], [Date.UTC(2021, 9, 6), 11.27], [Date.UTC(2021, 10, 6), 11.77], [Date.UTC(2021, 11, 5), 12.90], [Date.UTC(2022, 0, 1), 13.58], [Date.UTC(2022, 0, 30), 15.33]]}, {name : 'C',data : [[Date.UTC(2001, 5, 30), 20.24], [Date.UTC(2001, 6, 30), 20.77], [Date.UTC(2001, 7, 30), 20.75], [Date.UTC(2001, 8, 28), 20.77], [Date.UTC(2001, 9, 26), 19.75], [Date.UTC(2001, 10, 28), 19.21], [Date.UTC(2001, 11, 31), 20.14], [Date.UTC(2002, 0, 30), 18.83], [Date.UTC(2002, 1, 27), 19.89], [Date.UTC(2002, 2, 29), 19.85], [Date.UTC(2002, 3, 29), 19.82], [Date.UTC(2002, 4, 29), 19.99], [Date.UTC(2002, 5, 29), 19.57], [Date.UTC(2002, 6, 31), 19.25], [Date.UTC(2002, 7, 29), 18.16], [Date.UTC(2002, 8, 29), 18.70], [Date.UTC(2002, 9, 30), 18.73], [Date.UTC(2002, 10, 29), 17.50], [Date.UTC(2002, 11, 31), 17.26], [Date.UTC(2003, 0, 31), 18.25], [Date.UTC(2003, 1, 28), 18.54], [Date.UTC(2003, 2, 31), 17.21], [Date.UTC(2003, 3, 30), 18.02], [Date.UTC(2003, 4, 30), 18.50], [Date.UTC(2003, 5, 30), 18.52], [Date.UTC(2003, 6, 31), 17.97], [Date.UTC(2003, 7, 31), 17.78], [Date.UTC(2003, 8, 30), 18.31], [Date.UTC(2003, 9, 31), 17.00], [Date.UTC(2003, 10, 30), 18.47], [Date.UTC(2003, 11, 31), 18.60], [Date.UTC(2004, 0, 31), 18.20], [Date.UTC(2004, 1, 29), 18.93], [Date.UTC(2004, 2, 31), 17.75], [Date.UTC(2004, 3, 30), 17.95], [Date.UTC(2004, 4, 30), 18.29], [Date.UTC(2004, 5, 30), 17.14], [Date.UTC(2004, 6, 31), 16.33], [Date.UTC(2004, 7, 30), 17.12], [Date.UTC(2004, 8, 30), 18.17], [Date.UTC(2004, 9, 31), 17.99], [Date.UTC(2004, 10, 30), 19.70], [Date.UTC(2004, 11, 31), 20.71], [Date.UTC(2005, 0, 31), 19.82], [Date.UTC(2005, 1, 28), 19.47], [Date.UTC(2005, 2, 31), 18.63], [Date.UTC(2005, 3, 30), 18.52], [Date.UTC(2005, 4, 31), 19.37], [Date.UTC(2005, 5, 30), 19.85], [Date.UTC(2005, 6, 31), 19.47], [Date.UTC(2005, 7, 31), 19.16], [Date.UTC(2005, 8, 30), 18.77], [Date.UTC(2005, 11, 3), 19.63], [Date.UTC(2006, 0, 4), 19.01], [Date.UTC(2006, 1, 2), 18.33], [Date.UTC(2006, 2, 1), 17.79], [Date.UTC(2006, 3, 2), 17.69], [Date.UTC(2006, 4, 1), 17.69], [Date.UTC(2006, 5, 1), 18.25], [Date.UTC(2006, 6, 2), 17.83], [Date.UTC(2006, 7, 2), 17.43], [Date.UTC(2006, 8, 2), 18.06], [Date.UTC(2006, 9, 1), 17.66], [Date.UTC(2006, 10, 2), 17.20], [Date.UTC(2006, 11, 1), 16.62], [Date.UTC(2007, 0, 2), 15.81], [Date.UTC(2007, 1, 3), 16.10], [Date.UTC(2007, 2, 3), 15.63], [Date.UTC(2007, 3, 1), 14.94], [Date.UTC(2007, 4, 5), 15.15], [Date.UTC(2007, 5, 2), 15.97], [Date.UTC(2007, 6, 2), 16.36], [Date.UTC(2007, 7, 5), 15.70], [Date.UTC(2007, 8, 2), 14.91], [Date.UTC(2007, 9, 4), 14.59], [Date.UTC(2007, 10, 4), 13.97], [Date.UTC(2007, 11, 3), 13.17], [Date.UTC(2008, 0, 3), 13.92], [Date.UTC(2008, 1, 7), 14.86], [Date.UTC(2008, 5, 1), 15.51], [Date.UTC(2008, 6, 2), 15.95], [Date.UTC(2008, 7, 3), 16.18], [Date.UTC(2008, 8, 3), 15.38], [Date.UTC(2008, 9, 6), 15.57], [Date.UTC(2008, 10, 2), 15.28], [Date.UTC(2008, 11, 3), 15.02], [Date.UTC(2009, 0, 2), 15.93], [Date.UTC(2009, 1, 1), 15.84], [Date.UTC(2009, 2, 5), 15.86], [Date.UTC(2009, 3, 7), 15.47], [Date.UTC(2009, 4, 1), 16.13], [Date.UTC(2009, 5, 4), 16.78], [Date.UTC(2009, 6, 2), 17.32], [Date.UTC(2009, 7, 1), 17.22], [Date.UTC(2009, 8, 5), 16.86], [Date.UTC(2009, 9, 2), 16.84], [Date.UTC(2009, 10, 2), 17.32], [Date.UTC(2009, 11, 2), 16.28], [Date.UTC(2010, 0, 5), 16.22], [Date.UTC(2010, 1, 7), 16.60], [Date.UTC(2010, 2, 7), 17.28], [Date.UTC(2010, 3, 5), 18.06], [Date.UTC(2010, 4, 15), 18.19], [Date.UTC(2010, 6, 6), 18.48], [Date.UTC(2010, 6, 30), 17.87], [Date.UTC(2010, 8, 11), 17.15], [Date.UTC(2010, 9, 2), 17.18], [Date.UTC(2010, 10, 3), 16.72], [Date.UTC(2010, 11, 7), 16.08], [Date.UTC(2011, 0, 2), 15.82], [Date.UTC(2011, 1, 8), 14.99], [Date.UTC(2011, 2, 8), 15.26], [Date.UTC(2011, 3, 3), 16.16], [Date.UTC(2011, 4, 2), 16.17], [Date.UTC(2011, 5, 5), 16.28], [Date.UTC(2011, 5, 27), 16.28], [Date.UTC(2011, 6, 8), 17.28], [Date.UTC(2011, 7, 3), 17.39], [Date.UTC(2011, 8, 10), 18.00], [Date.UTC(2011, 9, 9), 17.71], [Date.UTC(2011, 10, 7), 17.32], [Date.UTC(2011, 11, 4), 17.06], [Date.UTC(2012, 0, 8), 16.97], [Date.UTC(2012, 1, 5), 16.52], [Date.UTC(2012, 2, 11), 17.09], [Date.UTC(2012, 3, 8), 17.55], [Date.UTC(2012, 4, 9), 17.35], [Date.UTC(2012, 5, 10), 17.72], [Date.UTC(2012, 6, 4), 18.33], [Date.UTC(2012, 7, 10), 18.94], [Date.UTC(2012, 8, 2), 19.30], [Date.UTC(2012, 9, 5), 19.82], [Date.UTC(2012, 10, 4), 19.22], [Date.UTC(2012, 11, 2), 18.70], [Date.UTC(2013, 0, 5), 17.85], [Date.UTC(2013, 1, 8), 17.08], [Date.UTC(2013, 2, 11), 17.14], [Date.UTC(2013, 3, 7), 17.86], [Date.UTC(2013, 4, 8), 18.73], [Date.UTC(2013, 5, 9), 17.81], [Date.UTC(2013, 6, 7), 17.63], [Date.UTC(2013, 6, 12), 17.63], [Date.UTC(2013, 7, 4), 15.97], [Date.UTC(2013, 8, 11), 16.98], [Date.UTC(2013, 9, 10), 17.25], [Date.UTC(2013, 10, 9), 18.16], [Date.UTC(2013, 11, 6), 17.89], [Date.UTC(2014, 0, 1), 17.94], [Date.UTC(2014, 1, 8), 18.33], [Date.UTC(2014, 2, 3), 17.53], [Date.UTC(2014, 3, 10), 17.63], [Date.UTC(2014, 4, 7), 16.93], [Date.UTC(2014, 5, 8), 16.19], [Date.UTC(2014, 6, 6), 17.14], [Date.UTC(2014, 7, 11), 16.40], [Date.UTC(2014, 8, 1), 16.72], [Date.UTC(2014, 9, 3), 17.66], [Date.UTC(2014, 10, 8), 17.47], [Date.UTC(2014, 11, 7), 17.59], [Date.UTC(2015, 0, 6), 16.70], [Date.UTC(2015, 1, 5), 16.49], [Date.UTC(2015, 2, 7), 16.64], [Date.UTC(2015, 3, 13), 15.75], [Date.UTC(2015, 4, 13), 16.85], [Date.UTC(2015, 5, 6), 16.79], [Date.UTC(2015, 6, 12), 16.15], [Date.UTC(2015, 7, 6), 14.73], [Date.UTC(2015, 8, 5), 15.62], [Date.UTC(2015, 9, 4), 16.19], [Date.UTC(2015, 10, 7), 17.15], [Date.UTC(2015, 11, 4), 16.46], [Date.UTC(2016, 0, 2), 16.04], [Date.UTC(2016, 1, 2), 15.59], [Date.UTC(2016, 2, 3), 14.60], [Date.UTC(2016, 3, 7), 13.91], [Date.UTC(2016, 4, 6), 13.22], [Date.UTC(2016, 5, 5), 12.38], [Date.UTC(2016, 6, 4), 12.24], [Date.UTC(2016, 7, 6), 11.30], [Date.UTC(2016, 8, 8), 10.95], [Date.UTC(2016, 9, 7), 9.84], [Date.UTC(2016, 10, 5), 9.20], [Date.UTC(2016, 11, 4), 8.73], [Date.UTC(2017, 0, 7), 9.35], [Date.UTC(2017, 1, 8), 8.44], [Date.UTC(2017, 2, 7), 7.74], [Date.UTC(2017, 3, 9), 6.97], [Date.UTC(2017, 4, 6), 7.00], [Date.UTC(2017, 5, 3), 6.85], [Date.UTC(2017, 6, 7), 7.32], [Date.UTC(2017, 7, 2), 6.48], [Date.UTC(2017, 8, 6), 7.38], [Date.UTC(2017, 9, 5), 8.37], [Date.UTC(2017, 10, 12), 9.29], [Date.UTC(2017, 11, 9), 10.16], [Date.UTC(2018, 0, 3), 11.04], [Date.UTC(2018, 1, 8), 11.86], [Date.UTC(2018, 2, 7), 12.76], [Date.UTC(2018, 3, 1), 13.59], [Date.UTC(2018, 4, 6), 14.00], [Date.UTC(2018, 5, 10), 14.94], [Date.UTC(2018, 6, 7), 14.66], [Date.UTC(2018, 7, 1), 14.97], [Date.UTC(2018, 8, 3), 15.45], [Date.UTC(2018, 9, 5), 15.38], [Date.UTC(2018, 10, 8), 14.40], [Date.UTC(2018, 11, 2), 14.28], [Date.UTC(2019, 0, 4), 13.34], [Date.UTC(2019, 1, 6), 12.42], [Date.UTC(2019, 2, 2), 13.31], [Date.UTC(2019, 3, 7), 14.08], [Date.UTC(2019, 4, 4), 14.24], [Date.UTC(2019, 5, 9), 13.30], [Date.UTC(2019, 6, 6), 14.21], [Date.UTC(2019, 7, 5), 15.15], [Date.UTC(2019, 8, 9), 15.21], [Date.UTC(2019, 9, 5), 16.18], [Date.UTC(2019, 10, 3), 16.04], [Date.UTC(2019, 11, 6), 16.09], [Date.UTC(2020, 0, 5), 15.77], [Date.UTC(2020, 1, 4), 16.77], [Date.UTC(2020, 2, 4), 16.33], [Date.UTC(2020, 3, 2), 16.72], [Date.UTC(2020, 4, 2), 17.07], [Date.UTC(2020, 5, 1), 17.19], [Date.UTC(2020, 6, 4), 16.45], [Date.UTC(2020, 7, 2), 16.98], [Date.UTC(2020, 8, 6), 15.95], [Date.UTC(2020, 9, 4), 16.95], [Date.UTC(2020, 10, 3), 16.21], [Date.UTC(2020, 11, 3), 16.48], [Date.UTC(2021, 0, 2), 17.38], [Date.UTC(2021, 1, 6), 16.34], [Date.UTC(2021, 2, 4), 15.33], [Date.UTC(2021, 3, 4), 14.32], [Date.UTC(2021, 4, 2), 13.38], [Date.UTC(2021, 5, 5), 12.54], [Date.UTC(2021, 6, 4), 11.63], [Date.UTC(2021, 7, 3), 12.57], [Date.UTC(2021, 8, 11), 11.83], [Date.UTC(2021, 9, 6), 11.16], [Date.UTC(2021, 10, 6), 10.72], [Date.UTC(2021, 11, 5), 11.80], [Date.UTC(2022, 0, 1), 12.44], [Date.UTC(2022, 0, 30), 14.08]]}, {name : 'Java',data : [[Date.UTC(2001, 5, 30), 26.49], [Date.UTC(2001, 6, 30), 25.03], [Date.UTC(2001, 7, 30), 24.66], [Date.UTC(2001, 8, 28), 24.82], [Date.UTC(2001, 9, 26), 25.68], [Date.UTC(2001, 10, 28), 24.37], [Date.UTC(2001, 11, 31), 24.20], [Date.UTC(2002, 0, 30), 24.06], [Date.UTC(2002, 1, 27), 24.01], [Date.UTC(2002, 2, 29), 24.41], [Date.UTC(2002, 3, 29), 25.05], [Date.UTC(2002, 4, 29), 25.19], [Date.UTC(2002, 5, 29), 24.20], [Date.UTC(2002, 6, 31), 24.53], [Date.UTC(2002, 7, 29), 22.89], [Date.UTC(2002, 8, 29), 24.48], [Date.UTC(2002, 9, 30), 24.20], [Date.UTC(2002, 10, 29), 24.12], [Date.UTC(2002, 11, 31), 24.23], [Date.UTC(2003, 0, 31), 24.79], [Date.UTC(2003, 1, 28), 24.78], [Date.UTC(2003, 2, 31), 24.60], [Date.UTC(2003, 3, 30), 24.66], [Date.UTC(2003, 4, 30), 23.11], [Date.UTC(2003, 5, 30), 22.34], [Date.UTC(2003, 6, 31), 23.21], [Date.UTC(2003, 7, 31), 22.24], [Date.UTC(2003, 8, 30), 21.90], [Date.UTC(2003, 9, 31), 23.08], [Date.UTC(2003, 10, 30), 25.01], [Date.UTC(2003, 11, 31), 23.57], [Date.UTC(2004, 0, 31), 22.56], [Date.UTC(2004, 1, 29), 23.17], [Date.UTC(2004, 2, 31), 24.24], [Date.UTC(2004, 3, 30), 18.69], [Date.UTC(2004, 4, 30), 17.54], [Date.UTC(2004, 5, 30), 17.05], [Date.UTC(2004, 6, 31), 17.00], [Date.UTC(2004, 7, 30), 15.90], [Date.UTC(2004, 8, 30), 17.05], [Date.UTC(2004, 9, 31), 14.80], [Date.UTC(2004, 10, 30), 16.33], [Date.UTC(2004, 11, 31), 17.48], [Date.UTC(2005, 0, 31), 18.34], [Date.UTC(2005, 1, 28), 18.87], [Date.UTC(2005, 2, 31), 16.98], [Date.UTC(2005, 3, 30), 17.40], [Date.UTC(2005, 4, 31), 18.57], [Date.UTC(2005, 5, 30), 19.66], [Date.UTC(2005, 6, 31), 21.21], [Date.UTC(2005, 7, 31), 22.44], [Date.UTC(2005, 8, 30), 21.87], [Date.UTC(2005, 11, 3), 22.13], [Date.UTC(2006, 0, 4), 22.25], [Date.UTC(2006, 1, 2), 22.43], [Date.UTC(2006, 2, 1), 21.89], [Date.UTC(2006, 3, 2), 21.28], [Date.UTC(2006, 4, 1), 21.32], [Date.UTC(2006, 5, 1), 21.13], [Date.UTC(2006, 6, 2), 21.85], [Date.UTC(2006, 7, 2), 22.38], [Date.UTC(2006, 8, 2), 21.53], [Date.UTC(2006, 9, 1), 21.17], [Date.UTC(2006, 10, 2), 20.40], [Date.UTC(2006, 11, 1), 19.91], [Date.UTC(2007, 0, 2), 19.16], [Date.UTC(2007, 1, 3), 18.98], [Date.UTC(2007, 2, 3), 18.04], [Date.UTC(2007, 3, 1), 18.36], [Date.UTC(2007, 4, 5), 19.14], [Date.UTC(2007, 5, 2), 20.03], [Date.UTC(2007, 6, 2), 21.01], [Date.UTC(2007, 7, 5), 21.77], [Date.UTC(2007, 8, 2), 21.70], [Date.UTC(2007, 9, 4), 21.62], [Date.UTC(2007, 10, 4), 20.54], [Date.UTC(2007, 11, 3), 20.05], [Date.UTC(2008, 0, 3), 20.85], [Date.UTC(2008, 1, 7), 21.48], [Date.UTC(2008, 5, 1), 20.89], [Date.UTC(2008, 6, 2), 21.34], [Date.UTC(2008, 7, 3), 21.57], [Date.UTC(2008, 8, 3), 20.71], [Date.UTC(2008, 9, 6), 20.95], [Date.UTC(2008, 10, 2), 20.30], [Date.UTC(2008, 11, 3), 17.92], [Date.UTC(2009, 0, 2), 19.02], [Date.UTC(2009, 1, 1), 19.40], [Date.UTC(2009, 2, 5), 19.80], [Date.UTC(2009, 3, 7), 19.34], [Date.UTC(2009, 4, 1), 19.54], [Date.UTC(2009, 5, 4), 20.15], [Date.UTC(2009, 6, 2), 20.45], [Date.UTC(2009, 7, 1), 19.53], [Date.UTC(2009, 8, 5), 19.38], [Date.UTC(2009, 9, 2), 18.65], [Date.UTC(2009, 10, 2), 18.37], [Date.UTC(2009, 11, 2), 17.06], [Date.UTC(2010, 0, 5), 17.48], [Date.UTC(2010, 1, 7), 17.35], [Date.UTC(2010, 2, 7), 17.51], [Date.UTC(2010, 3, 5), 18.05], [Date.UTC(2010, 4, 15), 17.96], [Date.UTC(2010, 6, 6), 18.67], [Date.UTC(2010, 6, 30), 17.99], [Date.UTC(2010, 8, 11), 17.92], [Date.UTC(2010, 9, 2), 18.17], [Date.UTC(2010, 10, 3), 18.51], [Date.UTC(2010, 11, 7), 18.00], [Date.UTC(2011, 0, 2), 17.77], [Date.UTC(2011, 1, 8), 18.48], [Date.UTC(2011, 2, 8), 19.71], [Date.UTC(2011, 3, 3), 19.04], [Date.UTC(2011, 4, 2), 18.16], [Date.UTC(2011, 5, 5), 18.58], [Date.UTC(2011, 5, 27), 18.58], [Date.UTC(2011, 6, 8), 19.25], [Date.UTC(2011, 7, 3), 19.41], [Date.UTC(2011, 8, 10), 18.76], [Date.UTC(2011, 9, 9), 17.91], [Date.UTC(2011, 10, 7), 17.87], [Date.UTC(2011, 11, 4), 17.56], [Date.UTC(2012, 0, 8), 17.47], [Date.UTC(2012, 1, 5), 17.05], [Date.UTC(2012, 2, 11), 17.11], [Date.UTC(2012, 3, 8), 17.03], [Date.UTC(2012, 4, 9), 16.60], [Date.UTC(2012, 5, 10), 16.26], [Date.UTC(2012, 6, 4), 16.09], [Date.UTC(2012, 7, 10), 16.35], [Date.UTC(2012, 8, 2), 16.27], [Date.UTC(2012, 9, 5), 17.19], [Date.UTC(2012, 10, 4), 17.46], [Date.UTC(2012, 11, 2), 17.57], [Date.UTC(2013, 0, 5), 17.42], [Date.UTC(2013, 1, 8), 18.39], [Date.UTC(2013, 2, 11), 18.16], [Date.UTC(2013, 3, 7), 17.68], [Date.UTC(2013, 4, 8), 16.91], [Date.UTC(2013, 5, 9), 16.66], [Date.UTC(2013, 6, 7), 15.91], [Date.UTC(2013, 6, 12), 15.91], [Date.UTC(2013, 7, 4), 15.98], [Date.UTC(2013, 8, 11), 16.15], [Date.UTC(2013, 9, 10), 16.11], [Date.UTC(2013, 10, 9), 16.52], [Date.UTC(2013, 11, 6), 17.31], [Date.UTC(2014, 0, 1), 16.52], [Date.UTC(2014, 1, 8), 17.32], [Date.UTC(2014, 2, 3), 16.41], [Date.UTC(2014, 3, 10), 17.35], [Date.UTC(2014, 4, 7), 16.91], [Date.UTC(2014, 5, 8), 16.11], [Date.UTC(2014, 6, 6), 15.69], [Date.UTC(2014, 7, 11), 14.98], [Date.UTC(2014, 8, 1), 14.14], [Date.UTC(2014, 9, 3), 13.51], [Date.UTC(2014, 10, 8), 14.39], [Date.UTC(2014, 11, 7), 14.96], [Date.UTC(2015, 0, 6), 15.53], [Date.UTC(2015, 1, 5), 15.34], [Date.UTC(2015, 2, 7), 15.58], [Date.UTC(2015, 3, 13), 16.04], [Date.UTC(2015, 4, 13), 16.87], [Date.UTC(2015, 5, 6), 17.82], [Date.UTC(2015, 6, 12), 17.73], [Date.UTC(2015, 7, 6), 19.27], [Date.UTC(2015, 8, 5), 19.56], [Date.UTC(2015, 9, 4), 19.54], [Date.UTC(2015, 10, 7), 20.40], [Date.UTC(2015, 11, 4), 20.97], [Date.UTC(2016, 0, 2), 21.47], [Date.UTC(2016, 1, 2), 21.14], [Date.UTC(2016, 2, 3), 20.53], [Date.UTC(2016, 3, 7), 20.85], [Date.UTC(2016, 4, 6), 20.96], [Date.UTC(2016, 5, 5), 20.79], [Date.UTC(2016, 6, 4), 19.80], [Date.UTC(2016, 7, 6), 19.01], [Date.UTC(2016, 8, 8), 18.24], [Date.UTC(2016, 9, 7), 18.80], [Date.UTC(2016, 10, 5), 18.75], [Date.UTC(2016, 11, 4), 17.86], [Date.UTC(2017, 0, 7), 17.28], [Date.UTC(2017, 1, 8), 16.68], [Date.UTC(2017, 2, 7), 16.38], [Date.UTC(2017, 3, 9), 15.57], [Date.UTC(2017, 4, 6), 14.64], [Date.UTC(2017, 5, 3), 14.49], [Date.UTC(2017, 6, 7), 13.77], [Date.UTC(2017, 7, 2), 12.96], [Date.UTC(2017, 8, 6), 12.69], [Date.UTC(2017, 9, 5), 12.43], [Date.UTC(2017, 10, 12), 13.23], [Date.UTC(2017, 11, 9), 13.27], [Date.UTC(2018, 0, 3), 14.22], [Date.UTC(2018, 1, 8), 14.99], [Date.UTC(2018, 2, 7), 14.94], [Date.UTC(2018, 3, 1), 15.78], [Date.UTC(2018, 4, 6), 16.38], [Date.UTC(2018, 5, 10), 15.37], [Date.UTC(2018, 6, 7), 16.14], [Date.UTC(2018, 7, 1), 16.88], [Date.UTC(2018, 8, 3), 17.44], [Date.UTC(2018, 9, 5), 17.80], [Date.UTC(2018, 10, 8), 16.75], [Date.UTC(2018, 11, 2), 15.93], [Date.UTC(2019, 0, 4), 16.90], [Date.UTC(2019, 1, 6), 15.88], [Date.UTC(2019, 2, 2), 14.88], [Date.UTC(2019, 3, 7), 15.04], [Date.UTC(2019, 4, 4), 16.00], [Date.UTC(2019, 5, 9), 15.00], [Date.UTC(2019, 6, 6), 15.06], [Date.UTC(2019, 7, 5), 16.03], [Date.UTC(2019, 8, 9), 16.66], [Date.UTC(2019, 9, 5), 16.88], [Date.UTC(2019, 10, 3), 16.25], [Date.UTC(2019, 11, 6), 17.25], [Date.UTC(2020, 0, 5), 16.90], [Date.UTC(2020, 1, 4), 17.36], [Date.UTC(2020, 2, 4), 17.78], [Date.UTC(2020, 3, 2), 16.73], [Date.UTC(2020, 4, 2), 16.28], [Date.UTC(2020, 5, 1), 16.10], [Date.UTC(2020, 6, 4), 15.10], [Date.UTC(2020, 7, 2), 14.43], [Date.UTC(2020, 8, 6), 13.48], [Date.UTC(2020, 9, 4), 12.56], [Date.UTC(2020, 10, 3), 11.68], [Date.UTC(2020, 11, 3), 12.53], [Date.UTC(2021, 0, 2), 11.96], [Date.UTC(2021, 1, 6), 11.29], [Date.UTC(2021, 2, 4), 10.45], [Date.UTC(2021, 3, 4), 11.23], [Date.UTC(2021, 4, 2), 11.74], [Date.UTC(2021, 5, 5), 11.54], [Date.UTC(2021, 6, 4), 11.20], [Date.UTC(2021, 7, 3), 10.43], [Date.UTC(2021, 8, 11), 11.12], [Date.UTC(2021, 9, 6), 10.46], [Date.UTC(2021, 10, 6), 10.72], [Date.UTC(2021, 11, 5), 10.12], [Date.UTC(2022, 0, 1), 10.66], [Date.UTC(2022, 0, 30), 12.13]]}, {name : 'C++',data : [[Date.UTC(2001, 5, 30), 14.20], [Date.UTC(2001, 6, 30), 16.11], [Date.UTC(2001, 7, 30), 16.12], [Date.UTC(2001, 8, 28), 15.85], [Date.UTC(2001, 9, 26), 16.10], [Date.UTC(2001, 10, 28), 15.67], [Date.UTC(2001, 11, 31), 14.96], [Date.UTC(2002, 0, 30), 15.18], [Date.UTC(2002, 1, 27), 15.54], [Date.UTC(2002, 2, 29), 15.91], [Date.UTC(2002, 3, 29), 15.37], [Date.UTC(2002, 4, 29), 14.86], [Date.UTC(2002, 5, 29), 14.18], [Date.UTC(2002, 6, 31), 14.94], [Date.UTC(2002, 7, 29), 14.77], [Date.UTC(2002, 8, 29), 15.90], [Date.UTC(2002, 9, 30), 15.03], [Date.UTC(2002, 10, 29), 13.64], [Date.UTC(2002, 11, 31), 13.19], [Date.UTC(2003, 0, 31), 14.63], [Date.UTC(2003, 1, 28), 15.53], [Date.UTC(2003, 2, 31), 14.57], [Date.UTC(2003, 3, 30), 15.80], [Date.UTC(2003, 4, 30), 15.58], [Date.UTC(2003, 5, 30), 16.72], [Date.UTC(2003, 6, 31), 16.58], [Date.UTC(2003, 7, 31), 17.53], [Date.UTC(2003, 8, 30), 16.17], [Date.UTC(2003, 9, 31), 16.31], [Date.UTC(2003, 10, 30), 17.42], [Date.UTC(2003, 11, 31), 16.08], [Date.UTC(2004, 0, 31), 15.71], [Date.UTC(2004, 1, 29), 14.50], [Date.UTC(2004, 2, 31), 15.99], [Date.UTC(2004, 3, 30), 12.27], [Date.UTC(2004, 4, 30), 12.55], [Date.UTC(2004, 5, 30), 13.44], [Date.UTC(2004, 6, 31), 15.31], [Date.UTC(2004, 7, 30), 14.92], [Date.UTC(2004, 8, 30), 15.02], [Date.UTC(2004, 9, 31), 13.86], [Date.UTC(2004, 10, 30), 11.91], [Date.UTC(2004, 11, 31), 11.93], [Date.UTC(2005, 0, 31), 11.34], [Date.UTC(2005, 1, 28), 11.63], [Date.UTC(2005, 2, 31), 10.19], [Date.UTC(2005, 3, 30), 9.90], [Date.UTC(2005, 4, 31), 9.72], [Date.UTC(2005, 5, 30), 11.06], [Date.UTC(2005, 6, 31), 10.51], [Date.UTC(2005, 7, 31), 11.17], [Date.UTC(2005, 8, 30), 11.82], [Date.UTC(2005, 11, 3), 11.03], [Date.UTC(2006, 0, 4), 11.46], [Date.UTC(2006, 1, 2), 11.30], [Date.UTC(2006, 2, 1), 11.16], [Date.UTC(2006, 3, 2), 10.90], [Date.UTC(2006, 4, 1), 10.94], [Date.UTC(2006, 5, 1), 10.67], [Date.UTC(2006, 6, 2), 9.78], [Date.UTC(2006, 7, 2), 10.25], [Date.UTC(2006, 8, 2), 10.75], [Date.UTC(2006, 9, 1), 11.06], [Date.UTC(2006, 10, 2), 11.05], [Date.UTC(2006, 11, 1), 10.41], [Date.UTC(2007, 0, 2), 10.42], [Date.UTC(2007, 1, 3), 10.77], [Date.UTC(2007, 2, 3), 11.11], [Date.UTC(2007, 3, 1), 10.72], [Date.UTC(2007, 4, 5), 10.11], [Date.UTC(2007, 5, 2), 11.12], [Date.UTC(2007, 6, 2), 10.50], [Date.UTC(2007, 7, 5), 10.11], [Date.UTC(2007, 8, 2), 9.94], [Date.UTC(2007, 9, 4), 9.58], [Date.UTC(2007, 10, 4), 8.75], [Date.UTC(2007, 11, 3), 7.87], [Date.UTC(2008, 0, 3), 8.73], [Date.UTC(2008, 1, 7), 9.27], [Date.UTC(2008, 5, 1), 10.81], [Date.UTC(2008, 6, 2), 10.69], [Date.UTC(2008, 7, 3), 10.06], [Date.UTC(2008, 8, 3), 10.72], [Date.UTC(2008, 9, 6), 10.95], [Date.UTC(2008, 10, 2), 10.36], [Date.UTC(2008, 11, 3), 10.10], [Date.UTC(2009, 0, 2), 10.12], [Date.UTC(2009, 1, 1), 9.63], [Date.UTC(2009, 2, 5), 10.36], [Date.UTC(2009, 3, 7), 10.74], [Date.UTC(2009, 4, 1), 11.07], [Date.UTC(2009, 5, 4), 10.59], [Date.UTC(2009, 6, 2), 10.42], [Date.UTC(2009, 7, 1), 10.50], [Date.UTC(2009, 8, 5), 9.99], [Date.UTC(2009, 9, 2), 9.88], [Date.UTC(2009, 10, 2), 10.00], [Date.UTC(2009, 11, 2), 9.18], [Date.UTC(2010, 0, 5), 9.71], [Date.UTC(2010, 1, 7), 9.45], [Date.UTC(2010, 2, 7), 9.61], [Date.UTC(2010, 3, 5), 9.71], [Date.UTC(2010, 4, 15), 10.38], [Date.UTC(2010, 6, 6), 10.47], [Date.UTC(2010, 6, 30), 9.66], [Date.UTC(2010, 8, 11), 9.81], [Date.UTC(2010, 9, 2), 9.80], [Date.UTC(2010, 10, 3), 9.50], [Date.UTC(2010, 11, 7), 9.01], [Date.UTC(2011, 0, 2), 8.78], [Date.UTC(2011, 1, 8), 8.19], [Date.UTC(2011, 2, 8), 8.75], [Date.UTC(2011, 3, 3), 9.23], [Date.UTC(2011, 4, 2), 9.15], [Date.UTC(2011, 5, 5), 9.83], [Date.UTC(2011, 5, 27), 9.83], [Date.UTC(2011, 6, 8), 9.02], [Date.UTC(2011, 7, 3), 8.43], [Date.UTC(2011, 8, 10), 8.85], [Date.UTC(2011, 9, 9), 9.07], [Date.UTC(2011, 10, 7), 8.08], [Date.UTC(2011, 11, 4), 8.25], [Date.UTC(2012, 0, 8), 8.05], [Date.UTC(2012, 1, 5), 7.85], [Date.UTC(2012, 2, 11), 8.05], [Date.UTC(2012, 3, 8), 8.90], [Date.UTC(2012, 4, 9), 9.82], [Date.UTC(2012, 5, 10), 9.36], [Date.UTC(2012, 6, 4), 9.12], [Date.UTC(2012, 7, 10), 9.33], [Date.UTC(2012, 8, 2), 9.15], [Date.UTC(2012, 9, 5), 9.26], [Date.UTC(2012, 10, 4), 9.70], [Date.UTC(2012, 11, 2), 9.20], [Date.UTC(2013, 0, 5), 9.14], [Date.UTC(2013, 1, 8), 8.76], [Date.UTC(2013, 2, 11), 9.11], [Date.UTC(2013, 3, 7), 9.71], [Date.UTC(2013, 4, 8), 9.20], [Date.UTC(2013, 5, 9), 8.82], [Date.UTC(2013, 6, 7), 8.75], [Date.UTC(2013, 6, 12), 8.75], [Date.UTC(2013, 7, 4), 9.37], [Date.UTC(2013, 8, 11), 8.66], [Date.UTC(2013, 9, 10), 8.66], [Date.UTC(2013, 10, 9), 8.37], [Date.UTC(2013, 11, 6), 8.27], [Date.UTC(2014, 0, 1), 7.56], [Date.UTC(2014, 1, 8), 6.89], [Date.UTC(2014, 2, 3), 6.31], [Date.UTC(2014, 3, 10), 6.14], [Date.UTC(2014, 4, 7), 5.99], [Date.UTC(2014, 5, 8), 6.43], [Date.UTC(2014, 6, 6), 5.52], [Date.UTC(2014, 7, 11), 4.70], [Date.UTC(2014, 8, 1), 4.67], [Date.UTC(2014, 9, 3), 4.87], [Date.UTC(2014, 10, 8), 6.10], [Date.UTC(2014, 11, 7), 6.10], [Date.UTC(2015, 0, 6), 6.70], [Date.UTC(2015, 1, 5), 6.61], [Date.UTC(2015, 2, 7), 6.64], [Date.UTC(2015, 3, 13), 6.96], [Date.UTC(2015, 4, 13), 7.87], [Date.UTC(2015, 5, 6), 7.76], [Date.UTC(2015, 6, 12), 8.64], [Date.UTC(2015, 7, 6), 7.74], [Date.UTC(2015, 8, 5), 6.78], [Date.UTC(2015, 9, 4), 5.75], [Date.UTC(2015, 10, 7), 6.20], [Date.UTC(2015, 11, 4), 5.94], [Date.UTC(2016, 0, 2), 6.91], [Date.UTC(2016, 1, 2), 6.91], [Date.UTC(2016, 2, 3), 6.72], [Date.UTC(2016, 3, 7), 5.92], [Date.UTC(2016, 4, 6), 6.70], [Date.UTC(2016, 5, 5), 6.20], [Date.UTC(2016, 6, 4), 6.31], [Date.UTC(2016, 7, 6), 5.80], [Date.UTC(2016, 8, 8), 6.66], [Date.UTC(2016, 9, 7), 5.80], [Date.UTC(2016, 10, 5), 5.41], [Date.UTC(2016, 11, 4), 5.34], [Date.UTC(2017, 0, 7), 6.30], [Date.UTC(2017, 1, 8), 5.43], [Date.UTC(2017, 2, 7), 5.18], [Date.UTC(2017, 3, 9), 4.55], [Date.UTC(2017, 4, 6), 4.75], [Date.UTC(2017, 5, 3), 5.72], [Date.UTC(2017, 6, 7), 5.58], [Date.UTC(2017, 7, 2), 5.55], [Date.UTC(2017, 8, 6), 5.56], [Date.UTC(2017, 9, 5), 5.01], [Date.UTC(2017, 10, 12), 5.34], [Date.UTC(2017, 11, 9), 4.72], [Date.UTC(2018, 0, 3), 5.60], [Date.UTC(2018, 1, 8), 5.73], [Date.UTC(2018, 2, 7), 6.45], [Date.UTC(2018, 3, 1), 7.22], [Date.UTC(2018, 4, 6), 7.67], [Date.UTC(2018, 5, 10), 8.34], [Date.UTC(2018, 6, 7), 7.62], [Date.UTC(2018, 7, 1), 7.47], [Date.UTC(2018, 8, 3), 7.39], [Date.UTC(2018, 9, 5), 7.59], [Date.UTC(2018, 10, 8), 8.28], [Date.UTC(2018, 11, 2), 7.56], [Date.UTC(2019, 0, 4), 8.16], [Date.UTC(2019, 1, 6), 7.44], [Date.UTC(2019, 2, 2), 8.13], [Date.UTC(2019, 3, 7), 8.84], [Date.UTC(2019, 4, 4), 8.10], [Date.UTC(2019, 5, 9), 7.38], [Date.UTC(2019, 6, 6), 6.70], [Date.UTC(2019, 7, 5), 6.06], [Date.UTC(2019, 8, 9), 5.64], [Date.UTC(2019, 9, 5), 6.23], [Date.UTC(2019, 10, 3), 5.60], [Date.UTC(2019, 11, 6), 6.20], [Date.UTC(2020, 0, 5), 5.57], [Date.UTC(2020, 1, 4), 6.16], [Date.UTC(2020, 2, 4), 6.79], [Date.UTC(2020, 3, 2), 6.78], [Date.UTC(2020, 4, 2), 6.13], [Date.UTC(2020, 5, 1), 5.95], [Date.UTC(2020, 6, 4), 6.21], [Date.UTC(2020, 7, 2), 6.84], [Date.UTC(2020, 8, 6), 7.11], [Date.UTC(2020, 9, 4), 6.94], [Date.UTC(2020, 10, 3), 7.60], [Date.UTC(2020, 11, 3), 6.91], [Date.UTC(2021, 0, 2), 7.56], [Date.UTC(2021, 1, 6), 6.88], [Date.UTC(2021, 2, 4), 6.52], [Date.UTC(2021, 3, 4), 7.14], [Date.UTC(2021, 4, 2), 7.81], [Date.UTC(2021, 5, 5), 7.36], [Date.UTC(2021, 6, 4), 8.02], [Date.UTC(2021, 7, 3), 7.36], [Date.UTC(2021, 8, 11), 7.13], [Date.UTC(2021, 9, 6), 7.50], [Date.UTC(2021, 10, 6), 8.28], [Date.UTC(2021, 11, 5), 7.73], [Date.UTC(2022, 0, 1), 8.29], [Date.UTC(2022, 0, 30), 8.01]]}, {name : 'C#',data : [[Date.UTC(2001, 5, 30), 0.38], [Date.UTC(2001, 6, 30), 0.43], [Date.UTC(2001, 7, 30), 0.38], [Date.UTC(2001, 8, 28), 0.39], [Date.UTC(2001, 9, 26), 0.42], [Date.UTC(2001, 10, 28), 0.76], [Date.UTC(2001, 11, 31), 0.59], [Date.UTC(2002, 0, 30), 0.62], [Date.UTC(2002, 1, 27), 0.74], [Date.UTC(2002, 2, 29), 0.74], [Date.UTC(2002, 3, 29), 1.18], [Date.UTC(2002, 4, 29), 1.16], [Date.UTC(2002, 5, 29), 1.46], [Date.UTC(2002, 6, 31), 1.36], [Date.UTC(2002, 7, 29), 1.46], [Date.UTC(2002, 8, 29), 1.65], [Date.UTC(2002, 9, 30), 1.78], [Date.UTC(2002, 10, 29), 2.38], [Date.UTC(2002, 11, 31), 2.45], [Date.UTC(2003, 0, 31), 1.99], [Date.UTC(2003, 1, 28), 1.98], [Date.UTC(2003, 2, 31), 2.38], [Date.UTC(2003, 3, 30), 1.88], [Date.UTC(2003, 4, 30), 1.94], [Date.UTC(2003, 5, 30), 1.78], [Date.UTC(2003, 6, 31), 2.00], [Date.UTC(2003, 7, 31), 2.06], [Date.UTC(2003, 8, 30), 1.94], [Date.UTC(2003, 9, 31), 1.90], [Date.UTC(2003, 10, 30), 1.71], [Date.UTC(2003, 11, 31), 1.80], [Date.UTC(2004, 0, 31), 2.18], [Date.UTC(2004, 1, 29), 2.24], [Date.UTC(2004, 2, 31), 2.14], [Date.UTC(2004, 3, 30), 1.88], [Date.UTC(2004, 4, 30), 1.65], [Date.UTC(2004, 5, 30), 1.67], [Date.UTC(2004, 6, 31), 1.63], [Date.UTC(2004, 7, 30), 1.63], [Date.UTC(2004, 8, 30), 1.64], [Date.UTC(2004, 9, 31), 1.50], [Date.UTC(2004, 10, 30), 1.95], [Date.UTC(2004, 11, 31), 2.20], [Date.UTC(2005, 0, 31), 2.36], [Date.UTC(2005, 1, 28), 2.53], [Date.UTC(2005, 2, 31), 2.82], [Date.UTC(2005, 3, 30), 2.77], [Date.UTC(2005, 4, 31), 2.78], [Date.UTC(2005, 5, 30), 3.14], [Date.UTC(2005, 6, 31), 3.48], [Date.UTC(2005, 7, 31), 3.29], [Date.UTC(2005, 8, 30), 3.46], [Date.UTC(2005, 11, 3), 3.31], [Date.UTC(2006, 0, 4), 3.55], [Date.UTC(2006, 1, 2), 3.97], [Date.UTC(2006, 2, 1), 3.15], [Date.UTC(2006, 3, 2), 3.95], [Date.UTC(2006, 4, 1), 3.27], [Date.UTC(2006, 5, 1), 3.24], [Date.UTC(2006, 6, 2), 3.40], [Date.UTC(2006, 7, 2), 2.68], [Date.UTC(2006, 8, 2), 2.99], [Date.UTC(2006, 9, 1), 3.06], [Date.UTC(2006, 10, 2), 3.02], [Date.UTC(2006, 11, 1), 3.17], [Date.UTC(2007, 0, 2), 3.52], [Date.UTC(2007, 1, 3), 3.19], [Date.UTC(2007, 2, 3), 3.37], [Date.UTC(2007, 3, 1), 3.55], [Date.UTC(2007, 4, 5), 3.66], [Date.UTC(2007, 5, 2), 3.48], [Date.UTC(2007, 6, 2), 3.71], [Date.UTC(2007, 7, 5), 3.99], [Date.UTC(2007, 8, 2), 3.58], [Date.UTC(2007, 9, 4), 3.74], [Date.UTC(2007, 10, 4), 3.92], [Date.UTC(2007, 11, 3), 3.99], [Date.UTC(2008, 0, 3), 4.86], [Date.UTC(2008, 1, 7), 4.51], [Date.UTC(2008, 5, 1), 4.06], [Date.UTC(2008, 6, 2), 4.00], [Date.UTC(2008, 7, 3), 3.70], [Date.UTC(2008, 8, 3), 4.33], [Date.UTC(2008, 9, 6), 3.77], [Date.UTC(2008, 10, 2), 4.03], [Date.UTC(2008, 11, 3), 4.58], [Date.UTC(2009, 0, 2), 5.61], [Date.UTC(2009, 1, 1), 5.06], [Date.UTC(2009, 2, 5), 4.32], [Date.UTC(2009, 3, 7), 4.06], [Date.UTC(2009, 4, 1), 4.27], [Date.UTC(2009, 5, 4), 4.54], [Date.UTC(2009, 6, 2), 4.54], [Date.UTC(2009, 7, 1), 4.44], [Date.UTC(2009, 8, 5), 4.19], [Date.UTC(2009, 9, 2), 4.42], [Date.UTC(2009, 10, 2), 5.35], [Date.UTC(2009, 11, 2), 6.26], [Date.UTC(2010, 0, 5), 5.77], [Date.UTC(2010, 1, 7), 5.01], [Date.UTC(2010, 2, 7), 4.26], [Date.UTC(2010, 3, 5), 4.43], [Date.UTC(2010, 4, 15), 4.78], [Date.UTC(2010, 6, 6), 5.73], [Date.UTC(2010, 6, 30), 4.99], [Date.UTC(2010, 8, 11), 5.02], [Date.UTC(2010, 9, 2), 4.96], [Date.UTC(2010, 10, 3), 5.71], [Date.UTC(2010, 11, 7), 6.69], [Date.UTC(2011, 0, 2), 6.23], [Date.UTC(2011, 1, 8), 6.81], [Date.UTC(2011, 2, 8), 7.21], [Date.UTC(2011, 3, 3), 7.19], [Date.UTC(2011, 4, 2), 7.54], [Date.UTC(2011, 5, 5), 6.84], [Date.UTC(2011, 5, 27), 6.84], [Date.UTC(2011, 6, 8), 6.22], [Date.UTC(2011, 7, 3), 6.04], [Date.UTC(2011, 8, 10), 6.82], [Date.UTC(2011, 9, 9), 6.72], [Date.UTC(2011, 10, 7), 7.32], [Date.UTC(2011, 11, 4), 8.21], [Date.UTC(2012, 0, 8), 8.76], [Date.UTC(2012, 1, 5), 8.65], [Date.UTC(2012, 2, 11), 8.24], [Date.UTC(2012, 3, 8), 7.35], [Date.UTC(2012, 4, 9), 6.82], [Date.UTC(2012, 5, 10), 7.03], [Date.UTC(2012, 6, 4), 6.67], [Date.UTC(2012, 7, 10), 6.59], [Date.UTC(2012, 8, 2), 6.60], [Date.UTC(2012, 9, 5), 6.53], [Date.UTC(2012, 10, 4), 5.59], [Date.UTC(2012, 11, 2), 5.55], [Date.UTC(2013, 0, 5), 6.20], [Date.UTC(2013, 1, 8), 6.68], [Date.UTC(2013, 2, 11), 6.60], [Date.UTC(2013, 3, 7), 6.15], [Date.UTC(2013, 4, 8), 6.12], [Date.UTC(2013, 5, 9), 5.78], [Date.UTC(2013, 6, 7), 6.21], [Date.UTC(2013, 6, 12), 6.21], [Date.UTC(2013, 7, 4), 6.12], [Date.UTC(2013, 8, 11), 5.56], [Date.UTC(2013, 9, 10), 5.72], [Date.UTC(2013, 10, 9), 6.02], [Date.UTC(2013, 11, 6), 5.62], [Date.UTC(2014, 0, 1), 5.85], [Date.UTC(2014, 1, 8), 6.45], [Date.UTC(2014, 2, 3), 5.57], [Date.UTC(2014, 3, 10), 4.82], [Date.UTC(2014, 4, 7), 3.75], [Date.UTC(2014, 5, 8), 3.94], [Date.UTC(2014, 6, 6), 4.05], [Date.UTC(2014, 7, 11), 3.41], [Date.UTC(2014, 8, 1), 4.35], [Date.UTC(2014, 9, 3), 4.75], [Date.UTC(2014, 10, 8), 4.98], [Date.UTC(2014, 11, 7), 4.33], [Date.UTC(2015, 0, 6), 5.05], [Date.UTC(2015, 1, 5), 5.74], [Date.UTC(2015, 2, 7), 4.92], [Date.UTC(2015, 3, 13), 4.95], [Date.UTC(2015, 4, 13), 5.26], [Date.UTC(2015, 5, 6), 5.06], [Date.UTC(2015, 6, 12), 5.65], [Date.UTC(2015, 7, 6), 4.84], [Date.UTC(2015, 8, 5), 4.91], [Date.UTC(2015, 9, 4), 4.82], [Date.UTC(2015, 10, 7), 4.32], [Date.UTC(2015, 11, 4), 4.11], [Date.UTC(2016, 0, 2), 4.71], [Date.UTC(2016, 1, 2), 4.40], [Date.UTC(2016, 2, 3), 4.27], [Date.UTC(2016, 3, 7), 3.80], [Date.UTC(2016, 4, 6), 4.48], [Date.UTC(2016, 5, 5), 3.79], [Date.UTC(2016, 6, 4), 3.92], [Date.UTC(2016, 7, 6), 4.91], [Date.UTC(2016, 8, 8), 5.49], [Date.UTC(2016, 9, 7), 4.37], [Date.UTC(2016, 10, 5), 3.66], [Date.UTC(2016, 11, 4), 3.17], [Date.UTC(2017, 0, 7), 4.04], [Date.UTC(2017, 1, 8), 4.90], [Date.UTC(2017, 2, 7), 4.41], [Date.UTC(2017, 3, 9), 3.58], [Date.UTC(2017, 4, 6), 3.46], [Date.UTC(2017, 5, 3), 3.53], [Date.UTC(2017, 6, 7), 3.52], [Date.UTC(2017, 7, 2), 4.20], [Date.UTC(2017, 8, 6), 4.78], [Date.UTC(2017, 9, 5), 3.86], [Date.UTC(2017, 10, 12), 3.01], [Date.UTC(2017, 11, 9), 2.82], [Date.UTC(2018, 0, 3), 3.75], [Date.UTC(2018, 1, 8), 4.45], [Date.UTC(2018, 2, 7), 5.07], [Date.UTC(2018, 3, 1), 5.27], [Date.UTC(2018, 4, 6), 4.40], [Date.UTC(2018, 5, 10), 4.31], [Date.UTC(2018, 6, 7), 3.79], [Date.UTC(2018, 7, 1), 3.54], [Date.UTC(2018, 8, 3), 3.30], [Date.UTC(2018, 9, 5), 3.49], [Date.UTC(2018, 10, 8), 3.95], [Date.UTC(2018, 11, 2), 3.45], [Date.UTC(2019, 0, 4), 3.28], [Date.UTC(2019, 1, 6), 2.85], [Date.UTC(2019, 2, 2), 3.27], [Date.UTC(2019, 3, 7), 3.52], [Date.UTC(2019, 4, 4), 3.98], [Date.UTC(2019, 5, 9), 4.48], [Date.UTC(2019, 6, 6), 4.36], [Date.UTC(2019, 7, 5), 3.84], [Date.UTC(2019, 8, 9), 3.40], [Date.UTC(2019, 9, 5), 3.86], [Date.UTC(2019, 10, 3), 4.32], [Date.UTC(2019, 11, 6), 4.80], [Date.UTC(2020, 0, 5), 5.35], [Date.UTC(2020, 1, 4), 5.93], [Date.UTC(2020, 2, 4), 5.32], [Date.UTC(2020, 3, 2), 4.74], [Date.UTC(2020, 4, 2), 4.29], [Date.UTC(2020, 5, 1), 4.73], [Date.UTC(2020, 6, 4), 5.25], [Date.UTC(2020, 7, 2), 4.68], [Date.UTC(2020, 8, 6), 4.58], [Date.UTC(2020, 9, 4), 4.16], [Date.UTC(2020, 10, 3), 4.67], [Date.UTC(2020, 11, 3), 4.20], [Date.UTC(2021, 0, 2), 3.95], [Date.UTC(2021, 1, 6), 4.44], [Date.UTC(2021, 2, 4), 4.97], [Date.UTC(2021, 3, 4), 4.91], [Date.UTC(2021, 4, 2), 4.41], [Date.UTC(2021, 5, 5), 4.33], [Date.UTC(2021, 6, 4), 4.84], [Date.UTC(2021, 7, 3), 5.14], [Date.UTC(2021, 8, 11), 5.78], [Date.UTC(2021, 9, 6), 5.26], [Date.UTC(2021, 10, 6), 6.06], [Date.UTC(2021, 11, 5), 6.40], [Date.UTC(2022, 0, 1), 5.68], [Date.UTC(2022, 0, 30), 5.37]]}, {name : 'Visual Basic',data : [[Date.UTC(2010, 8, 11), 0.33], [Date.UTC(2010, 9, 2), 0.33], [Date.UTC(2010, 10, 3), 0.32], [Date.UTC(2010, 11, 7), 0.26], [Date.UTC(2011, 0, 2), 0.26], [Date.UTC(2011, 1, 8), 0.59], [Date.UTC(2011, 2, 8), 0.56], [Date.UTC(2011, 3, 3), 0.34], [Date.UTC(2011, 4, 2), 0.48], [Date.UTC(2011, 5, 5), 0.43], [Date.UTC(2011, 5, 27), 0.43], [Date.UTC(2011, 6, 8), 0.48], [Date.UTC(2011, 7, 3), 0.46], [Date.UTC(2011, 8, 10), 0.31], [Date.UTC(2011, 9, 9), 0.48], [Date.UTC(2011, 10, 7), 0.53], [Date.UTC(2011, 11, 4), 0.36], [Date.UTC(2012, 0, 8), 0.48], [Date.UTC(2012, 1, 5), 0.80], [Date.UTC(2012, 2, 11), 0.78], [Date.UTC(2012, 3, 8), 0.98], [Date.UTC(2012, 4, 9), 1.27], [Date.UTC(2012, 5, 10), 1.22], [Date.UTC(2012, 6, 4), 0.92], [Date.UTC(2012, 7, 10), 0.88], [Date.UTC(2012, 8, 2), 0.84], [Date.UTC(2012, 9, 5), 0.60], [Date.UTC(2012, 10, 4), 0.77], [Date.UTC(2012, 11, 2), 0.89], [Date.UTC(2013, 0, 5), 1.04], [Date.UTC(2013, 1, 8), 1.01], [Date.UTC(2013, 2, 11), 0.89], [Date.UTC(2013, 3, 7), 1.10], [Date.UTC(2013, 4, 8), 1.13], [Date.UTC(2013, 5, 9), 1.07], [Date.UTC(2013, 6, 7), 1.25], [Date.UTC(2013, 6, 12), 1.25], [Date.UTC(2013, 7, 4), 1.32], [Date.UTC(2013, 8, 11), 1.84], [Date.UTC(2013, 9, 10), 1.93], [Date.UTC(2013, 10, 9), 1.97], [Date.UTC(2013, 11, 6), 1.69], [Date.UTC(2014, 0, 1), 1.56], [Date.UTC(2014, 1, 8), 1.80], [Date.UTC(2014, 2, 3), 1.86], [Date.UTC(2014, 3, 10), 1.75], [Date.UTC(2014, 4, 7), 1.26], [Date.UTC(2014, 5, 8), 1.91], [Date.UTC(2014, 6, 6), 1.49], [Date.UTC(2014, 7, 11), 2.01], [Date.UTC(2014, 8, 1), 1.27], [Date.UTC(2014, 9, 3), 1.56], [Date.UTC(2014, 10, 8), 1.66], [Date.UTC(2014, 11, 7), 1.80], [Date.UTC(2015, 0, 6), 1.07], [Date.UTC(2015, 1, 5), 1.72], [Date.UTC(2015, 2, 7), 1.95], [Date.UTC(2015, 3, 13), 2.20], [Date.UTC(2015, 4, 13), 1.89], [Date.UTC(2015, 5, 6), 1.84], [Date.UTC(2015, 6, 12), 1.95], [Date.UTC(2015, 7, 6), 1.78], [Date.UTC(2015, 8, 5), 1.53], [Date.UTC(2015, 9, 4), 1.51], [Date.UTC(2015, 10, 7), 1.68], [Date.UTC(2015, 11, 4), 1.65], [Date.UTC(2016, 0, 2), 1.68], [Date.UTC(2016, 1, 2), 1.86], [Date.UTC(2016, 2, 3), 1.67], [Date.UTC(2016, 3, 7), 1.61], [Date.UTC(2016, 4, 6), 1.83], [Date.UTC(2016, 5, 5), 2.25], [Date.UTC(2016, 6, 4), 2.01], [Date.UTC(2016, 7, 6), 2.05], [Date.UTC(2016, 8, 8), 1.76], [Date.UTC(2016, 9, 7), 1.99], [Date.UTC(2016, 10, 5), 1.92], [Date.UTC(2016, 11, 4), 1.97], [Date.UTC(2017, 0, 7), 1.91], [Date.UTC(2017, 1, 8), 1.88], [Date.UTC(2017, 2, 7), 2.01], [Date.UTC(2017, 3, 9), 2.06], [Date.UTC(2017, 4, 6), 2.35], [Date.UTC(2017, 5, 3), 2.01], [Date.UTC(2017, 6, 7), 2.10], [Date.UTC(2017, 7, 2), 1.81], [Date.UTC(2017, 8, 6), 1.75], [Date.UTC(2017, 9, 5), 1.42], [Date.UTC(2017, 10, 12), 1.49], [Date.UTC(2017, 11, 9), 1.35], [Date.UTC(2018, 0, 3), 2.31], [Date.UTC(2018, 1, 8), 2.18], [Date.UTC(2018, 2, 7), 1.74], [Date.UTC(2018, 3, 1), 1.80], [Date.UTC(2018, 4, 6), 0.91], [Date.UTC(2018, 5, 10), 1.15], [Date.UTC(2018, 6, 7), 0.89], [Date.UTC(2018, 7, 1), 0.92], [Date.UTC(2018, 8, 3), 0.68], [Date.UTC(2018, 9, 5), 0.65], [Date.UTC(2018, 10, 8), 0.85], [Date.UTC(2018, 11, 2), 0.98], [Date.UTC(2019, 0, 4), 1.03], [Date.UTC(2019, 1, 6), 0.99], [Date.UTC(2019, 2, 2), 0.95], [Date.UTC(2019, 3, 7), 1.06], [Date.UTC(2019, 4, 4), 1.32], [Date.UTC(2019, 5, 9), 1.07], [Date.UTC(2019, 6, 6), 1.01], [Date.UTC(2019, 7, 5), 1.02], [Date.UTC(2019, 8, 9), 1.08], [Date.UTC(2019, 9, 5), 1.23], [Date.UTC(2019, 10, 3), 0.96], [Date.UTC(2019, 11, 6), 0.93], [Date.UTC(2020, 0, 5), 0.83], [Date.UTC(2020, 1, 4), 0.60], [Date.UTC(2020, 2, 4), 0.77], [Date.UTC(2020, 3, 2), 4.72], [Date.UTC(2020, 4, 2), 4.18], [Date.UTC(2020, 5, 1), 4.69], [Date.UTC(2020, 6, 4), 5.23], [Date.UTC(2020, 7, 2), 4.66], [Date.UTC(2020, 8, 6), 4.12], [Date.UTC(2020, 9, 4), 3.97], [Date.UTC(2020, 10, 3), 4.01], [Date.UTC(2020, 11, 3), 3.92], [Date.UTC(2021, 0, 2), 3.84], [Date.UTC(2021, 1, 6), 4.33], [Date.UTC(2021, 2, 4), 4.85], [Date.UTC(2021, 3, 4), 4.55], [Date.UTC(2021, 4, 2), 4.02], [Date.UTC(2021, 5, 5), 4.01], [Date.UTC(2021, 6, 4), 4.50], [Date.UTC(2021, 7, 3), 4.67], [Date.UTC(2021, 8, 11), 4.62], [Date.UTC(2021, 9, 6), 5.24], [Date.UTC(2021, 10, 6), 5.72], [Date.UTC(2021, 11, 5), 5.40], [Date.UTC(2022, 0, 1), 4.74], [Date.UTC(2022, 0, 30), 5.23]]}, {name : 'JavaScript',data : [[Date.UTC(2001, 5, 30), 1.55], [Date.UTC(2001, 6, 30), 1.72], [Date.UTC(2001, 7, 30), 1.66], [Date.UTC(2001, 8, 28), 1.63], [Date.UTC(2001, 9, 26), 1.51], [Date.UTC(2001, 10, 28), 1.47], [Date.UTC(2001, 11, 31), 1.46], [Date.UTC(2002, 0, 30), 2.73], [Date.UTC(2002, 1, 27), 1.48], [Date.UTC(2002, 2, 29), 1.47], [Date.UTC(2002, 3, 29), 1.37], [Date.UTC(2002, 4, 29), 1.36], [Date.UTC(2002, 5, 29), 1.43], [Date.UTC(2002, 6, 31), 1.15], [Date.UTC(2002, 7, 29), 2.02], [Date.UTC(2002, 8, 29), 1.91], [Date.UTC(2002, 9, 30), 1.98], [Date.UTC(2002, 10, 29), 2.49], [Date.UTC(2002, 11, 31), 2.42], [Date.UTC(2003, 0, 31), 2.92], [Date.UTC(2003, 1, 28), 2.81], [Date.UTC(2003, 2, 31), 2.63], [Date.UTC(2003, 3, 30), 3.26], [Date.UTC(2003, 4, 30), 1.72], [Date.UTC(2003, 5, 30), 1.69], [Date.UTC(2003, 6, 31), 1.79], [Date.UTC(2003, 7, 31), 1.90], [Date.UTC(2003, 8, 30), 1.66], [Date.UTC(2003, 9, 31), 1.92], [Date.UTC(2003, 10, 30), 1.74], [Date.UTC(2003, 11, 31), 1.74], [Date.UTC(2004, 0, 31), 2.14], [Date.UTC(2004, 1, 29), 2.06], [Date.UTC(2004, 2, 31), 1.78], [Date.UTC(2004, 3, 30), 1.78], [Date.UTC(2004, 4, 30), 1.45], [Date.UTC(2004, 5, 30), 1.61], [Date.UTC(2004, 6, 31), 1.68], [Date.UTC(2004, 7, 30), 1.51], [Date.UTC(2004, 8, 30), 1.27], [Date.UTC(2004, 9, 31), 1.20], [Date.UTC(2004, 10, 30), 1.59], [Date.UTC(2004, 11, 31), 1.70], [Date.UTC(2005, 0, 31), 1.78], [Date.UTC(2005, 1, 28), 1.65], [Date.UTC(2005, 2, 31), 1.64], [Date.UTC(2005, 3, 30), 1.44], [Date.UTC(2005, 4, 31), 1.39], [Date.UTC(2005, 5, 30), 1.78], [Date.UTC(2005, 6, 31), 1.92], [Date.UTC(2005, 7, 31), 1.77], [Date.UTC(2005, 8, 30), 2.04], [Date.UTC(2005, 11, 3), 1.84], [Date.UTC(2006, 0, 4), 1.54], [Date.UTC(2006, 1, 2), 1.51], [Date.UTC(2006, 2, 1), 1.73], [Date.UTC(2006, 3, 2), 1.57], [Date.UTC(2006, 4, 1), 2.19], [Date.UTC(2006, 5, 1), 1.46], [Date.UTC(2006, 6, 2), 2.11], [Date.UTC(2006, 7, 2), 2.02], [Date.UTC(2006, 8, 2), 2.44], [Date.UTC(2006, 9, 1), 2.20], [Date.UTC(2006, 10, 2), 2.31], [Date.UTC(2006, 11, 1), 2.56], [Date.UTC(2007, 0, 2), 2.84], [Date.UTC(2007, 1, 3), 2.98], [Date.UTC(2007, 2, 3), 3.49], [Date.UTC(2007, 3, 1), 3.14], [Date.UTC(2007, 4, 5), 3.07], [Date.UTC(2007, 5, 2), 2.62], [Date.UTC(2007, 6, 2), 2.51], [Date.UTC(2007, 7, 5), 2.58], [Date.UTC(2007, 8, 2), 2.72], [Date.UTC(2007, 9, 4), 2.68], [Date.UTC(2007, 10, 4), 2.93], [Date.UTC(2007, 11, 3), 2.73], [Date.UTC(2008, 0, 3), 3.20], [Date.UTC(2008, 1, 7), 2.33], [Date.UTC(2008, 5, 1), 2.93], [Date.UTC(2008, 6, 2), 2.76], [Date.UTC(2008, 7, 3), 2.89], [Date.UTC(2008, 8, 3), 3.13], [Date.UTC(2008, 9, 6), 2.67], [Date.UTC(2008, 10, 2), 2.93], [Date.UTC(2008, 11, 3), 2.97], [Date.UTC(2009, 0, 2), 3.36], [Date.UTC(2009, 1, 1), 3.54], [Date.UTC(2009, 2, 5), 3.61], [Date.UTC(2009, 3, 7), 3.68], [Date.UTC(2009, 4, 1), 3.55], [Date.UTC(2009, 5, 4), 4.02], [Date.UTC(2009, 6, 2), 3.51], [Date.UTC(2009, 7, 1), 2.81], [Date.UTC(2009, 8, 5), 3.00], [Date.UTC(2009, 9, 2), 3.03], [Date.UTC(2009, 10, 2), 2.92], [Date.UTC(2009, 11, 2), 3.51], [Date.UTC(2010, 0, 5), 2.71], [Date.UTC(2010, 1, 7), 2.64], [Date.UTC(2010, 2, 7), 2.65], [Date.UTC(2010, 3, 5), 2.47], [Date.UTC(2010, 4, 15), 2.08], [Date.UTC(2010, 6, 6), 2.43], [Date.UTC(2010, 6, 30), 2.40], [Date.UTC(2010, 8, 11), 1.66], [Date.UTC(2010, 9, 2), 1.66], [Date.UTC(2010, 10, 3), 1.66], [Date.UTC(2010, 11, 7), 1.51], [Date.UTC(2011, 0, 2), 1.59], [Date.UTC(2011, 1, 8), 2.56], [Date.UTC(2011, 2, 8), 1.87], [Date.UTC(2011, 3, 3), 1.51], [Date.UTC(2011, 4, 2), 1.39], [Date.UTC(2011, 5, 5), 1.50], [Date.UTC(2011, 5, 27), 1.50], [Date.UTC(2011, 6, 8), 2.24], [Date.UTC(2011, 7, 3), 1.56], [Date.UTC(2011, 8, 10), 1.47], [Date.UTC(2011, 9, 9), 2.19], [Date.UTC(2011, 10, 7), 2.56], [Date.UTC(2011, 11, 4), 2.20], [Date.UTC(2012, 0, 8), 2.32], [Date.UTC(2012, 1, 5), 2.46], [Date.UTC(2012, 2, 11), 3.39], [Date.UTC(2012, 3, 8), 2.88], [Date.UTC(2012, 4, 9), 2.13], [Date.UTC(2012, 5, 10), 1.47], [Date.UTC(2012, 6, 4), 1.45], [Date.UTC(2012, 7, 10), 1.37], [Date.UTC(2012, 8, 2), 1.33], [Date.UTC(2012, 9, 5), 1.26], [Date.UTC(2012, 10, 4), 1.28], [Date.UTC(2012, 11, 2), 1.32], [Date.UTC(2013, 0, 5), 1.98], [Date.UTC(2013, 1, 8), 1.42], [Date.UTC(2013, 2, 11), 1.37], [Date.UTC(2013, 3, 7), 1.51], [Date.UTC(2013, 4, 8), 1.54], [Date.UTC(2013, 5, 9), 1.65], [Date.UTC(2013, 6, 7), 1.84], [Date.UTC(2013, 6, 12), 1.84], [Date.UTC(2013, 7, 4), 2.09], [Date.UTC(2013, 8, 11), 2.01], [Date.UTC(2013, 9, 10), 2.04], [Date.UTC(2013, 10, 9), 2.05], [Date.UTC(2013, 11, 6), 1.85], [Date.UTC(2014, 0, 1), 1.58], [Date.UTC(2014, 1, 8), 1.93], [Date.UTC(2014, 2, 3), 1.90], [Date.UTC(2014, 3, 10), 1.75], [Date.UTC(2014, 4, 7), 1.79], [Date.UTC(2014, 5, 8), 2.00], [Date.UTC(2014, 6, 6), 1.81], [Date.UTC(2014, 7, 11), 2.17], [Date.UTC(2014, 8, 1), 2.45], [Date.UTC(2014, 9, 3), 1.77], [Date.UTC(2014, 10, 8), 2.09], [Date.UTC(2014, 11, 7), 2.43], [Date.UTC(2015, 0, 6), 3.27], [Date.UTC(2015, 1, 5), 3.51], [Date.UTC(2015, 2, 7), 3.63], [Date.UTC(2015, 3, 13), 3.30], [Date.UTC(2015, 4, 13), 3.13], [Date.UTC(2015, 5, 6), 2.30], [Date.UTC(2015, 6, 12), 2.19], [Date.UTC(2015, 7, 6), 2.16], [Date.UTC(2015, 8, 5), 2.34], [Date.UTC(2015, 9, 4), 2.29], [Date.UTC(2015, 10, 7), 2.47], [Date.UTC(2015, 11, 4), 2.36], [Date.UTC(2016, 0, 2), 2.57], [Date.UTC(2016, 1, 2), 2.20], [Date.UTC(2016, 2, 3), 2.33], [Date.UTC(2016, 3, 7), 2.57], [Date.UTC(2016, 4, 6), 2.34], [Date.UTC(2016, 5, 5), 2.58], [Date.UTC(2016, 6, 4), 2.64], [Date.UTC(2016, 7, 6), 2.71], [Date.UTC(2016, 8, 8), 2.93], [Date.UTC(2016, 9, 7), 2.75], [Date.UTC(2016, 10, 5), 2.71], [Date.UTC(2016, 11, 4), 2.86], [Date.UTC(2017, 0, 7), 2.85], [Date.UTC(2017, 1, 8), 2.87], [Date.UTC(2017, 2, 7), 2.67], [Date.UTC(2017, 3, 9), 2.85], [Date.UTC(2017, 4, 6), 3.07], [Date.UTC(2017, 5, 3), 3.02], [Date.UTC(2017, 6, 7), 2.61], [Date.UTC(2017, 7, 2), 2.10], [Date.UTC(2017, 8, 6), 2.02], [Date.UTC(2017, 9, 5), 3.01], [Date.UTC(2017, 10, 12), 2.97], [Date.UTC(2017, 11, 9), 2.47], [Date.UTC(2018, 0, 3), 3.47], [Date.UTC(2018, 1, 8), 3.16], [Date.UTC(2018, 2, 7), 3.92], [Date.UTC(2018, 3, 1), 3.49], [Date.UTC(2018, 4, 6), 2.92], [Date.UTC(2018, 5, 10), 2.50], [Date.UTC(2018, 6, 7), 2.83], [Date.UTC(2018, 7, 1), 2.41], [Date.UTC(2018, 8, 3), 2.13], [Date.UTC(2018, 9, 5), 2.28], [Date.UTC(2018, 10, 8), 2.66], [Date.UTC(2018, 11, 2), 3.06], [Date.UTC(2019, 0, 4), 3.30], [Date.UTC(2019, 1, 6), 2.85], [Date.UTC(2019, 2, 2), 2.43], [Date.UTC(2019, 3, 7), 2.51], [Date.UTC(2019, 4, 4), 2.69], [Date.UTC(2019, 5, 9), 2.72], [Date.UTC(2019, 6, 6), 2.30], [Date.UTC(2019, 7, 5), 2.26], [Date.UTC(2019, 8, 9), 2.13], [Date.UTC(2019, 9, 5), 2.08], [Date.UTC(2019, 10, 3), 1.93], [Date.UTC(2019, 11, 6), 2.09], [Date.UTC(2020, 0, 5), 2.45], [Date.UTC(2020, 1, 4), 2.06], [Date.UTC(2020, 2, 4), 2.05], [Date.UTC(2020, 3, 2), 2.38], [Date.UTC(2020, 4, 2), 2.68], [Date.UTC(2020, 5, 1), 2.27], [Date.UTC(2020, 6, 4), 2.48], [Date.UTC(2020, 7, 2), 2.87], [Date.UTC(2020, 8, 6), 2.54], [Date.UTC(2020, 9, 4), 2.14], [Date.UTC(2020, 10, 3), 2.03], [Date.UTC(2020, 11, 3), 2.35], [Date.UTC(2021, 0, 2), 2.20], [Date.UTC(2021, 1, 6), 2.27], [Date.UTC(2021, 2, 4), 2.11], [Date.UTC(2021, 3, 4), 2.44], [Date.UTC(2021, 4, 2), 2.45], [Date.UTC(2021, 5, 5), 2.33], [Date.UTC(2021, 6, 4), 2.71], [Date.UTC(2021, 7, 3), 2.95], [Date.UTC(2021, 8, 11), 2.55], [Date.UTC(2021, 9, 6), 2.19], [Date.UTC(2021, 10, 6), 2.66], [Date.UTC(2021, 11, 5), 2.30], [Date.UTC(2022, 0, 1), 2.09], [Date.UTC(2022, 0, 30), 1.83]]}, {name : 'PHP',data : [[Date.UTC(2001, 5, 30), 1.90], [Date.UTC(2001, 6, 30), 1.38], [Date.UTC(2001, 7, 30), 1.55], [Date.UTC(2001, 8, 28), 1.55], [Date.UTC(2001, 9, 26), 1.78], [Date.UTC(2001, 10, 28), 4.87], [Date.UTC(2001, 11, 31), 7.27], [Date.UTC(2002, 0, 30), 8.27], [Date.UTC(2002, 1, 27), 7.44], [Date.UTC(2002, 2, 29), 7.03], [Date.UTC(2002, 3, 29), 5.05], [Date.UTC(2002, 4, 29), 5.22], [Date.UTC(2002, 5, 29), 5.18], [Date.UTC(2002, 6, 31), 6.50], [Date.UTC(2002, 7, 29), 5.35], [Date.UTC(2002, 8, 29), 4.96], [Date.UTC(2002, 9, 30), 5.28], [Date.UTC(2002, 10, 29), 7.30], [Date.UTC(2002, 11, 31), 7.61], [Date.UTC(2003, 0, 31), 4.49], [Date.UTC(2003, 1, 28), 4.01], [Date.UTC(2003, 2, 31), 4.61], [Date.UTC(2003, 3, 30), 4.53], [Date.UTC(2003, 4, 30), 4.78], [Date.UTC(2003, 5, 30), 3.83], [Date.UTC(2003, 6, 31), 4.68], [Date.UTC(2003, 7, 31), 5.44], [Date.UTC(2003, 8, 30), 5.80], [Date.UTC(2003, 9, 31), 3.57], [Date.UTC(2003, 10, 30), 5.74], [Date.UTC(2003, 11, 31), 6.31], [Date.UTC(2004, 0, 31), 7.26], [Date.UTC(2004, 1, 29), 7.63], [Date.UTC(2004, 2, 31), 9.76], [Date.UTC(2004, 3, 30), 7.17], [Date.UTC(2004, 4, 30), 8.71], [Date.UTC(2004, 5, 30), 10.32], [Date.UTC(2004, 6, 31), 10.43], [Date.UTC(2004, 7, 30), 8.23], [Date.UTC(2004, 8, 30), 7.42], [Date.UTC(2004, 9, 31), 7.59], [Date.UTC(2004, 10, 30), 11.45], [Date.UTC(2004, 11, 31), 9.48], [Date.UTC(2005, 0, 31), 10.28], [Date.UTC(2005, 1, 28), 9.41], [Date.UTC(2005, 2, 31), 8.72], [Date.UTC(2005, 3, 30), 9.20], [Date.UTC(2005, 4, 31), 7.97], [Date.UTC(2005, 5, 30), 9.17], [Date.UTC(2005, 6, 31), 7.87], [Date.UTC(2005, 7, 31), 8.89], [Date.UTC(2005, 8, 30), 9.67], [Date.UTC(2005, 11, 3), 9.63], [Date.UTC(2006, 0, 4), 9.40], [Date.UTC(2006, 1, 2), 8.92], [Date.UTC(2006, 2, 1), 9.95], [Date.UTC(2006, 3, 2), 10.88], [Date.UTC(2006, 4, 1), 10.22], [Date.UTC(2006, 5, 1), 9.59], [Date.UTC(2006, 6, 2), 10.35], [Date.UTC(2006, 7, 2), 9.64], [Date.UTC(2006, 8, 2), 9.13], [Date.UTC(2006, 9, 1), 9.86], [Date.UTC(2006, 10, 2), 9.21], [Date.UTC(2006, 11, 1), 8.54], [Date.UTC(2007, 0, 2), 7.94], [Date.UTC(2007, 1, 3), 8.85], [Date.UTC(2007, 2, 3), 9.46], [Date.UTC(2007, 3, 1), 8.64], [Date.UTC(2007, 4, 5), 8.74], [Date.UTC(2007, 5, 2), 8.87], [Date.UTC(2007, 6, 2), 8.65], [Date.UTC(2007, 7, 5), 9.70], [Date.UTC(2007, 8, 2), 10.20], [Date.UTC(2007, 9, 4), 9.50], [Date.UTC(2007, 10, 4), 8.69], [Date.UTC(2007, 11, 3), 8.39], [Date.UTC(2008, 0, 3), 9.20], [Date.UTC(2008, 1, 7), 9.89], [Date.UTC(2008, 5, 1), 10.21], [Date.UTC(2008, 6, 2), 9.52], [Date.UTC(2008, 7, 3), 9.35], [Date.UTC(2008, 8, 3), 9.24], [Date.UTC(2008, 9, 6), 8.61], [Date.UTC(2008, 10, 2), 8.94], [Date.UTC(2008, 11, 3), 9.13], [Date.UTC(2009, 0, 2), 8.88], [Date.UTC(2009, 1, 1), 8.78], [Date.UTC(2009, 2, 5), 9.48], [Date.UTC(2009, 3, 7), 9.89], [Date.UTC(2009, 4, 1), 9.92], [Date.UTC(2009, 5, 4), 9.67], [Date.UTC(2009, 6, 2), 9.27], [Date.UTC(2009, 7, 1), 9.39], [Date.UTC(2009, 8, 5), 10.16], [Date.UTC(2009, 9, 2), 10.36], [Date.UTC(2009, 10, 2), 10.18], [Date.UTC(2009, 11, 2), 9.77], [Date.UTC(2010, 0, 5), 10.07], [Date.UTC(2010, 1, 7), 10.00], [Date.UTC(2010, 2, 7), 9.91], [Date.UTC(2010, 3, 5), 9.66], [Date.UTC(2010, 4, 15), 9.07], [Date.UTC(2010, 6, 6), 8.57], [Date.UTC(2010, 6, 30), 9.18], [Date.UTC(2010, 8, 11), 8.37], [Date.UTC(2010, 9, 2), 8.32], [Date.UTC(2010, 10, 3), 7.81], [Date.UTC(2010, 11, 7), 7.51], [Date.UTC(2011, 0, 2), 7.83], [Date.UTC(2011, 1, 8), 6.97], [Date.UTC(2011, 2, 8), 6.57], [Date.UTC(2011, 3, 3), 6.58], [Date.UTC(2011, 4, 2), 6.51], [Date.UTC(2011, 5, 5), 6.60], [Date.UTC(2011, 5, 27), 6.60], [Date.UTC(2011, 6, 8), 6.18], [Date.UTC(2011, 7, 3), 6.13], [Date.UTC(2011, 8, 10), 6.60], [Date.UTC(2011, 9, 9), 6.82], [Date.UTC(2011, 10, 7), 6.10], [Date.UTC(2011, 11, 4), 6.00], [Date.UTC(2012, 0, 8), 5.70], [Date.UTC(2012, 1, 5), 5.64], [Date.UTC(2012, 2, 11), 5.55], [Date.UTC(2012, 3, 8), 5.29], [Date.UTC(2012, 4, 9), 5.71], [Date.UTC(2012, 5, 10), 5.29], [Date.UTC(2012, 6, 4), 5.01], [Date.UTC(2012, 7, 10), 5.52], [Date.UTC(2012, 8, 2), 5.61], [Date.UTC(2012, 9, 5), 5.67], [Date.UTC(2012, 10, 4), 5.73], [Date.UTC(2012, 11, 2), 5.54], [Date.UTC(2013, 0, 5), 5.55], [Date.UTC(2013, 1, 8), 5.07], [Date.UTC(2013, 2, 11), 4.81], [Date.UTC(2013, 3, 7), 5.43], [Date.UTC(2013, 4, 8), 5.78], [Date.UTC(2013, 5, 9), 5.99], [Date.UTC(2013, 6, 7), 7.19], [Date.UTC(2013, 6, 12), 7.19], [Date.UTC(2013, 7, 4), 6.69], [Date.UTC(2013, 8, 11), 6.43], [Date.UTC(2013, 9, 10), 6.09], [Date.UTC(2013, 10, 9), 5.38], [Date.UTC(2013, 11, 6), 5.28], [Date.UTC(2014, 0, 1), 4.61], [Date.UTC(2014, 1, 8), 4.22], [Date.UTC(2014, 2, 3), 3.70], [Date.UTC(2014, 3, 10), 2.77], [Date.UTC(2014, 4, 7), 3.39], [Date.UTC(2014, 5, 8), 2.85], [Date.UTC(2014, 6, 6), 2.92], [Date.UTC(2014, 7, 11), 2.86], [Date.UTC(2014, 8, 1), 3.12], [Date.UTC(2014, 9, 3), 2.94], [Date.UTC(2014, 10, 8), 3.04], [Date.UTC(2014, 11, 7), 2.75], [Date.UTC(2015, 0, 6), 3.78], [Date.UTC(2015, 1, 5), 3.17], [Date.UTC(2015, 2, 7), 4.00], [Date.UTC(2015, 3, 13), 3.01], [Date.UTC(2015, 4, 13), 2.72], [Date.UTC(2015, 5, 6), 2.87], [Date.UTC(2015, 6, 12), 2.89], [Date.UTC(2015, 7, 6), 2.73], [Date.UTC(2015, 8, 5), 2.53], [Date.UTC(2015, 9, 4), 2.56], [Date.UTC(2015, 10, 7), 3.25], [Date.UTC(2015, 11, 4), 2.79], [Date.UTC(2016, 0, 2), 2.71], [Date.UTC(2016, 1, 2), 2.77], [Date.UTC(2016, 2, 3), 2.77], [Date.UTC(2016, 3, 7), 2.99], [Date.UTC(2016, 4, 6), 2.99], [Date.UTC(2016, 5, 5), 3.23], [Date.UTC(2016, 6, 4), 3.27], [Date.UTC(2016, 7, 6), 3.17], [Date.UTC(2016, 8, 8), 2.85], [Date.UTC(2016, 9, 7), 2.74], [Date.UTC(2016, 10, 5), 3.13], [Date.UTC(2016, 11, 4), 2.92], [Date.UTC(2017, 0, 7), 2.56], [Date.UTC(2017, 1, 8), 3.07], [Date.UTC(2017, 2, 7), 3.01], [Date.UTC(2017, 3, 9), 3.38], [Date.UTC(2017, 4, 6), 2.69], [Date.UTC(2017, 5, 3), 2.77], [Date.UTC(2017, 6, 7), 3.09], [Date.UTC(2017, 7, 2), 2.29], [Date.UTC(2017, 8, 6), 2.21], [Date.UTC(2017, 9, 5), 2.79], [Date.UTC(2017, 10, 12), 1.90], [Date.UTC(2017, 11, 9), 1.59], [Date.UTC(2018, 0, 3), 2.53], [Date.UTC(2018, 1, 8), 3.42], [Date.UTC(2018, 2, 7), 4.01], [Date.UTC(2018, 3, 1), 4.22], [Date.UTC(2018, 4, 6), 3.32], [Date.UTC(2018, 5, 10), 2.88], [Date.UTC(2018, 6, 7), 2.83], [Date.UTC(2018, 7, 1), 2.93], [Date.UTC(2018, 8, 3), 2.78], [Date.UTC(2018, 9, 5), 2.79], [Date.UTC(2018, 10, 8), 2.38], [Date.UTC(2018, 11, 2), 2.44], [Date.UTC(2019, 0, 4), 2.68], [Date.UTC(2019, 1, 6), 2.27], [Date.UTC(2019, 2, 2), 2.42], [Date.UTC(2019, 3, 7), 2.24], [Date.UTC(2019, 4, 4), 2.49], [Date.UTC(2019, 5, 9), 2.57], [Date.UTC(2019, 6, 6), 2.17], [Date.UTC(2019, 7, 5), 2.08], [Date.UTC(2019, 8, 9), 1.86], [Date.UTC(2019, 9, 5), 1.91], [Date.UTC(2019, 10, 3), 1.72], [Date.UTC(2019, 11, 6), 2.05], [Date.UTC(2020, 0, 5), 2.41], [Date.UTC(2020, 1, 4), 2.02], [Date.UTC(2020, 2, 4), 2.02], [Date.UTC(2020, 3, 2), 2.37], [Date.UTC(2020, 4, 2), 2.49], [Date.UTC(2020, 5, 1), 2.26], [Date.UTC(2020, 6, 4), 1.90], [Date.UTC(2020, 7, 2), 2.24], [Date.UTC(2020, 8, 6), 2.49], [Date.UTC(2020, 9, 4), 2.09], [Date.UTC(2020, 10, 3), 1.79], [Date.UTC(2020, 11, 3), 2.12], [Date.UTC(2021, 0, 2), 1.99], [Date.UTC(2021, 1, 6), 1.75], [Date.UTC(2021, 2, 4), 2.07], [Date.UTC(2021, 3, 4), 1.84], [Date.UTC(2021, 4, 2), 1.86], [Date.UTC(2021, 5, 5), 2.21], [Date.UTC(2021, 6, 4), 2.58], [Date.UTC(2021, 7, 3), 2.19], [Date.UTC(2021, 8, 11), 1.85], [Date.UTC(2021, 9, 6), 2.10], [Date.UTC(2021, 10, 6), 1.81], [Date.UTC(2021, 11, 5), 1.50], [Date.UTC(2022, 0, 1), 1.40], [Date.UTC(2022, 0, 30), 1.79]]}, {name : 'Assembly language',data : [[Date.UTC(2010, 11, 7), 0.66], [Date.UTC(2011, 0, 2), 0.86], [Date.UTC(2011, 1, 8), 1.27], [Date.UTC(2011, 2, 8), 1.34], [Date.UTC(2011, 3, 3), 0.97], [Date.UTC(2011, 4, 2), 1.04], [Date.UTC(2011, 5, 5), 0.67], [Date.UTC(2011, 5, 27), 0.67], [Date.UTC(2011, 6, 8), 0.62], [Date.UTC(2011, 7, 3), 0.60], [Date.UTC(2011, 8, 10), 0.59], [Date.UTC(2011, 9, 9), 0.62], [Date.UTC(2011, 10, 7), 0.53], [Date.UTC(2011, 11, 4), 0.56], [Date.UTC(2012, 0, 8), 0.54], [Date.UTC(2012, 1, 5), 0.52], [Date.UTC(2012, 2, 11), 0.43], [Date.UTC(2012, 3, 8), 0.47], [Date.UTC(2012, 4, 9), 0.52], [Date.UTC(2012, 5, 10), 0.54], [Date.UTC(2012, 6, 4), 0.55], [Date.UTC(2012, 7, 10), 0.50], [Date.UTC(2012, 8, 2), 0.53], [Date.UTC(2012, 9, 5), 0.57], [Date.UTC(2012, 10, 4), 0.59], [Date.UTC(2012, 11, 2), 0.58], [Date.UTC(2013, 0, 5), 0.63], [Date.UTC(2013, 1, 8), 0.64], [Date.UTC(2013, 2, 11), 0.63], [Date.UTC(2013, 3, 7), 0.71], [Date.UTC(2013, 4, 8), 0.64], [Date.UTC(2013, 5, 9), 0.50], [Date.UTC(2013, 6, 7), 0.58], [Date.UTC(2013, 6, 12), 0.58], [Date.UTC(2013, 7, 4), 0.62], [Date.UTC(2013, 8, 11), 0.48], [Date.UTC(2013, 9, 10), 0.47], [Date.UTC(2013, 10, 9), 0.53], [Date.UTC(2013, 11, 6), 0.58], [Date.UTC(2014, 0, 1), 0.49], [Date.UTC(2014, 1, 8), 0.40], [Date.UTC(2014, 2, 3), 0.73], [Date.UTC(2014, 3, 10), 0.85], [Date.UTC(2014, 4, 7), 0.77], [Date.UTC(2014, 5, 8), 0.77], [Date.UTC(2014, 6, 6), 0.78], [Date.UTC(2014, 7, 11), 0.65], [Date.UTC(2014, 8, 1), 0.58], [Date.UTC(2014, 9, 3), 0.41], [Date.UTC(2014, 10, 8), 0.60], [Date.UTC(2014, 11, 7), 0.52], [Date.UTC(2015, 0, 6), 1.17], [Date.UTC(2015, 1, 5), 0.75], [Date.UTC(2015, 2, 7), 0.62], [Date.UTC(2015, 3, 13), 0.66], [Date.UTC(2015, 4, 13), 0.76], [Date.UTC(2015, 5, 6), 0.75], [Date.UTC(2015, 6, 12), 1.54], [Date.UTC(2015, 7, 6), 1.76], [Date.UTC(2015, 8, 5), 1.81], [Date.UTC(2015, 9, 4), 1.57], [Date.UTC(2015, 10, 7), 1.88], [Date.UTC(2015, 11, 4), 1.93], [Date.UTC(2016, 0, 2), 2.09], [Date.UTC(2016, 1, 2), 1.83], [Date.UTC(2016, 2, 3), 1.85], [Date.UTC(2016, 3, 7), 2.19], [Date.UTC(2016, 4, 6), 1.88], [Date.UTC(2016, 5, 5), 2.12], [Date.UTC(2016, 6, 4), 2.28], [Date.UTC(2016, 7, 6), 2.36], [Date.UTC(2016, 8, 8), 2.42], [Date.UTC(2016, 9, 7), 2.23], [Date.UTC(2016, 10, 5), 2.44], [Date.UTC(2016, 11, 4), 2.54], [Date.UTC(2017, 0, 7), 2.70], [Date.UTC(2017, 1, 8), 2.11], [Date.UTC(2017, 2, 7), 2.23], [Date.UTC(2017, 3, 9), 2.17], [Date.UTC(2017, 4, 6), 2.86], [Date.UTC(2017, 5, 3), 2.25], [Date.UTC(2017, 6, 7), 2.24], [Date.UTC(2017, 7, 2), 1.81], [Date.UTC(2017, 8, 6), 1.64], [Date.UTC(2017, 9, 5), 2.37], [Date.UTC(2017, 10, 12), 1.72], [Date.UTC(2017, 11, 9), 1.47], [Date.UTC(2018, 0, 3), 2.06], [Date.UTC(2018, 1, 8), 1.83], [Date.UTC(2018, 2, 7), 1.71], [Date.UTC(2018, 3, 1), 1.65], [Date.UTC(2018, 4, 6), 1.00], [Date.UTC(2018, 5, 10), 0.92], [Date.UTC(2018, 6, 7), 1.15], [Date.UTC(2018, 7, 1), 1.41], [Date.UTC(2018, 8, 3), 1.23], [Date.UTC(2018, 9, 5), 1.25], [Date.UTC(2018, 10, 8), 1.11], [Date.UTC(2018, 11, 2), 1.37], [Date.UTC(2019, 0, 4), 1.20], [Date.UTC(2019, 1, 6), 1.38], [Date.UTC(2019, 2, 2), 1.41], [Date.UTC(2019, 3, 7), 1.71], [Date.UTC(2019, 4, 4), 1.82], [Date.UTC(2019, 5, 9), 1.48], [Date.UTC(2019, 6, 6), 1.39], [Date.UTC(2019, 7, 5), 1.11], [Date.UTC(2019, 8, 9), 1.38], [Date.UTC(2019, 9, 5), 1.31], [Date.UTC(2019, 10, 3), 1.02], [Date.UTC(2019, 11, 6), 1.07], [Date.UTC(2020, 0, 5), 0.88], [Date.UTC(2020, 1, 4), 1.11], [Date.UTC(2020, 2, 4), 1.25], [Date.UTC(2020, 3, 2), 1.16], [Date.UTC(2020, 4, 2), 1.12], [Date.UTC(2020, 5, 1), 0.97], [Date.UTC(2020, 6, 4), 0.94], [Date.UTC(2020, 7, 2), 1.04], [Date.UTC(2020, 8, 6), 1.30], [Date.UTC(2020, 9, 4), 1.08], [Date.UTC(2020, 10, 3), 1.17], [Date.UTC(2020, 11, 3), 1.35], [Date.UTC(2021, 0, 2), 1.64], [Date.UTC(2021, 1, 6), 1.65], [Date.UTC(2021, 2, 4), 1.97], [Date.UTC(2021, 3, 4), 2.32], [Date.UTC(2021, 4, 2), 2.43], [Date.UTC(2021, 5, 5), 2.05], [Date.UTC(2021, 6, 4), 2.40], [Date.UTC(2021, 7, 3), 2.03], [Date.UTC(2021, 8, 11), 2.42], [Date.UTC(2021, 9, 6), 2.06], [Date.UTC(2021, 10, 6), 2.52], [Date.UTC(2021, 11, 5), 2.25], [Date.UTC(2022, 0, 1), 1.85], [Date.UTC(2022, 0, 30), 1.60]]}, {name : 'SQL',data : [[Date.UTC(2001, 5, 30), 2.96], [Date.UTC(2001, 6, 30), 2.77], [Date.UTC(2001, 7, 30), 2.38], [Date.UTC(2001, 8, 28), 2.36], [Date.UTC(2001, 9, 26), 2.24], [Date.UTC(2001, 10, 28), 1.84], [Date.UTC(2001, 11, 31), 1.87], [Date.UTC(2002, 0, 30), 1.94], [Date.UTC(2002, 1, 27), 2.09], [Date.UTC(2002, 2, 29), 2.06], [Date.UTC(2002, 3, 29), 2.33], [Date.UTC(2002, 4, 29), 2.36], [Date.UTC(2002, 5, 29), 2.53], [Date.UTC(2002, 6, 31), 2.66], [Date.UTC(2002, 7, 29), 2.65], [Date.UTC(2002, 8, 29), 2.54], [Date.UTC(2002, 9, 30), 2.64], [Date.UTC(2002, 10, 29), 2.38], [Date.UTC(2002, 11, 31), 2.52], [Date.UTC(2003, 0, 31), 2.56], [Date.UTC(2003, 1, 28), 2.51], [Date.UTC(2003, 2, 31), 2.56], [Date.UTC(2003, 3, 30), 2.65], [Date.UTC(2003, 4, 30), 3.12], [Date.UTC(2003, 5, 30), 3.04], [Date.UTC(2003, 6, 31), 2.99], [Date.UTC(2003, 7, 31), 3.24], [Date.UTC(2003, 8, 30), 3.72], [Date.UTC(2003, 9, 31), 3.70], [Date.UTC(2003, 10, 30), 2.93], [Date.UTC(2003, 11, 31), 3.10], [Date.UTC(2004, 0, 31), 3.51], [Date.UTC(2004, 1, 29), 3.10], [Date.UTC(2004, 2, 31), 2.97], [Date.UTC(2004, 3, 30), 2.44], [Date.UTC(2018, 1, 8), 2.36], [Date.UTC(2018, 2, 7), 2.69], [Date.UTC(2018, 3, 1), 2.65], [Date.UTC(2018, 4, 6), 1.99], [Date.UTC(2018, 5, 10), 2.34], [Date.UTC(2018, 6, 7), 2.33], [Date.UTC(2018, 7, 1), 2.32], [Date.UTC(2018, 8, 3), 2.06], [Date.UTC(2018, 9, 5), 2.04], [Date.UTC(2018, 10, 8), 1.84], [Date.UTC(2018, 11, 2), 2.18], [Date.UTC(2019, 0, 4), 2.28], [Date.UTC(2019, 1, 6), 1.90], [Date.UTC(2019, 2, 2), 1.93], [Date.UTC(2019, 3, 7), 2.27], [Date.UTC(2019, 4, 4), 2.56], [Date.UTC(2019, 5, 9), 2.22], [Date.UTC(2019, 6, 6), 1.98], [Date.UTC(2019, 7, 5), 1.63], [Date.UTC(2019, 8, 9), 1.94], [Date.UTC(2019, 9, 5), 1.93], [Date.UTC(2019, 10, 3), 1.69], [Date.UTC(2019, 11, 6), 1.84], [Date.UTC(2020, 0, 5), 1.50], [Date.UTC(2020, 1, 4), 1.53], [Date.UTC(2020, 2, 4), 1.83], [Date.UTC(2020, 3, 2), 2.17], [Date.UTC(2020, 4, 2), 2.09], [Date.UTC(2020, 5, 1), 1.73], [Date.UTC(2020, 6, 4), 1.40], [Date.UTC(2020, 7, 2), 1.46], [Date.UTC(2020, 8, 6), 1.76], [Date.UTC(2020, 9, 4), 1.57], [Date.UTC(2020, 10, 3), 1.54], [Date.UTC(2020, 11, 3), 1.53], [Date.UTC(2021, 0, 2), 1.61], [Date.UTC(2021, 1, 6), 1.72], [Date.UTC(2021, 2, 4), 1.87], [Date.UTC(2021, 3, 4), 1.83], [Date.UTC(2021, 4, 2), 1.71], [Date.UTC(2021, 5, 5), 1.88], [Date.UTC(2021, 6, 4), 1.53], [Date.UTC(2021, 7, 3), 1.47], [Date.UTC(2021, 8, 11), 1.80], [Date.UTC(2021, 9, 6), 2.17], [Date.UTC(2021, 10, 6), 2.11], [Date.UTC(2021, 11, 5), 1.79], [Date.UTC(2022, 0, 1), 1.80], [Date.UTC(2022, 0, 30), 1.55]]}
+    ]
+  });
+});
+</script>
+<div align="center">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Horizontal_Display_Responsive_Ad -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8520506242739182" data-ad-slot="4917108898" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<a href="./rss.xml">
+  <img style="float:right" src="/images/rss_logo.gif" border="0" alt="rss" title="RSS Feed">
+</a>
+<h2><b>TIOBE Index for February 2022</b></h2>
+<h3>February Headline: TIOBE index top 3 benefits from technology changes</h3>
+<p>
+As of the 1st of May, the Alexa web traffic ranking engine is going to stop its services. Alexa was used to select the search engines for the TIOBE index until now. So now something has to change. Similarweb has been chosen as the alternative for Alexa. We have used Similarweb for the first time this month to select search engines and fortunately, there are no big changes in the index due to this swap. The only striking difference is that the top 3 languages, Python, C, and Java, all gained more than 1 percent in the rankings. We are still fine-tuning the integration with Similarweb, which is combined with a shift to HtmlUnit in the back-end. Some websites are not onboarded yet, but will follow soon. Now that HtmlUnit is applied for web crawling, it will become possible to add more sites to the index, such as Stackoverflow and Github. This will hopefully happen in the next few months. --<i>Paul Jansen CEO TIOBE Software</i>	
+</p> 
+<p>The TIOBE Programming Community index is an indicator of the popularity of programming 
+languages. The index is updated once a month. The ratings are based on the number of 
+skilled engineers world-wide, courses and third party vendors. Popular search engines such as
+Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings.
+It is important to note that the TIOBE index is not about the <i>best</i> programming language or the language
+in which <i>most lines of code</i> have been written.</p>
+<p>The index can be used to check whether your programming skills are still up to date or to make a 
+strategic decision about what programming language should be adopted when starting to build a new 
+software system. The definition of the TIOBE index can be found <a href="./programming-languages-definition/">here</a>.
+</p>
+<table id="top20" class="table table-striped table-top20">
+<thead><tr>
+<th style="width: 15%">Feb 2022</th>
+<th style="width: 15%">Feb 2021</th>
+<th title="Difference compared to last year" style="width: 15%">Change</th>
+<th style="width: 25%" colspan="2">Programming Language</th>
+<th style="width: 15%">Ratings</th>
+<th title="Difference compared to last year" style="width: 15%">Change</th>
+</tr></thead>
+<tbody>
+<tr><td>1</td><td>3</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/Python.png" alt="Python page" style="vertical-align:middle"></td><td>Python</td><td>15.33%</td><td>+4.47%</td></tr><tr><td>2</td><td>1</td><td><img src="/images/down.png" alt="change"></td><td class="td-top20"><img src="images/C.png" alt="C page" style="vertical-align:middle"></td><td>C</td><td>14.08%</td><td>-2.26%</td></tr><tr><td>3</td><td>2</td><td><img src="/images/down.png" alt="change"></td><td class="td-top20"><img src="images/Java.png" alt="Java page" style="vertical-align:middle"></td><td>Java</td><td>12.13%</td><td>+0.84%</td></tr><tr><td>4</td><td>4</td><td></td><td class="td-top20"><img src="images/C__.png" alt="C++ page" style="vertical-align:middle"></td><td>C++</td><td>8.01%</td><td>+1.13%</td></tr><tr><td>5</td><td>5</td><td></td><td class="td-top20"><img src="images/C_.png" alt="C# page" style="vertical-align:middle"></td><td>C#</td><td>5.37%</td><td>+0.93%</td></tr><tr><td>6</td><td>6</td><td></td><td class="td-top20"><img src="images/Visual_Basic.png" alt="Visual Basic page" style="vertical-align:middle"></td><td>Visual Basic</td><td>5.23%</td><td>+0.90%</td></tr><tr><td>7</td><td>7</td><td></td><td class="td-top20"><img src="images/JavaScript.png" alt="JavaScript page" style="vertical-align:middle"></td><td>JavaScript</td><td>1.83%</td><td>-0.45%</td></tr><tr><td>8</td><td>8</td><td></td><td class="td-top20"><img src="images/PHP.png" alt="PHP page" style="vertical-align:middle"></td><td>PHP</td><td>1.79%</td><td>+0.04%</td></tr><tr><td>9</td><td>10</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/Assembly_language.png" alt="Assembly language page" style="vertical-align:middle"></td><td>Assembly language</td><td>1.60%</td><td>-0.06%</td></tr><tr><td>10</td><td>9</td><td><img src="/images/down.png" alt="change"></td><td class="td-top20"><img src="images/SQL.png" alt="SQL page" style="vertical-align:middle"></td><td>SQL</td><td>1.55%</td><td>-0.18%</td></tr><tr><td>11</td><td>13</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/Go.png" alt="Go page" style="vertical-align:middle"></td><td>Go</td><td>1.23%</td><td>-0.05%</td></tr><tr><td>12</td><td>15</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/Swift.png" alt="Swift page" style="vertical-align:middle"></td><td>Swift</td><td>1.18%</td><td>+0.04%</td></tr><tr><td>13</td><td>11</td><td><img src="/images/down.png" alt="change"></td><td class="td-top20"><img src="images/R.png" alt="R page" style="vertical-align:middle"></td><td>R</td><td>1.11%</td><td>-0.45%</td></tr><tr><td>14</td><td>16</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/MATLAB.png" alt="MATLAB page" style="vertical-align:middle"></td><td>MATLAB</td><td>1.03%</td><td>-0.03%</td></tr><tr><td>15</td><td>17</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/Delphi_Object_Pascal.png" alt="Delphi/Object Pascal page" style="vertical-align:middle"></td><td>Delphi/Object Pascal</td><td>0.90%</td><td>-0.12%</td></tr><tr><td>16</td><td>14</td><td><img src="/images/down.png" alt="change"></td><td class="td-top20"><img src="images/Ruby.png" alt="Ruby page" style="vertical-align:middle"></td><td>Ruby</td><td>0.89%</td><td>-0.35%</td></tr><tr><td>17</td><td>18</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/Classic_Visual_Basic.png" alt="Classic Visual Basic page" style="vertical-align:middle"></td><td>Classic Visual Basic</td><td>0.83%</td><td>-0.18%</td></tr><tr><td>18</td><td>20</td><td><img src="/images/up.png" alt="change"></td><td class="td-top20"><img src="images/Objective_C.png" alt="Objective-C page" style="vertical-align:middle"></td><td>Objective-C</td><td>0.81%</td><td>-0.08%</td></tr><tr><td>19</td><td>19</td><td></td><td class="td-top20"><img src="images/Perl.png" alt="Perl page" style="vertical-align:middle"></td><td>Perl</td><td>0.79%</td><td>-0.13%</td></tr><tr><td>20</td><td>12</td><td><img src="/images/downdown.png" alt="change"></td><td class="td-top20"><img src="images/Groovy.png" alt="Groovy page" style="vertical-align:middle"></td><td>Groovy</td><td>0.74%</td><td>-0.76%</td></tr>
+</tbody>
+</table>
+<div align="center">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Horizontal_Display_Responsive_Ad -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8520506242739182" data-ad-slot="4917108898" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="container" style="width:100%; height:450px;"></div>
+<hr>
+<h2>Other programming languages</h2>
+<p>The complete top 50 of programming languages is listed below. This overview is 
+published unofficially, because it could be the case that we missed a language. If
+you have the impression there is a programming language lacking, please notify us 
+at <a href="mailto:tpci@tiobe.com">tpci@tiobe.com</a>. Please also check the <a href="./programming-languages-definition/#instances">overview of all programming languages</a> that we monitor.</p>
+
+<table id="otherPL" class="table table-striped">
+<thead><tr><th>Position</th><th>Programming Language</th><th>Ratings</th></tr></thead>
+<tbody>
+<tr><td>21</td><td>SAS</td><td>0.66%</td></tr><tr><td>22</td><td>Scratch</td><td>0.64%</td></tr><tr><td>23</td><td>Fortran</td><td>0.58%</td></tr><tr><td>24</td><td>Rust</td><td>0.54%</td></tr><tr><td>25</td><td>(Visual) FoxPro</td><td>0.52%</td></tr><tr><td>26</td><td>COBOL</td><td>0.42%</td></tr><tr><td>27</td><td>Dart</td><td>0.42%</td></tr><tr><td>28</td><td>Kotlin</td><td>0.41%</td></tr><tr><td>29</td><td>Lua</td><td>0.40%</td></tr><tr><td>30</td><td>Julia</td><td>0.40%</td></tr><tr><td>31</td><td>Prolog</td><td>0.39%</td></tr><tr><td>32</td><td>Ada</td><td>0.39%</td></tr><tr><td>33</td><td>PL/SQL</td><td>0.37%</td></tr><tr><td>34</td><td>ABAP</td><td>0.35%</td></tr><tr><td>35</td><td>Lisp</td><td>0.34%</td></tr><tr><td>36</td><td>D</td><td>0.32%</td></tr><tr><td>37</td><td>Scala</td><td>0.26%</td></tr><tr><td>38</td><td>TypeScript</td><td>0.21%</td></tr><tr><td>39</td><td>VBScript</td><td>0.21%</td></tr><tr><td>40</td><td>LabVIEW</td><td>0.21%</td></tr><tr><td>41</td><td>Scheme</td><td>0.20%</td></tr><tr><td>42</td><td>Awk</td><td>0.18%</td></tr><tr><td>43</td><td>Ladder Logic</td><td>0.18%</td></tr><tr><td>44</td><td>Apex</td><td>0.18%</td></tr><tr><td>45</td><td>PowerShell</td><td>0.18%</td></tr><tr><td>46</td><td>Logo</td><td>0.18%</td></tr><tr><td>47</td><td>Haskell</td><td>0.17%</td></tr><tr><td>48</td><td>Bash</td><td>0.17%</td></tr><tr><td>49</td><td>RPG</td><td>0.16%</td></tr><tr><td>50</td><td>ML</td><td>0.16%</td></tr>
+</tbody>
+</table>
+<hr>
+<h2>The Next 50 Programming Languages</h2>
+<p>The following list of languages denotes #51 to #100. Since the differences are 
+relatively small, the programming languages are only listed (in alphabetical
+order).
+</p>
+<ul>
+<li>		
+ActionScript, Alice, APL, Arc, AspectJ, Avenue, B4X, bc, BCPL, Bourne shell, C shell, C++/CLI, CLIPS, Dylan, Elixir, Elm, Erlang, F#, Icon, IDL, Inform, Io, J#, Korn shell, Lingo, M4, MEL, MQL4, MUMPS, Nim, Oberon, OCaml, OpenCL, Oz, Pike, Pure Data, Q, Racket, REXX, Ring, Simulink, Snap!, Solidity, SPARK, Stata, Tcl, Transact-SQL, VHDL, XBase++, Xojo
+</li></ul><p></p>
+<hr>
+<h2>This Month&apos;s Changes in the Index</h2>
+<p>This month the following changes have been made to the definition of the index:
+<ul>
+<li>                                                                                                                                                                          
+There are lots of mails that still need to be processed. As soon as there is more time available your mail will be answered. Please be patient. 
+</li>
+</ul>
+<hr>
+</p><h2>Very Long Term History</h2>
+<p>
+To see the bigger picture, please find below the positions of the top 10 programming languages of many years back. Please note that these are <i>average</i> positions for a period of 12 months.</p> 
+<table id="VLTH" class="table table-striped">
+<thead><tr><th>Programming Language</th><th>2022</th><th>2017</th><th>2012</th><th>2007</th><th>2002</th><th>1997</th><th>1992</th><th>1987</th></tr></thead>
+<tr><td>C</td><td>1</td><td>2</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Python</td><td>2</td><td>5</td><td>8</td><td>7</td><td>12</td><td>28</td><td>-</td><td>-</td></tr><tr><td>Java</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td><td>16</td><td>-</td><td>-</td></tr><tr><td>C++</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>4</td></tr><tr><td>C#</td><td>5</td><td>4</td><td>4</td><td>8</td><td>14</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Visual Basic</td><td>6</td><td>14</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>JavaScript</td><td>7</td><td>7</td><td>10</td><td>9</td><td>9</td><td>21</td><td>-</td><td>-</td></tr><tr><td>Assembly language</td><td>8</td><td>10</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>PHP</td><td>9</td><td>6</td><td>5</td><td>5</td><td>8</td><td>-</td><td>-</td><td>-</td></tr><tr><td>SQL</td><td>10</td><td>-</td><td>-</td><td>-</td><td>34</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Prolog</td><td>24</td><td>33</td><td>43</td><td>27</td><td>28</td><td>19</td><td>13</td><td>3</td></tr><tr><td>Lisp</td><td>32</td><td>30</td><td>13</td><td>14</td><td>11</td><td>11</td><td>11</td><td>2</td></tr><tr><td>Pascal</td><td>271</td><td>97</td><td>15</td><td>20</td><td>18</td><td>6</td><td>3</td><td>6</td></tr><tr><td>(Visual) Basic</td><td>-</td><td>-</td><td>7</td><td>4</td><td>4</td><td>3</td><td>7</td><td>5</td></tr>
+</table>
+<p>There are 2 important remarks here:</p> 
+<ol><li>There is a difference between &quot;Visual Basic&quot; and &quot;(Visual) Basic&quot; in the table above. Until 2010, &quot;(Visual) Basic&quot; referred to all possible dialects of Basic, including Visual Basic. After some discussion, it has been decided to split &quot;(Visual) Basic&quot; into all its dialects such as Visual Basic .NET, Classic Visual Basic, PureBasic, and Small Basic, just to name a few. Since Visual Basic .NET has become the major implementation of Visual Basic, it is now called &quot;Visual Basic&quot;.</li><li>The programming language SQL has not been in the TIOBE index for a long time. In 2018, somebody pointed out that SQL is Turing Complete. From that moment on, SQL is part of the TIOBE index. So although this language is very old, it has only a short history in the index.</li></ol>  
+<hr>
+<h2>Programming Language Hall of Fame</h2>
+<p>The hall of fame listing all &quot;Programming Language of the Year&quot; award winners is shown below. The award is given to the programming language that has the highest rise in ratings in a year.
+<br><br>
+<table id="PLHoF" class="table table-striped"><colgroup><col align="center"><col align="center"><tr><th nowrap align="center">Year</th><th nowrap align="center">Winner</th></tr><tr><td>2021</td><td><img src="/images/medal.png" alt="medal"> Python</td></tr><tr><td>2020</td><td><img src="/images/medal.png" alt="medal"> Python</td></tr><tr><td>2019</td><td><img src="/images/medal.png" alt="medal"> C</td></tr><tr><td>2018</td><td><img src="/images/medal.png" alt="medal"> Python</td></tr><tr><td>2017</td><td><img src="/images/medal.png" alt="medal"> C</td></tr><tr><td>2016</td><td><img src="/images/medal.png" alt="medal"> Go</td></tr><tr><td>2015</td><td><img src="/images/medal.png" alt="medal"> Java</td></tr><tr><td>2014</td><td><img src="/images/medal.png" alt="medal"> JavaScript</td></tr><tr><td>2013</td><td><img src="/images/medal.png" alt="medal"> Transact-SQL</td></tr><tr><td>2012</td><td><img src="/images/medal.png" alt="medal"> Objective-C</td></tr><tr><td>2011</td><td><img src="/images/medal.png" alt="medal"> Objective-C</td></tr><tr><td>2010</td><td><img src="/images/medal.png" alt="medal"> Python</td></tr><tr><td>2009</td><td><img src="/images/medal.png" alt="medal"> Go</td></tr><tr><td>2008</td><td><img src="/images/medal.png" alt="medal"> C</td></tr><tr><td>2007</td><td><img src="/images/medal.png" alt="medal"> Python</td></tr><tr><td>2006</td><td><img src="/images/medal.png" alt="medal"> Ruby</td></tr><tr><td>2005</td><td><img src="/images/medal.png" alt="medal"> Java</td></tr><tr><td>2004</td><td><img src="/images/medal.png" alt="medal"> PHP</td></tr><tr><td>2003</td><td><img src="/images/medal.png" alt="medal"> C++</td></tr></colgroup></table>
+</p>
+
+<hr>
+<h2>Bugs &amp; Change Requests</h2>
+<p>This is the top 5 of most requested changes and bugs. If you have any suggestions how to improve the index don&apos;t hesitate to send an e-mail to <a href="mailto:tpci@tiobe.com">tpci@tiobe.com</a>.</p>
+<ol>
+<li>
+Apart from &quot;&lt;language&gt; programming&quot;, also other queries such as &quot;programming with &lt;language&gt;&quot;, &quot;&lt;language&gt; development&quot; and &quot;&lt;language&gt; coding&quot; should be tried out.
+</li>
+<li>
+Add queries for other natural languages (apart from English). The idea is to start with the Chinese search engine Baidu. This has been implemented partially and will be completed the next few months.
+</li>
+<li>
+Add a list of all search term requests that have been rejected. This is to minimize the number of recurring mails about Rails, JQuery, JSP, etc.
+</li>
+<li>
+Start a TIOBE index for databases, software configuration management systems and application frameworks.
+</li>
+<li>
+Some search engines allow to query pages that have been added last year. The TIOBE index should only track those recently added pages.
+</li>
+</ol>
+<p></p>
+
+
+<hr>
+<h2>Frequently Asked Questions (FAQ)</h2>
+<ul>
+<li>
+<i>Q: Am I allowed to show the TIOBE index in my weblog/presentation/publication?</i>
+<p>A: Yes, the only condition is to refer to its original source &quot;www.tiobe.com&quot;.</p>
+</li>
+<li>
+<i>Q: How may I nominate a new language to be added to the TIOBE index?</i>
+<p>A: If a language meets the criteria of being listed (i.e. it is Turing complete and has an own Wikipedia entry that indicates that it concerns a programming language) and it is sufficiently popular (more than 5,000 hits for +&quot;&lt;language&gt; programming&quot; for Google), then please write an e-mail to <a href="mailto:tpci@tiobe.com">tpci@tiobe.com</a>.</p>
+</li>
+<li>
+<i>Q: I would like to have the complete data set of the TIOBE index. Is this possible?</i>
+<p>A: We spent a lot of effort to obtain all the data and keep the TIOBE index up to date. 
+In order to compensate a bit for this, we ask a fee of 5,000 US$ for the complete data set. 
+The data set runs from June 2001 till today. It started with 25 languages back in 2001, and 
+now measures more than 150 languages once a month. The data are available in comma separated 
+format. Please contact <a href="mailto:sales@tiobe.com"> sales@tiobe.com</a> for more information.</p>
+</li><li>
+<i>Q: Why is the maximum taken to calculate the ranking for a grouping, why not the sum?</i>
+<p>A: Well, you can do it either way and both are wrong. If you take the sum, then you get the intersection 
+twice. If you take the max, then you miss the difference. Which one to choose? Suppose somebody comes up with a new search term that is 10% of 
+the original. If you take the max, nothing changes. If you take the sum then the ratings will rise 10%. So 
+taking the sum will be an incentive for some to come up with all kinds of obscure terms for a language. That&apos;s 
+why we decided to take the max.</p>
+<p>The proper way to solve this is is of course to take the sum and subtract the intersection. This will give 
+rise to an explosion of extra queries that must be performed. Suppose a language has a grouping of 15 terms, 
+then you have to perform 32,768 queries (all combinations of intersections). 
+So this seems not possible either... If somebody has a solution for this, please let us know.</p>
+</li>
+<li>
+<i>Q: What happened to Java in April 2004? Did you change your methodology?</i>
+<p>A: No, we did not change our methodology at that time. Google changed its methodology. 
+They performed a general sweep action to get rid of all kinds of web sites that had been 
+pushed up. As a consequence, there was a huge drop for languages such as Java and C++. In 
+order to minimize such fluctuations in the future, we added two more search engines (MSN 
+and Yahoo) a few months after this incident.</p>
+</li>
+</ul>
+          </article>
+        </section>
+        <div id="news" class="sitewidth whitebg padblock clearfix">
+          <a href="/news/" class="right link">More news</a>
+          <h1>Latest news</h1>
+          <hr>
+          <div class="newsitems">
+            <a href="https://www.ecb.europa.eu" target="_blank" class="clearfix">
+              <img src="/images/news/ECB.png" width="60" height="60" alt="news image">
+              <div>
+                <time datetime="">January 2022</time>
+                <h3>ECB assessment</h3>
+                <p>TIOBE has conducted a TUViT Trusted Product Maintainability assessment for the European Central Bank (ECB).</p>
+              </div>
+            </a>
+            <a href="https://www.tuvit.de/de/leistungen/zertifizierung/anerkannte-pruefstellen/" target="_blank" class="clearfix">
+              <img src="/images/news/Tuvit.png" width="60" height="60" alt="news image">
+              <div>
+                <time datetime="">January 2022</time>
+                <h3>TIOBE evaluation body TUViT</h3>
+                <p>TUViT and TIOBE join forces to measure Trusted Product Maintainability according to the ISO/IEC 25010 model.</p>
+              </div>
+            </a>
+            <a href="/tiobe-index/"  class="clearfix">
+              <img src="/images/news/python-logo.png" width="60" height="60" alt="news image">
+              <div>
+                <time datetime="">January 2022</time>
+                <h3>Python Language of Year 2021</h3>
+                <p>Programming language Python is the language of 2021 in the TIOBE index (most increase in ratings in one year).</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="fullwidth graybg">
+      <footer class="sitewidth">
+        <div class="row clearfix">
+          <a href="/" class="ir" id="footerlogo">TIOBE website</a>
+          <ul id="footermenu">
+            <li>
+              <a href="/documentation/">Documentation</a>
+            </li>
+            <li>
+              <a href="/tqi/definition/">TQI</a>
+            </li>
+            <li>
+              <a href="/markets/customers/">Markets</a>
+            </li>
+            <li>
+              <a href="/tics/fact-sheet/">Products</a>
+            </li>
+            <li>
+              <a href="/tics/fact-sheet/">TICS</a>
+            </li>
+            <li>
+              <a href="/company/about/">Company</a>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row clearfix">
+          <div class="quote">
+            TIOBE checks more than 1056 million lines of software code for its customers world-wide, realtime, each day.
+          </div>
+          <div class="zoeken">
+            <form method="get" action="/search">
+              <input type="text" name="s" class="input" placeholder="Search"><input type="submit" value="" class="searchbutton">
+            </form>
+          </div>
+        </div>
+        <hr>
+        <div class="row clearfix" id="adres">
+          <div class="contact-footer-desktop">
+            <div class="adres left">Victory House II, Esp 401, 5633 AJ Eindhoven, The Netherlands</div>
+            <div class="tel left">+31 40 400 2800</div>
+            <div class="mail left"><a href="mailto:info@tiobe.com">info@tiobe.com</a></div>
+          </div>
+          <div class="contact-footer-mobile">
+            <ul>
+              <li>Victory House II</li>
+              <li>Esp 401</li>
+              <li>5633 AJ Eindhoven</li>
+              <li>The Netherlands</li>
+              <li>+31 40 400 2800</li>
+              <li><a href="mailto:info@tiobe.com">info@tiobe.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row clearfix" id="disclaimer">
+          <div class="copy left">&copy; 2022 TIOBE Software BV</div>
+          <div class="left"><a href="/privacy-statement/">Privacy statement</a></div>
+        </div>
+      </footer>
+    </div>
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+     ga('create', 'UA-18555865-1', 'auto');
+     ga('set', 'anonymizeIp', true);
+     ga('send', 'pageview');
+    
+    </script>
+    <script type="text/javascript">
+    _linkedin_partner_id = "440548";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(){var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})();
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" 
+    src="https://dc.ads.linkedin.com/collect/?pid=440548&fmt=gif" />
+    </noscript>
+  </body>
+</html>

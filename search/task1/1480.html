@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en"><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app210.us.archive.org';v.server_ms=1038;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=rQCmsv02" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.secnetix.de/~olli/Python/block_indentation.hawk","20180218162410","https://web.archive.org/","web","/_static/",
+	      "1518971050");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=fantwOh2" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css" media="screen"><!--
+	body {
+		background: #ffffff ;
+		color:      #000000
+	}
+	A:link		{ color: #0000ff }
+	A:active	{ color: #00a0a0 }
+	A:visited	{ color: #a000a0 }
+	img.borderless	{
+		border: none ;
+		border-color: #ffffff ;
+		border-width: 0px
+	}
+	th		{ text-decoration: underline }
+	div.vspace	{ padding-top: 3ex }
+	span.hspace	{ padding-left: 3em }
+	p		{ width: 75ex ; text-align: justify }
+	.just		{ width: 75ex ; text-align: justify }
+--></style>
+<title>Python:  Myths about Indentation</title>
+</head>
+<body bgcolor="#ffffff" text="#000000" link="0000ff" vlink="a000a0" alink="00a0a0"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20180218162410/http%3A//www.secnetix.de/~olli/Python/block_indentation.hawk"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.secnetix.de/~olli/Python/block_indentation.hawk" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20180218162410" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+		<div class="s" id="wm-nav-captures">
+	  	  <a class="t" href="/web/20180218162410*/http://www.secnetix.de/~olli/Python/block_indentation.hawk" title="See a list of every capture for this URL">112 captures</a>
+	  <div class="r" title="Timespan for captures of this URL">21 Mar 2003 - 04 Feb 2021</div>
+	  </div>
+	<div class="k" style="flex:1;">
+	  <a href="" id="wm-graph-anchor">
+	    <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+	      <canvas id="wm-sparkline-canvas" width="675" height="27" border="0"></canvas>
+	    </div>
+	  </a>
+	</div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+	<tbody>
+	  <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+	  <tr class="m">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20171229004712/http://www.secnetix.de:80/~olli/Python/block_indentation.hawk" title="29 Dec 2017"><strong>Dec</strong></a></td>
+	    <td class="c" id="displayMonthEl" title="You are here: 16:24:10 Feb 18, 2018">FEB</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20190924074845/http://www.secnetix.de:80/~olli/Python/block_indentation.hawk" title="24 Sep 2019"><strong>Sep</strong></a></td>
+	  </tr>
+	  <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+	  <tr class="d">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20180131001355/http://www.secnetix.de:80/~olli/Python/block_indentation.hawk" title="00:13:55 Jan 31, 2018"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+	    <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 16:24:10 Feb 18, 2018">18</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20190924074845/http://www.secnetix.de:80/~olli/Python/block_indentation.hawk" title="07:48:45 Sep 24, 2019"><img src="/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a></td>
+	  </tr>
+	  <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+	  <tr class="y">
+	    <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20170112122143/http://www.secnetix.de/~olli/Python/block_indentation.hawk" title="12 Jan 2017"><strong>2017</strong></a></td>
+	    <td class="c" id="displayYearEl" title="You are here: 16:24:10 Feb 18, 2018">2018</td>
+	    <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20190924074845/http://www.secnetix.de:80/~olli/Python/block_indentation.hawk" title="24 Sep 2019"><strong>2019</strong></a></td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+        	<span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+	</span>
+        	<a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20180218162410/http://web.archive.org/screenshot/http://www.secnetix.de/~olli/Python/block_indentation.hawk"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+	<a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20180218162410/http://www.secnetix.de/~olli/Python/block_indentation.hawk" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20180218162410/http://www.secnetix.de/~olli/Python/block_indentation.hawk" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+	<a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archiveteam);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/archiveteam" target="_new"><span class="wm-title">Archive Team</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  <img align=right src="http://archiveteam.org/images/e/e6/Archiveteam.jpg" width=200> Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copies of rapidly dying or deleted websites for the sake of history and digital heritage. The group is 100% composed of volunteers and interested parties, and has expanded into a large amount of related projects for saving online and digital history.
+<p>
+History is littered with hundreds of conflicts over the future of a community, group, location or business that were "resolved" when one of the parties stepped ahead and destroyed what was there. With the original point of contention destroyed, the debates would fall to the wayside. Archive Team believes that by duplicated condemned data, the conversation and debate can continue, as well as the richness and insight gained by keeping the materials. Our projects have ranged in size from a single volunteer downloading the data to a small-but-critical site, to over 100 volunteers stepping forward to acquire terabytes of user-created data to save for future generations.
+<p>
+The main site for Archive Team is at <a href="http://www.archiveteam.org">archiveteam.org</a> and contains up to the date information on various projects, manifestos, plans and walkthroughs.
+<p>
+This collection contains the output of many Archive Team projects, both ongoing and completed. Thanks to the generous providing of disk space by the Internet Archive, multi-terabyte datasets can be made available, as well as in use by the <a href="http://archive.org/web/web.php">Wayback Machine</a>, providing a path back to lost websites and work. 
+<p>
+Our collection has grown to the point of having sub-collections for the type of data we acquire. If you are seeking to browse the contents of these collections, the Wayback Machine is the best first stop. Otherwise, you are free to dig into the stacks to see what you may find.
+<p>
+<b>The Archive Team Panic Downloads</b> are full pulldowns of currently extant websites, meant to serve as emergency backups for needed sites that are in danger of closing, or which will be missed dearly if suddenly lost due to hard drive crashes or server failures. 
+<p>
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/archivebot)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/archivebot" target="_new"><span class="wm-title">ArchiveBot: The Archive Team Crowdsourced Crawler</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  ArchiveBot is an IRC bot designed to automate the archival of smaller websites (e.g. up to a few hundred thousand URLs). You give it a URL to start at, and it grabs all content under that URL, records it in a WARC, and then uploads that WARC to ArchiveTeam servers for eventual injection into the Internet Archive (or other archive sites).
+<p>
+To use ArchiveBot, drop by #archivebot on EFNet. To interact with ArchiveBot, you issue commands by typing it into the channel. Note you will need channel operator permissions in order to issue archiving jobs. The dashboard shows the sites being downloaded currently.
+<p>
+There is a dashboard running for the archivebot process at <a href="http://www.archivebot.com">http://www.archivebot.com</a>.
+<p>
+ArchiveBot's source code can be found at <a href="https://github.com/ArchiveTeam/ArchiveBot">https://github.com/ArchiveTeam/ArchiveBot</a>.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20180218162410/http://www.secnetix.de/~olli/Python/block_indentation.hawk</div>
+<script type="text/javascript">
+__wm.bt(675,27,25,2,"web","http://www.secnetix.de/~olli/Python/block_indentation.hawk","20180218162410",1996,"/_static/",["/_static/css/banner-styles.css?v=fantwOh2","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<div style="width: 75ex ; text-align: justify">
+
+<h1>Python:  Myths about Indentation</h1>
+
+<table border="1" cellspacing="0" cellpadding="6"><tr>
+<td class="just">
+    <font size="-1">
+	Note:  Lines beginning with "<code>&gt;&gt;&gt;</code>"
+	and "<code>...</code>" indicate input to Python (these
+	are the default prompts of the interactive interpreter).
+	Everything else is output from Python.
+    </font>
+</td>
+</tr></table>
+
+
+<p>
+There are quite some prejudices and myths about Python's
+indentation rules among people who don't really know Python.
+I'll try to address a few of these concerns on this page.
+</p>
+
+<hr>
+
+<h3>"Whitespace is significant in Python source code."</h3>
+
+<p>
+No, not in general.  Only the indentation level of your
+statements is significant (i.e. the whitespace at the
+very left of your statements).  Everywhere else, whitespace
+is not significant and can be used as you like, just like
+in any other language.  You can also insert empty lines
+that contain nothing (or only arbitrary whitespace)
+anywhere.
+</p>
+
+<p>
+Also, the exact amount of indentation doesn't matter at all,
+but only the relative indentation of nested blocks (relative
+to each other).
+</p>
+
+<p>
+Furthermore, the indentation level is ignored when you use
+explicit or implicit continuation lines.  For example,
+you can split a list across multiple lines, and the indentation
+is completely insignificant.  So, if you want, you can do
+things like this:
+</p>
+
+</div>
+<table border="0" cellspacing="0" cellpadding="12">
+<tr><td width="50"></td>
+<td bgcolor="#d0d0ff">
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>foo&nbsp;=&nbsp;[</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'some&nbsp;string',</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'another&nbsp;string',</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'short&nbsp;string'</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>]</code><br>
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>print&nbsp;foo</code><br>
+<table cellpadding="2" cellspacing="0" bgcolor="#d0f0ff" width="100%"><tr><td>
+<code>['some&nbsp;string',&nbsp;'another&nbsp;string',&nbsp;'short&nbsp;string']</code><br>
+</td></tr></table>
+<code></code><br>
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>bar&nbsp;=&nbsp;'this&nbsp;is&nbsp;'&nbsp;\</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'one&nbsp;long&nbsp;string&nbsp;'&nbsp;\</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'that&nbsp;is&nbsp;split&nbsp;'&nbsp;\</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;'across&nbsp;multiple&nbsp;lines'</code><br>
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>print&nbsp;bar</code><br>
+<table cellpadding="2" cellspacing="0" bgcolor="#d0f0ff" width="100%"><tr><td>
+<code>this&nbsp;is&nbsp;one&nbsp;long&nbsp;string&nbsp;that&nbsp;is&nbsp;split&nbsp;across&nbsp;multiple&nbsp;lines</code><br>
+</td></tr></table>
+</td></tr></table>
+<div style="width: 75ex ; text-align: justify">
+
+<hr>
+
+<h3>"Python forces me to use a certain indentation style."</h3>
+
+<p>
+Yes and no.  First of all, you can write the inner block all
+on one line if you like, therefore not having to care about
+intendation at all.  The following three versions of an
+"if" statement are all valid and do exactly the same thing
+(output omitted for brevity):
+</p>
+
+</div>
+<table border="0" cellspacing="0" cellpadding="12">
+<tr><td width="50"></td>
+<td bgcolor="#d0d0ff">
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>if&nbsp;1&nbsp;+&nbsp;1&nbsp;==&nbsp;2:</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"foo"</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"bar"</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;42</code><br>
+<code></code><br>
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>if&nbsp;1&nbsp;+&nbsp;1&nbsp;==&nbsp;2:</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"foo";&nbsp;print&nbsp;"bar";&nbsp;x&nbsp;=&nbsp;42</code><br>
+<code></code><br>
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>if&nbsp;1&nbsp;+&nbsp;1&nbsp;==&nbsp;2:&nbsp;print&nbsp;"foo";&nbsp;print&nbsp;"bar";&nbsp;x&nbsp;=&nbsp;42</code><br>
+</td></tr></table>
+<div style="width: 75ex ; text-align: justify">
+
+<p>
+Of course, most of the time you will want to write the blocks
+in separate lines (like the first version above), but sometimes
+you have a bunch of similar "if" statements which can be
+conveniently written on one line each.
+</p>
+
+<p>
+If you decide to write the block on separate lines, then yes,
+Python forces you to obey its indentation rules, which simply
+means:  The enclosed block (that's two "print" statements and
+one assignment in the above example) have to be indented more
+than the "if" statement itself.  That's it.
+And frankly, would you really want to indent it in any other
+way?  I don't think so.
+</p>
+
+<p>
+So the conclusion is:  Python forces you to use indentation
+that you would have used anyway, unless you wanted to obfuscate
+the structure of the program.  In other words:  Python does
+not allow to obfuscate the structure of a program by using
+bogus indentations.  In my opinion, that's a very good thing.
+</p>
+
+<p>
+Have you ever seen code like this in C or C++?
+</p>
+
+</div>
+<table border="0" cellspacing="0" cellpadding="12">
+<tr><td width="50"></td>
+<td bgcolor="#d0d0ff">
+<code>/*&nbsp;&nbsp;Warning:&nbsp;&nbsp;bogus&nbsp;C&nbsp;code!&nbsp;&nbsp;*/</code><br>
+<code></code><br>
+<code>if&nbsp;(some&nbsp;condition)</code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(another&nbsp;condition)</code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something(fancy);</code><br>
+<code>else</code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this_sucks(badluck);</code><br>
+</td></tr></table>
+<div style="width: 75ex ; text-align: justify">
+
+<p>
+Either the indentation is wrong, or the program is buggy,
+because an "else" always applies to the nearest "if",
+unless you use braces.  This is an essential problem in
+C and C++.  Of course, you could resort to always use
+braces, no matter what, but that's tiresome and bloats
+the source code, and it doesn't prevent you from
+accidentally obfuscating the code by still having the
+wrong indentation.  (And that's just a very simple
+example.  In practice, C code can be much more complex.)
+</p>
+
+<p>
+In Python, the above problems can never occur, because
+indentation levels and logical block structure are always
+consistent.  The program always does what you expect
+when you look at the indentation.
+</p>
+
+<p>
+Quoting the famous book writer Bruce Eckel:
+</p>
+
+<blockquote>
+<p>
+Because blocks are denoted by indentation in Python, indentation
+is uniform in Python programs.  And indentation is meaningful to
+us as readers.  So because we have consistent code formatting,
+I can read somebody else's code and I'm not constantly tripping
+over, "Oh, I see. They're putting their curly braces here or
+there."  I don't have to think about that.
+</p>
+</blockquote>
+
+<hr>
+
+<h3>"You cannot safely mix tabs and spaces in Python."</h3>
+
+<p>
+That's right, and you don't want that.  To be exact, you
+cannot safely mix tabs and spaces in C either:  While it
+doesn't make a difference to the compiler, it can make a
+big difference to humans looking at the code.  If you
+move a piece of C source to an editor with different
+tabstops, it will all look wrong (and possibly behave
+differently than it looks at first sight).  You can easily
+introduce well-hidden bugs in code that has been mangled
+that way.  That's why mixing tabs and spaces in C isn't
+really "safe" either.  Also see the "bogus C code" example
+above.
+</p>
+
+<p>
+Therefore, it is generally a good idea not to mix tabs and
+spaces for indentation.  If you use tabs only or spaces only,
+you're fine.
+</p>
+
+<p>
+Furthermore, it can be a good idea to avoid tabs alltogether,
+because the semantics of tabs are not very well-defined in
+the computer world, and they can be displayed completely
+differently on different types of systems and editors.
+Also, tabs often get destroyed or wrongly converted
+during copy&amp;paste operations, or when a piece of source
+code is inserted into a web page or other kind of markup code.
+</p>
+
+<p>
+Most good editors support transparent translation of tabs,
+automatic indent and dedent.  That is, when you press the
+tab key, the editor will insert enough spaces (not actual
+tab characters!) to get you to the next position which is
+a multiple of eight (or four, or whatever you prefer), and
+some other key (usually Backspace) will get you back to
+the previous indentation level.
+</p>
+
+<p>
+In other words, it's behaving like you would expect a tab
+key to do, but still maintaining portability by using
+spaces in the file only.  This is convenient and safe.
+</p>
+
+<p>
+Having said that -- If you know what you're doing, you can
+of course use tabs and spaces to your liking, and then use
+tools like "expand" (on UNIX machines, for example) before
+giving the source to others.  If you use tab characters,
+Python assumes that tab stops are eight positions apart.
+</p>
+
+<hr>
+
+<h3>"I just don't like it."</h3>
+
+<p>
+That's perfectly OK; you're free to dislike it (and you're
+probably not alone).  Granted, the fact that indentation
+is used to indicate the block structure might be regarded
+as uncommon and requiring to get used to it, but it does
+have a lot of advantages, and you get used to it very quickly
+when you seriously start programming in Python.
+</p>
+
+<p>
+Having said that, you <em>can</em> use keywords to
+indicate the end of a block (instead of indentation),
+such as "<code>endif</code>".  These are not really Python
+keywords, but there is a tool that comes with Python
+which converts code using "end" keywords to correct
+indentation and removes those keywords.  It can be
+used as a pre-processor to the Python compiler.
+However, no real Python programmer uses it, of course.
+<br/><em>[Update]</em> It seems this tool has been removed
+from recent versions of Python.  Probably because nobody
+really used it.
+</p>
+
+<hr>
+
+<h3>"How does the compiler parse the indentation?"</h3>
+
+<p>
+The parsing is well-defined and quite simple.
+Basically, changes to the indentation level are
+inserted as tokens into the token stream.
+</p>
+
+<p>
+The lexical analyzer (tokenizer) uses a stack to store
+indentation levels.  At the beginning, the stack contains
+just the value 0, which is the leftmost position.
+Whenever a nested block begins, the new indentation level
+is pushed on the stack, and an "INDENT" token is inserted
+into the token stream which is passed to the parser.
+There can never be more than one "INDENT" token in a
+row.
+</p>
+
+<p>
+When a line is encountered with a smaller indentation
+level, values are popped from the stack until a value
+is on top which is equal to the new indentation level
+(if none is found, a syntax error occurs).  For each
+value popped, a "DEDENT" token is generated.  Obviously,
+there can be multiple "DEDENT" tokens in a row.
+</p>
+
+<p>
+At the end of the source code, "DEDENT" tokens are
+generated for each indentation level left on the stack,
+until just the 0 is left.
+</p>
+
+<p>
+Look at the following piece of sample code:
+</p>
+
+</div>
+<table border="0" cellspacing="0" cellpadding="12">
+<tr><td width="50"></td>
+<td bgcolor="#d0d0ff">
+<font color="#0000ff"><code>&gt;&gt;&gt;&nbsp;</code></font><code>if&nbsp;foo:</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;bar:</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;42</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>else:</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code>&nbsp;&nbsp;print&nbsp;foo</code><br>
+<font color="#0000ff"><code>...&nbsp;</code></font><code></code><br>
+</td></tr></table>
+<div style="width: 75ex ; text-align: justify">
+
+<p>
+In the following table, you can see the tokens produced
+on the left, and the indentation stack on the right.
+</p>
+
+</div>
+<table border="0" cellspacing="0" cellpadding="12">
+<tr><td width="50"></td>
+<td bgcolor="#d0d0ff">
+<code>&lt;if&gt;&nbsp;&lt;foo&gt;&nbsp;&lt;:&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0]</code><br>
+<code>&lt;INDENT&gt;&nbsp;&lt;if&gt;&nbsp;&lt;bar&gt;&nbsp;&lt;:&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0,&nbsp;4]</code><br>
+<code>&lt;INDENT&gt;&nbsp;&lt;x&gt;&nbsp;&lt;=&gt;&nbsp;&lt;42&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0,&nbsp;4,&nbsp;8]</code><br>
+<code>&lt;DEDENT&gt;&nbsp;&lt;DEDENT&gt;&nbsp;&lt;else&gt;&nbsp;&lt;:&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0]</code><br>
+<code>&lt;INDENT&gt;&nbsp;&lt;print&gt;&nbsp;&lt;foo&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0,&nbsp;2]</code><br>
+<code>&lt;DEDENT&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0]</code><br>
+</td></tr></table>
+<div style="width: 75ex ; text-align: justify">
+
+<p>
+Note that after the lexical analysis (before parsing
+starts), there is <em>no</em> whitespace left in the
+list of tokens (except possibly within string literals,
+of course).  In other words, the indentation is handled
+by the lexer, not by the parser.
+</p>
+
+<p>
+The parser then simply handles the "INDENT" and "DEDENT"
+tokens as block delimiters -- exactly like curly braces
+are handled by a C compiler.
+</p>
+
+<p>
+The above example is intentionally simple.  There are
+more things to it, such as continuation lines.  They
+are well-defined, too, and you can read about them in
+the Python Language Reference if you're interested, which
+includes a complete formal grammar of the language.
+</p>
+
+
+</div>
+
+<hr>
+
+<p>
+<a href="https://web.archive.org/web/20180218162410/http://validator.w3.org/check?uri=http://www.secnetix.de/~olli/Python/block_indentation.hawk"><img src="/web/20180218162410im_/http://www.secnetix.de/~olli/gfx/vh401.gif" alt="[HTML 4.01]" border="0" class="borderless" width="88" height="31"></a>
+</p>
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 16:24:10 Feb 18, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:59:49 Feb 13, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 403.496
+  exclusion.robots: 0.152
+  exclusion.robots.policy: 0.144
+  RedisCDXSource: 11.852
+  esindex: 0.006
+  LoadShardBlock: 370.307 (3)
+  PetaboxLoader3.datanode: 87.173 (4)
+  CDXLines.iter: 17.748 (3)
+  PetaboxLoader3.resolve: 301.653 (2)
+  load_resource: 628.149
+-->

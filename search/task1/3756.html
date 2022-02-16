@@ -1,0 +1,2604 @@
+<!doctype html>
+<html 
+      lang="en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#1a73e8"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans_old:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons&display=block"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/drive"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">
+      
+
+<title>Google Drive for Developers &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Google Drive for Developers &nbsp;|&nbsp; Google Developers"><meta name="description" content=" ">
+  <meta property="og:description" content=" "><meta property="og:url" content="https://developers.google.com/drive"><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers/images/opengraph/google-blue.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary_large_image">
+    </head>
+  <body class="workspace-family"
+        template="landing"
+        theme="google-blue"
+        type="product"
+        
+        layout="docs"
+        
+        
+        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+    <section class="devsite-wrapper"><devsite-header>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner nocontent">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/drive">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <img class="devsite-product-logo"
+         alt="Google Drive for Developers"
+         src="https://fonts.gstatic.com/s/i/productlogos/drive_2020q4/v8/web-32dp/logo_drive_2020q4_color_2x_web_32dp.png"
+         srcset=""
+         sizes="64px"
+         loading="lazy">
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/drive"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="Google Drive for Developers"
+      
+    >
+    
+          <h1 class="devsite-product-name"><svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Drive for Developers</h1>
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    project-name="Google Drive for Developers"
+    tenant-name="Google Developers"
+    project-scope="/drive"
+    url-scoped="https://developers.google.com/s/results/drive"
+    
+    
+    
+    
+    role="combobox">
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="Search"
+          aria-haspopup="false"
+          aria-multiline="false"
+          aria-label="Search box"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="Search"
+          role="searchbox"
+          type="text"
+          value=""
+          >
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="Open search"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="Close search"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+        
+
+        
+<devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    
+    <select aria-label="Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+    
+      
+      <option>Language</option>
+    
+    
+      <option value="en"
+              lang="en"
+            >
+        English
+      </option>
+    
+      <option value="id"
+              lang="id"
+            >
+        Bahasa Indonesia
+      </option>
+    
+      <option value="de"
+              lang="de"
+            >
+        Deutsch
+      </option>
+    
+      <option value="es"
+              lang="es"
+            >
+        Español
+      </option>
+    
+      <option value="fr"
+              lang="fr"
+            >
+        Français
+      </option>
+    
+      <option value="pt_br"
+              lang="pt_br"
+            >
+        Português – Brasil
+      </option>
+    
+      <option value="ru"
+              lang="ru"
+            >
+        Русский
+      </option>
+    
+      <option value="zh_cn"
+              lang="zh_cn"
+            >
+        中文 – 简体
+      </option>
+    
+      <option value="ja"
+              lang="ja"
+            >
+        日本語
+      </option>
+    
+      <option value="ko"
+              lang="ko"
+            >
+        한국어
+      </option>
+    
+    </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+
+        
+          
+          
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                          fp-auth
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Sign in</span>
+            
+        </devsite-user>
+           
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    
+      devsite-header-no-lower-tabs
+    ">
+    <div class="devsite-header-background">
+      
+        
+          <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+              
+                
+              
+              
+              <div class="devsite-product-description">
+                 
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        
+      
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars >
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter
+            ">
+  <input type="text"
+         placeholder="Filter"
+         
+         aria-label="Type to filter"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="Clear filter"
+        aria-label="Clear filter"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="Side menu">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/drive">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <img class="devsite-product-logo"
+         alt="Google Drive for Developers"
+         src="https://fonts.gstatic.com/s/i/productlogos/drive_2020q4/v8/web-32dp/logo_drive_2020q4_color_2x_web_32dp.png"
+         srcset=""
+         sizes="64px"
+         loading="lazy">
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/drive"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="Google Drive for Developers"
+      
+    >
+    
+          <h1 class="devsite-product-name"><svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Drive for Developers</h1>
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/drive"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Home"
+      
+        track-name="home"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Home"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Home
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+  
+              
+            </li>
+          
+          
+          
+        </ul>
+      
+    </div>
+    
+      <div class="devsite-mobile-nav-bottom" role="navigation">
+        
+          
+          <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/workspace"
+        class="devsite-nav-title"
+      ><span class="devsite-nav-text" tooltip>Platform overview</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Get started</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/workspace/guides/get-started"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Get started - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/workspace/guides/create-project"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Get started - Create a Google Cloud project"><span class="devsite-nav-text" tooltip>Create a Google Cloud project</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/workspace/guides/enable-apis"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Get started - Enable Google Workspace APIs"><span class="devsite-nav-text" tooltip>Enable Google Workspace APIs</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Set up authentication</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/workspace/guides/auth-overview"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Get started - Auth overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/guides/configure-oauth-consent"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Get started - Configure OAuth consent"><span class="devsite-nav-text" tooltip>Configure OAuth consent</span></a></li><li class="devsite-nav-item"><a href="/workspace/guides/create-credentials"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Get started - Create credentials"><span class="devsite-nav-text" tooltip>Create access credentials</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Developer products</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/workspace/products"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Developer products - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Admin Console</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/admin-sdk"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/apps-script/advanced/admin-sdk-directory"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/admin-settings"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Admin Settings API"><span class="devsite-nav-text" tooltip>Admin Settings API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/alertcenter"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Alert Center API"><span class="devsite-nav-text" tooltip>Alert Center API</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://support.google.com/chrome/a/answer/9681204?ref_topic=9301744"
+        class="devsite-nav-title"
+      target="_blank"data-category="Workspace Navigation"data-label="Admin SDK - Chrome Browser Cloud Management API"><span class="devsite-nav-text" tooltip>Chrome Browser Cloud Management API</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://support.google.com/chrome/a/answer/9949706?ref_topic=9301744"
+        class="devsite-nav-title"
+      target="_blank"data-category="Workspace Navigation"data-label="Admin SDK - Chrome Browser Enrollment Token API"><span class="devsite-nav-text" tooltip>Chrome Browser Enrollment Token API</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/chrome-printer"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Chrome Printer Management API"><span class="devsite-nav-text" tooltip>Chrome Printer Management API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/contact-delegation"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Contact Delegation API"><span class="devsite-nav-text" tooltip>Contact Delegation API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/data-transfer"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Data Transfer API"><span class="devsite-nav-text" tooltip>Data Transfer API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/directory"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Directory API"><span class="devsite-nav-text" tooltip>Directory API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/domain-shared-contacts"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Domain Shared Contacts API"><span class="devsite-nav-text" tooltip>Domain Shared Contacts API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/email-audit"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Email Audit API"><span class="devsite-nav-text" tooltip>Email Audit API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/groups-migration"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Groups Migration API"><span class="devsite-nav-text" tooltip>Groups Migration API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/groups-settings"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Groups Settings API"><span class="devsite-nav-text" tooltip>Groups Settings API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/licensing"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - License Manager API"><span class="devsite-nav-text" tooltip>License Manager API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/reports"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Reports API"><span class="devsite-nav-text" tooltip>Reports API</span></a></li><li class="devsite-nav-item"><a href="/admin-sdk/reseller"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Admin SDK - Reseller API"><span class="devsite-nav-text" tooltip>Reseller API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Classroom</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/apps-script/advanced/classroom"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Classroom - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/classroom"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Classroom - Classroom API"><span class="devsite-nav-text" tooltip>Classroom API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Cloud Identity</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://cloud.google.com/identity/docs/concepts"
+        class="devsite-nav-title"
+      target="_blank"data-category="Workspace Navigation"data-label="Cloud Identity - Overview"><span class="devsite-nav-text" tooltip>Overview</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://cloud.google.com/identity/docs/concepts/overview-devices"
+        class="devsite-nav-title"
+      target="_blank"data-category="Workspace Navigation"data-label="Cloud Identity - Devices API"><span class="devsite-nav-text" tooltip>Devices API</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://cloud.google.com/identity/docs/groups"
+        class="devsite-nav-title"
+      target="_blank"data-category="Workspace Navigation"data-label="Cloud Identity - Groups API"><span class="devsite-nav-text" tooltip>Groups API</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Cloud Search</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/cloud-search"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Cloud Search - Cloud Search API"><span class="devsite-nav-text" tooltip>Cloud Search API</span></a></li><li class="devsite-nav-item"><a href="/cloud-search/docs/connector-directory"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Cloud Search - Connector Directory"><span class="devsite-nav-text" tooltip>Connector Directory</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Contacts &amp; profiles</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item
+           devsite-nav-deprecated"><a href="/people/contacts-api-migration"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Contacts - Contacts API"><span class="devsite-nav-text" tooltip>Contacts API</span><span class="devsite-nav-icon material-icons"
+        data-icon="deprecated"
+        data-title="Deprecated"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/people/carddav"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Contacts - CardDAV API"><span class="devsite-nav-text" tooltip>CardDAV API</span></a></li><li class="devsite-nav-item"><a href="/people"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Contacts - People API"><span class="devsite-nav-text" tooltip>People API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Gmail</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/gmail"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Gmail - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/add-ons/gmail"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Gmail - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script/reference/gmail"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Gmail - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/gmail/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Gmail - Gmail API"><span class="devsite-nav-text" tooltip>Gmail API</span></a></li><li class="devsite-nav-item"><a href="/gmail/imap"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Gmail - IMAP for Gmail"><span class="devsite-nav-text" tooltip>IMAP for Gmail</span></a></li><li class="devsite-nav-item"><a href="/gmail/postmaster"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Gmail - Postmaster Tools API"><span class="devsite-nav-text" tooltip>Postmaster Tools API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Calendar</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/calendar"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Calendar - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/add-ons/calendar"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Calendar - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script/reference/calendar"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Calendar - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/calendar/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Calendar - Calendar API"><span class="devsite-nav-text" tooltip>Calendar API</span></a></li><li class="devsite-nav-item"><a href="/calendar/caldav"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Calendar - CalDAV API"><span class="devsite-nav-text" tooltip>CalDAV API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Chat</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/chat/how-tos/bots-apps-script"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Chat - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/chat"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Chat - Chat API"><span class="devsite-nav-text" tooltip>Google Chat API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Docs</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/docs"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Docs - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/add-ons/editors/gsao"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Docs - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script/guides/docs"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Docs - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/docs/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Docs - Docs API"><span class="devsite-nav-text" tooltip>Docs API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Drive</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/drive"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Drive - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/add-ons/drive"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Drive - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script/reference/drive"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Drive - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/drive/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Drive - Drive API"><span class="devsite-nav-text" tooltip>Drive API</span></a></li><li class="devsite-nav-item"><a href="/drive/activity"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Drive - Drive Activity API"><span class="devsite-nav-text" tooltip>Drive Activity API</span></a></li><li class="devsite-nav-item"><a href="/picker"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Drive - Picker API"><span class="devsite-nav-text" tooltip>Picker API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Forms</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/forms"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Forms - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/add-ons/editors/forms"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Forms - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script/reference/forms"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Forms - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item
+           devsite-nav-beta"><a href="/forms/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Forms - Forms API"><span class="devsite-nav-text" tooltip>Forms API</span><span class="devsite-nav-icon material-icons"
+        data-icon="beta"
+        data-title="Beta"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Keep</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/keep/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Keep - Keep API"><span class="devsite-nav-text" tooltip>Keep API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Sheets</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/sheets"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Sheets - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/add-ons/editors/gsao"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Sheets - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script/guides/sheets"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Sheets - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/chart/interactive/docs/spreadsheets"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Sheets - Charts API"><span class="devsite-nav-text" tooltip>Charts API</span></a></li><li class="devsite-nav-item"><a href="/sheets/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Sheets - Sheets API"><span class="devsite-nav-text" tooltip>Sheets API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Sites (Classic)</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/apps-script/reference/sites"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Sites (Classic) - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/sites"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Sites (Classic) - Classic Sites API"><span class="devsite-nav-text" tooltip>Classic Sites API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Slides</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/slides"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Slides - Overview"><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/workspace/add-ons/editors/gsao"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Slides - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script/guides/slides"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Slides - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item"><a href="/slides/api"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Slides - Slides API"><span class="devsite-nav-text" tooltip>Slides API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Tasks</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tasks"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Tasks - Tasks API"><span class="devsite-nav-text" tooltip>Tasks API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Vault</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/vault"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Vault - Vault API"><span class="devsite-nav-text" tooltip>Vault API</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Google Workspace</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/workspace/add-ons"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Workspace - Add-ons"><span class="devsite-nav-text" tooltip>Add-ons</span></a></li><li class="devsite-nav-item"><a href="/apps-script"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Workspace - Apps Script"><span class="devsite-nav-text" tooltip>Apps Script</span></a></li><li class="devsite-nav-item
+           devsite-nav-beta"><a href="/workspace/cse"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Workspace - Client-side Encryption API"><span class="devsite-nav-text" tooltip>Client-side Encryption API</span><span class="devsite-nav-icon material-icons"
+        data-icon="beta"
+        data-title="Beta"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/workspace/marketplace/reference/rest"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Workspace - Marketplace API"><span class="devsite-nav-text" tooltip>Marketplace API</span></a></li><li class="devsite-nav-item"><a href="/workspace/marketplace/overview"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Google Workspace - Marketplace SDK"><span class="devsite-nav-text" tooltip>Marketplace SDK</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-break"></li>
+
+  <li class="devsite-nav-item"><a href="/workspace/newsletters"
+        class="devsite-nav-title"
+      data-category="Workspace Navigation"data-label="Subscribe to the Google Workspace Developer newsletter"><span class="devsite-nav-text" tooltip>Subscribe to the Google Workspace Developer newsletter</span></a></li>
+          </ul>
+        
+        
+          
+    
+  
+        
+        
+          
+    
+  
+        
+      </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav
+            >
+          
+          <div class="devsite-sidebar">
+            <div class="devsite-sidebar-content">
+              <devsite-toc class="devsite-nav"
+                           role="navigation"
+                           aria-label="On this page"
+                           depth="2"
+                           scrollbars
+                disabled></devsite-toc>
+              <devsite-recommendations-sidebar class="nocontent devsite-nav">
+              </devsite-recommendations-sidebar>
+            </div>
+          </div>
+          
+          <devsite-content >
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article"><style>
+      /* Styles inlined from /workspace/css/workspace-landing-family.css */
+/* Remove page card appearance */
+body.workspace-family {
+  background: none;
+}
+body[layout=docs] .devsite-article {
+  box-shadow: none;
+}
+body[layout=docs] devsite-content {
+  margin: 0;
+}
+
+/* Update text coloring to improve scannability */
+.devsite-landing-row-item-description-content {
+  color: #555;
+}
+
+.devsite-landing-row-item-description-content > b {
+  color: #202124;
+}
+
+/* Make sure bolded product names don't wrap in Enhance and Automate sections */
+.section-enhance .devsite-landing-row-item-description-content > b,
+.section-automate .devsite-landing-row-item-description-content > b {
+  white-space: nowrap;
+}
+
+/* Invisible placeholder card to keep grid consistent */
+.workspace-empty-card {
+  border: 0 !important;
+}
+
+      </style>
+  
+  
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="Breadcrumb">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://developers.google.com/"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Home
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/products"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Products
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/workspace"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail="Google Workspace for Developers"
+      
+    >
+    
+        Google Workspace for Developers
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/drive"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="4"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="4"
+      
+        track-metadata-eventdetail="Google Drive for Developers"
+      
+    >
+    
+        Google Drive for Developers
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+  </div>
+  
+    <devsite-feedback
+  position="header"
+  project-name="Google Drive for Developers"
+  product-id="81689"
+  bucket=""
+  context=""
+  version="t-devsite-webserver-20220203-r01-rc00.441381156237770199"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+  
+  
+    project-feedback-url="https://issuetracker.google.com/issues/new?component=191650&amp;template=824106"
+  
+  
+    
+      project-icon="https://fonts.gstatic.com/s/i/productlogos/drive_2020q4/v8/web-32dp/logo_drive_2020q4_color_2x_web_32dp.png"
+    
+  
+  
+  feedback-type="thumb-rating">
+
+  <button>
+  
+    
+    Send feedback
+  
+  </button>
+</devsite-feedback>
+  
+  
+  <devsite-bookmark></devsite-bookmark>
+  <devsite-toc class="devsite-nav"
+               depth="2"
+               devsite-toc-embedded
+               disabled>
+  </devsite-toc>
+
+  
+
+  <div class="devsite-article-body clearfix
+    devsite-no-page-title">
+
+    
+      
+  <section class="devsite-landing-row devsite-landing-row-1-up"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="develop-google-drive-solutions"
+        data-text="Develop Google Drive solutions"
+        
+        tabindex="0">
+      
+    
+        Develop Google Drive solutions
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-2-up devsite-landing-row-padding-medium"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media section-enhance"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <img class="devsite-landing-row-item-icon"
+         alt=""
+         src="https://fonts.gstatic.com/s/i/productlogos/gsuite_addons/v6/web-64dp/logo_gsuite_addons_color_2x_web_64dp.png"
+         srcset=""
+         sizes="64px"
+         loading="lazy">
+  
+  </div>
+  
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="enhance-the-google-drive-experience"
+        data-text="Enhance the Google Drive experience"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+    
+        Enhance the Google Drive experience
+      
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Insert interactive content, powered by your account data or an external service, with <b>Add-ons</b>. <ul>
+  <li>Show a custom interface for uploading files from Drive into your third-party service.</li>
+  <li>Enable users to quickly create files from custom templates.</li>
+</ul>
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/workspace/add-ons/drive"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-label="Add-ons - View documentation button"
+      
+        data-category="Google Drive Landing Page"
+      
+    
+    >View documentation</a>
+
+  
+  <a href="https://developers.google.com/workspace/add-ons"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-label="Add-ons - Learn more button"
+      
+        data-category="Google Drive Landing Page"
+      
+    
+    >Learn about Add-ons</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media section-automate"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <img class="devsite-landing-row-item-icon"
+         alt=""
+         src="https://fonts.gstatic.com/s/i/productlogos/apps_script/v6/web-64dp/logo_apps_script_color_2x_web_64dp.png"
+         srcset=""
+         sizes="64px"
+         loading="lazy">
+  
+  </div>
+  
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="automate-google-drive-with-simple-code"
+        data-text="Automate Google Drive with simple code"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+    
+        Automate Google Drive with simple code
+      
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Anyone can use <b>Apps Script</b> to automate and enhance Google Drive in a web-based, low-code environment. <ul>
+  <li>Create Drive files based on Google Form submissions.</li>
+  <li>Modify files in bulk.</li>
+  <li>Populate a spreadsheet with file sharing info for audit.</li>
+</ul>
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/apps-script/reference/drive"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-category="Google Drive Landing Page"
+      
+        data-label="Apps Script - View documentation button"
+      
+    
+    >View documentation</a>
+
+  
+  <a href="https://developers.google.com/apps-script"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-category="Google Drive Landing Page"
+      
+        data-label="Apps Script - Learn more button"
+      
+    
+    >Learn about Apps Script</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-100"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media section-connect"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <img class="devsite-landing-row-item-icon"
+         alt=""
+         src="https://fonts.gstatic.com/s/i/productlogos/google_developers/v6/web-64dp/logo_google_developers_color_2x_web_64dp.png"
+         srcset=""
+         sizes="64px"
+         loading="lazy">
+  
+  </div>
+  
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="connect-your-service-to-google-drive"
+        data-text="Connect your service to Google Drive"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+    
+        Connect your service to Google Drive
+      
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Use the REST APIs below to interact programmatically with Google Drive.
+
+          </div>
+        
+
+        
+
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-3-up devsite-landing-row-padding-small devsite-landing-row-cards"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="drive-api"
+        data-text="Drive API"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/drive/api">
+    
+        Drive API
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            <b>Upload, download, share, and manage files</b> stored in Google Drive.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/drive/api"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-category="Google Drive Landing Page"
+      
+        data-label="Drive API - View documentation button"
+      
+    
+    >View documentation</a>
+
+  
+  <a href="https://developers.google.com/drive/api/v3/reference/files/list?apix_params=%7B&#34;corpora&#34;%3A&#34;user&#34;%7D&amp;apix=true"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-category="Google Drive Landing Page"
+      
+        data-label="Drive API - Try it button"
+      
+    
+    >Try it out</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="drive-activity-api"
+        data-text="Drive Activity API"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/drive/activity">
+    
+        Drive Activity API
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            <b>Get info about user activity</b> on files and folders.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/drive/activity"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-label="Drive Activity API - View documentation button"
+      
+        data-category="Google Drive Landing Page"
+      
+    
+    >View documentation</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="picker-api"
+        data-text="Picker API"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/picker">
+    
+        Picker API
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            <b>Embed a file manager widget</b> in your web app.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/picker"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+      
+        data-category="Google Drive Landing Page"
+      
+        data-label="Picker API - View documentation button"
+      
+    
+    >View documentation</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-cta"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="transform-how-people-work"
+        data-text="Transform how people work"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/workspace">
+    
+        Transform how people work
+      
+  </a>
+  
+    </h3>
+  
+
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/workspace"
+  
+    class="button
+      "
+    
+    
+      
+        target="_blank"
+      
+        data-label="Footer button"
+      
+        data-category="Sheets Landing Page"
+      
+    
+    >Explore Google Workspace for Developers</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+    
+
+    
+  </div>
+
+  
+
+  
+
+  
+  
+</article>
+
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  <p>Last updated 2021-12-10 UTC.</p>
+</devsite-content-footer>
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  <template class="devsite-thumb-rating-down-categories">
+  [{
+      "type": "thumb-down",
+      "id": "missingTheInformationINeed",
+      "label":"Missing the information I need"
+    },{
+      "type": "thumb-down",
+      "id": "tooComplicatedTooManySteps",
+      "label":"Too complicated / too many steps"
+    },{
+      "type": "thumb-down",
+      "id": "outOfDate",
+      "label":"Out of date"
+    },{
+      "type": "thumb-down",
+      "id": "samplesCodeIssue",
+      "label":"Samples / code issue"
+    },{
+      "type": "thumb-down",
+      "id": "otherDown",
+      "label":"Other"
+    }]
+  </template>
+  <template class="devsite-thumb-rating-up-categories">
+  [{
+      "type": "thumb-up",
+      "id": "easyToUnderstand",
+      "label":"Easy to understand"
+    },{
+      "type": "thumb-up",
+      "id": "solvedMyProblem",
+      "label":"Solved my problem"
+    },{
+      "type": "thumb-up",
+      "id": "otherUp",
+      "label":"Other"
+    }]
+  </template>
+  
+    
+    
+    <template class="devsite-thumb-rating-feedback">
+      <devsite-feedback
+  position="thumb-rating"
+  project-name="Google Drive for Developers"
+  product-id="81689"
+  bucket=""
+  context=""
+  version="t-devsite-webserver-20220203-r01-rc00.441381156237770199"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="thumb-rating"
+  
+  
+    project-feedback-url="https://issuetracker.google.com/issues/new?component=191650&amp;template=824106"
+  
+  
+    
+      project-icon="https://fonts.gstatic.com/s/i/productlogos/drive_2020q4/v8/web-32dp/logo_drive_2020q4_color_2x_web_32dp.png"
+    
+  
+  
+  feedback-type="thumb-rating">
+
+  <button>
+  
+    Need to tell us more?
+  
+  </button>
+</devsite-feedback>
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+
+<nav class="devsite-footer-promos nocontent" aria-label="Promotions">
+  <ul class="devsite-footer-promos-list">
+    
+    <li class="devsite-footer-promo">
+      <a href="https://developers.googleblog.com/search/label/Google%20Workspace"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+       
+         target="_blank"
+       
+         data-category="Workspace Footer"
+       
+         data-label="Promo - Google Workspace Developers Blog"
+       >
+        
+        
+        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png"
+             loading="lazy"
+             alt="Blog">
+        
+        Blog
+      </a>
+      <div class="devsite-footer-promo-description">Read the Google Workspace Developers blog</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://twitter.com/workspacedevs"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+       
+         data-label="Promo - Google Workspace on Twitter"
+       
+         target="_blank"
+       
+         data-category="Workspace Footer"
+       >
+        
+        
+        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-twitter.svg"
+             loading="lazy"
+             alt="Twitter">
+        
+        Twitter
+      </a>
+      <div class="devsite-footer-promo-description">Follow @workspacedevs on Twitter</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://github.com/googleworkspace"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+       
+         data-category="Workspace Footer"
+       
+         target="_blank"
+       
+         data-label="Promo - Google Workspace Github"
+       >
+        
+        
+        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-github.svg"
+             loading="lazy"
+             alt="Code Samples">
+        
+        Code Samples
+      </a>
+      <div class="devsite-footer-promo-description">Explore our sample apps or copy them to build your own</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://codelabs.developers.google.com/?cat=googleworkspace"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+       
+         target="_blank"
+       
+         data-label="Promo - Google Workspace Codelabs"
+       
+         data-category="Workspace Footer"
+       >
+        
+        
+        <img class="devsite-footer-promo-icon"
+             src="/site-assets/developers-logo-color.svg"
+             loading="lazy"
+             alt="Codelabs">
+        
+        Codelabs
+      </a>
+      <div class="devsite-footer-promo-description">Try a guided, hands-on coding experience</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://www.youtube.com/playlist?list=PLU8ezI8GYqs6KGrReStVU-UnRIfxWCoLA"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+       
+         data-category="Workspace Footer"
+       
+         data-label="Promo - Google Workspace on YouTube"
+       
+         target="_blank"
+       >
+        
+        
+        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-youtube.svg"
+             loading="lazy"
+             alt="Videos">
+        
+        Videos
+      </a>
+      <div class="devsite-footer-promo-description">Watch the developer playlist on YouTube</div>
+    </li>
+    
+  </ul>
+</nav>
+
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Google Workspace for Developers</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/workspace"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            data-category="Workspace Footer"data-label="Linkbox - Platform overview"target="_blank">
+          
+            Platform overview
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/workspace/products"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            target="_blank"data-label="Linkbox - Developer products"data-category="Workspace Footer">
+          
+            Developer products
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/workspace/support"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            data-label="Linkbox - Developer support"target="_blank"data-category="Workspace Footer">
+          
+            Developer support
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/workspace/terms"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            data-label="Linkbox - Terms of Service"data-category="Workspace Footer"target="_blank">
+          
+            Terms of Service
+          
+          </a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Tools</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://admin.google.com/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            data-label="Linkbox - Admin Console"data-category="Workspace Footer"target="_blank">
+          
+            Admin Console
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://script.google.com/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            data-label="Linkbox - Apps Script Dashboard"target="_blank"data-category="Workspace Footer">
+          
+            Apps Script Dashboard
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://console.cloud.google.com/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            target="_blank"data-label="Linkbox - Google Cloud Console"data-category="Workspace Footer">
+          
+            Google Cloud Console
+          
+          </a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Connect</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://developers.googleblog.com/search/label/Google%20Workspace"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            target="_blank"data-category="Workspace Footer"data-label="Linkbox - Blog">
+          
+            Blog
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/workspace/newsletters"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            data-category="Workspace Footer"target="_blank"data-label="Linkbox - Newsletter">
+          
+            Newsletter
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://twitter.com/workspacedevs"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            target="_blank"data-label="Linkbox - Twitter"data-category="Workspace Footer">
+          
+            Twitter
+          
+          </a>
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://www.youtube.com/playlist?list=PLU8ezI8GYqs6KGrReStVU-UnRIfxWCoLA"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+            data-label="Linkbox - YouTube"target="_blank"data-category="Workspace Footer">
+          
+            YouTube
+          
+          </a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+  
+  <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers/images/lockup-developers.svg"
+           loading="lazy"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Android Link"
+         
+         >
+          Android
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Chrome Link"
+         
+         >
+          Chrome
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Firebase Link"
+         
+         >
+          Firebase
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google Cloud Platform Link"
+         
+         >
+          Google Cloud Platform
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer All products Link"
+         
+         >
+          All products
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+    
+<devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    
+    <select aria-label="Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+    
+      
+      <option>Language</option>
+    
+    
+      <option value="en"
+              lang="en"
+            >
+        English
+      </option>
+    
+      <option value="id"
+              lang="id"
+            >
+        Bahasa Indonesia
+      </option>
+    
+      <option value="de"
+              lang="de"
+            >
+        Deutsch
+      </option>
+    
+      <option value="es"
+              lang="es"
+            >
+        Español
+      </option>
+    
+      <option value="fr"
+              lang="fr"
+            >
+        Français
+      </option>
+    
+      <option value="pt_br"
+              lang="pt_br"
+            >
+        Português – Brasil
+      </option>
+    
+      <option value="ru"
+              lang="ru"
+            >
+        Русский
+      </option>
+    
+      <option value="zh_cn"
+              lang="zh_cn"
+            >
+        中文 – 简体
+      </option>
+    
+      <option value="ja"
+              lang="ja"
+            >
+        日本語
+      </option>
+    
+      <option value="ko"
+              lang="ko"
+            >
+        한국어
+      </option>
+    
+    </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel></devsite-panel>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar
+    
+    >
+</devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics analytics-iframe>
+      
+        <script type="application/json" analytics>[{"dimensions": {"dimension3": false, "dimension6": "en", "dimension1": "Signed out", "dimension11": false, "dimension4": "Google Drive for Developers", "dimension5": "en"}, "gaid": "UA-24532603-1", "metrics": {"ratings_count": "metric2", "ratings_value": "metric1"}}, {"dimensions": {"dimension3": false, "dimension6": "en", "dimension1": "Signed out", "dimension11": false, "dimension4": "Google Drive for Developers", "dimension5": "en"}, "gaid": "UA-46884138-2", "metrics": {"ratings_count": "metric2", "ratings_value": "metric1"}}]</script>
+<script type="application/json" gtm>{"parameters": {"freeTrialEligibleUser": "False", "internalUser": "False", "language": {"machineTranslated": "False", "requested": "en", "served": "en"}, "pageType": "product", "projectName": "Google Drive for Developers", "signedIn": "False", "tenant": "developers", "recommendations": {"sourcePage": "", "sourceType": 0, "sourceRank": 0, "sourceIdenticalDescriptions": 0, "sourceTitleWords": 0, "sourceDescriptionWords": 0, "experiment": ""}}, "tags": []}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    <script nonce="qARZP30nW6ObzdpUx2Wz7cFeOZooYz">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9","https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v870be6fb6841f3532cd3aec5bc0b3146031642f2794ae8ba7f51ebf843a655f9/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans_old:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,18,21,25,40,50,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,111,112,113,115,117,118,120,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,138,141,144,147,148,149,150,151,152,153,154,155,156,157,158,159,161,164,165,168,169,173,179,186],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY"]')
+  
+</script>
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>

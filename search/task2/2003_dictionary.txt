@@ -1,0 +1,14 @@
+tempest: tempest 
+body: body 
+ng: ng 
+class: class 
+bodyclasses: bodyclasses 
+left: left 
+drawer: drawer 
+currentauthprincipal: currentauthprincipal 
+id: id 
+servicestatus: servicestatus 
+maintenance: maintenance 
+site: site 
+programming: programming 
+activitytitle: activitytitle 

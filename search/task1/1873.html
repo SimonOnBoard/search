@@ -1,0 +1,200 @@
+<!doctype html>
+<html ng-controller="tmtRootController">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title ng-bind-template="{{ activityTitle }}">Tempest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="Tempest">
+
+    <link rel="manifest"  href="/manifest.json">
+    <link rel="icon"      href="/images/favicon.png">
+    <link rel="mask-icon" href="/images/favicon.svg" color="black">
+
+    <link rel="subresource" href="/images/logo-large.png?appV=2022-02-18-190655-9eeab00-007578">
+    <link rel="subresource" href="/images/icons/svg-sprite.svg?appV=2022-02-18-190655-9eeab00-007578">
+
+    <link rel="dns-prefetch" href="//p.typekit.net" />
+    <link rel="dns-prefetch" href="//use.typekit.net" />
+    <link rel="dns-prefetch" href="//fonts.typekit.net" />
+    <link rel="dns-prefetch" href="//performance.typekit.net" />
+    <link rel="dns-prefetch" href="//netdna.bootstrapcdn.com" />
+    <link rel="dns-prefetch" href="//res.cloudinary.com" />
+    <link rel="dns-prefetch" href="//tempest-res.cloudinary.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="stylesheet" href="/styles/all.min.css?appV=2022-02-18-190655-9eeab00-007578" media="screen">
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'mdv8ruc',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+</head>
+<body ng-class="[bodyClasses, {
+    'has-left-drawer': currentAuthPrincipal.id && !serviceStatus.maintenance,
+    'is-site-programming': activityTitle == 'Site Programming'
+}]">
+
+    <div class="l-app" tmt-drawer-content="main-content">
+        <div class="l-app--header">
+            <div tmt-app-alerts></div>
+            <div class="l-app--nav-toggle">
+                <button class="m-nav--toggle" aria-label="Tempest" type="button" tmt-drawer-toggle="left-nav">
+                    <tmt-svg icon="tempest-logo" class="m-nav--toggle-icon"></tmt-svg>
+                </button>
+            </div>
+        </div>
+        <div class="l-app--wrapper">
+            <div class="l-app--content" ng-view ng-cloak></div>
+        </div>
+        <nav class="l-app--nav" ng-if="currentAuthPrincipal.id" tmt-navbar></nav>
+        <div class="l-app--overlay is-inactive" tmt-drawer-toggle='left-nav' tmt-drawer-toggle-type='close'></div>
+    </div>
+
+    <div class="m-loader--main">
+        <div class="m-loader--main-wrap">
+            <div class="m-loader--main-mask">
+                <div class="m-loader--main-disc first"></div>
+            </div>
+            <div class="m-loader--main-mask">
+                <div class="m-loader--main-disc second"></div>
+            </div>
+            <div class="m-loader--main-mask">
+                <div class="m-loader--main-disc third"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/all.min.js?appV=2022-02-18-190655-9eeab00-007578"></script>
+    <script src="/dist/scripts/tempest.min.js?appV=2022-02-18-190655-9eeab00-007578"></script>
+
+<script>
+
+    // This is used to pass data to specific service modules, and is
+    // destroyed by the config module once they've been loaded to force callers
+    // to go through the service abstraction.
+    // To get at these, make your controller or service depend on
+    // 'cstConfig'.
+    var cstInitialConfig = {
+        auth0: {
+            clientId: 'bbX0Z6l7F1v8Du2eQON0hYZ1we2Lx4W1',
+            domain: 'login.tempestpremium.com'
+        },
+        embedly: {
+            apiKey: '3c204f45f6d34b709cdc1985cbcc404c',
+        },
+        cornerstone: {
+            cstLogger: {
+                proxyUrl: '/.services',
+                clientLevelThreshold: 'info',
+                serverLevelThreshold: 'error',
+                appName: 'tempest-ax'
+            }
+        },
+        filament: {
+            flmRaw: {
+                proxyUrl: '/.services'
+            }
+        },
+        cloudinary: {
+            // this is used by tmtUploadUtils for ng-flow's upload target
+            uploadUrl: 'https://api.cloudinary.com/v1_1/tempest/upload',
+            cloudName: 'tempest',
+            useSiteHostname: true,
+        },
+        gettyimages: {
+            clientId: '4m8j79wzwc4uwtedjk5rfmfg'
+        },
+        salish: {
+            defaultHostname: '',
+        },
+        facebook: {
+            appId: '838976412872897',
+            clientToken: 'dd00801aeabb5fb8a170c7215e21c3a7',
+        },
+    };
+
+    // We assign to this global because of blvCloudinaryResolver
+    window.cloudinaryCloudName = cstInitialConfig.cloudinary.cloudName;
+
+    window.applicationVersion = '2022-02-18-190655-9eeab00-007578';
+
+    require.config({
+        baseUrl: "../components/",
+        paths: {
+            "angular": "angular/angular",
+            "tv4": "tv4/tv4",
+            "ng-file-upload": "ng-file-upload/dist",
+            "schema-form": "angular-schema-form/dist/schema-form",
+            "text": "requirejs-text/text",
+            "json": "requirejs-plugins/src/json",
+            "domReady": "requirejs-domready/domReady",
+            "tempest": "../scripts/tempest",
+            "filament": "@bower_components/filament/htdocs",
+            "cornerstone": "@bower_components/cornerstone/htdocs",
+            "angular-ui-sortable": "angular-ui-sortable/src",
+            "angular-ui-sortable-multiselection": "angular-ui-sortable-multiselection/src",
+            "belvedere": "@bower_components/belvedere/htdocs",
+            "angulartics": "angulartics/src",
+            "angulartics-ga": "angulartics/src",
+            "angular-markdown-directive": "angular-markdown-directive/markdown",
+            "moment": "moment/moment",
+            "jsondiffpatch": "@bower_components/jsondiffpatch/dist/jsondiffpatch.umd.slim",
+            "empty": "@bower_components/jsondiffpatch/dist/empty",
+            "features-js": "@bower_components/features-js/features",
+        },
+        shim: {
+            "angular": {
+                exports: "angular"
+            }
+        },
+
+        // This is required to stop the text plugin from trying to load
+        // cross-domain text files as JavaScript; we don't need that because our
+        // static server supports CORS.
+        config: {
+            text: {
+                useXhr: function () { return true; }
+            }
+        }
+    });
+
+    define('jquery', [], function () {
+        return jQuery;
+    });
+
+    
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+        { (i[r].q=i[r].q||[]).push(arguments)}
+        ,i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-1778701-18', {
+        'siteSpeedSampleRate': 10,
+        'storage': 'none',
+        'storeGac': false,
+    });
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'displayFeaturesTask', null);
+    
+
+    require(["tempest/main"], function (main) {
+        main.begin();
+    });
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(function(reg) {
+            console.log('ServiceWorker registered with scope: ', reg.scope);
+        }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    }
+
+</script>
+
+<script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-account="60016" data-user="53372" async></script>
+</body>
+</html>
